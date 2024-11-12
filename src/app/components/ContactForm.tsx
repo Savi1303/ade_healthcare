@@ -5,7 +5,7 @@ const ContactForm = () => {
     <div className='form-container'>
       <form
        action=""
-       className="flex flex-col gap-[15px] font-semibold md:pl-[20px] md:border-l-2 md:border-blue-500"
+       className="flex flex-col gap-[15px] font-semibold md:py-[20px] md:pl-[20px] md:border-l-2 md:border-blue-500"
     >
 
         <div className="group flex md:flex-row flex-col gap-[15px] md:gap-[40px]">
@@ -40,7 +40,7 @@ const ContactForm = () => {
               <input type="checkbox" name="terms" id="" className='border border-[#5cb0dd] p-[10px]' />
               <label htmlFor="" className='text-[11px] md:text-[13px]'>I agree with Terms of Use and Privacy Policy</label>
             </div>
-            <button type='submit' className='text-white bg-[#36b7ff] py-[10px] px-[30px] rounded-[5px] w-full md:w-fit'>Send</button>
+            <button type='submit' className='text-white bg-blue-500 py-[10px] px-[30px] rounded-[5px] w-full md:w-fit'>Send</button>
         </div>
       </form>
     </div>
