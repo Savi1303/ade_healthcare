@@ -1,0 +1,19 @@
+FONT: Libre Franklin
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+PRIMARY COLORS
+#FFFFFF // #F3E8FF
+#4E96D1
+#331C4C
+#6867AD
+#008000
+#0094DE
+#D8D8FF
+
+CARDS COLORS
+#B6B5FF
+#E8D3FF
+#FFE6D4
+#D9D9D9
+#B6B5FF
+#BFA161
