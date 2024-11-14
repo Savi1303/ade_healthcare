@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const OurStory: React.FC = () => {
+const OurStory = () => {
     return (
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between py-16 px-6 md:px-12 space-y-10 md:space-y-0">
             {/* Left Content */}

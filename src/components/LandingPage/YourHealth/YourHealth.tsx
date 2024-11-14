@@ -5,7 +5,7 @@ import { FaArrowRight, FaStar } from 'react-icons/fa';
 import 'animate.css';
 
 
-const YourHealth: React.FC = () => {
+const YourHealth = () => {
     return (
         <div className="py-16 bg-gray-50">
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">

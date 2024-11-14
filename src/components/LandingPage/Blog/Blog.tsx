@@ -2,7 +2,7 @@ import React from 'react'
 import BlogCard from './BlogCard/BlogCard'
 import 'animate.css';
 
-const Blog: React.FC = () => {
+const Blog = () => {
     return (
         <div className="container mx-auto p-5">
             {/* Header Section */}

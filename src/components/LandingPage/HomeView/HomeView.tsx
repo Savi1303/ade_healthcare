@@ -3,7 +3,7 @@ import React from 'react';
 import { BiPlusCircle } from "react-icons/bi";
 import { FaArrowRight } from 'react-icons/fa';
 
-const HomeView: React.FC = () => {
+const HomeView = () => {
     return (
         <div className="relative w-full h-[550px] sm:h-[600px] md:h-[650px] lg:h-[750px]">
             {/* Background Image */}

@@ -28,7 +28,7 @@ const PrettyHealthCare = [
     },
 ];
 
-const PrettyHealth: React.FC = () => {
+const PrettyHealth = () => {
     return (
         <div className="py-10 bg-white">
             <div className="max-w-7xl mx-auto px-6 sm:px-10">

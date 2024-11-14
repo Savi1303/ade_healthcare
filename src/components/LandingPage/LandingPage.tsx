@@ -6,7 +6,7 @@ import YourHealth from './YourHealth/YourHealth'
 import PrettyHealth from './PrettyHealth/PrettyHealth'
 import Blog from './Blog/Blog'
 
-const LandingPage:React.FC = () => {
+const LandingPage = () => {
     return (
         <div>
             <HomeView />

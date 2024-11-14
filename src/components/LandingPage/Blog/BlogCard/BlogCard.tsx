@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-const BlogCard: React.FC = () => {
+const BlogCard = () => {
     return (
         <div className="bg-white ">
             {/* Image Section */}

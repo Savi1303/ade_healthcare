@@ -47,7 +47,7 @@ const services = [
     },
 ];
 
-const Service: React.FC = () => {
+const Service = () => {
     return (
         <div className="py-16 bg-[#c0cceb94]">
             <div className="container mx-auto px-6 sm:px-8 lg:px-10 space-y-12">

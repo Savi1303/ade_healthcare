@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { CgCloseR } from "react-icons/cg";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     // Function to toggle the menu

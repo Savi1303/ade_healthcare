@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { PiHeartbeatBold } from "react-icons/pi";
 import { TbCalendarTime } from "react-icons/tb";
 
-const AboutHome: React.FC = () => {
+const AboutHome = () => {
     return (
         <div>
             {/* Hero Section */}

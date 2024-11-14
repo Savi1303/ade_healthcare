@@ -6,7 +6,7 @@ import 'animate.css';
 
 const colors = ['bg-[#5183e0]', 'bg-[#8aa9e0]', 'bg-[#cca7ce]', 'bg-[#d69c75]'];
 
-const VisitInfo: React.FC = () => {
+const VisitInfo = () => {
     return (
         <div className="p-6 sm:p-8 lg:p-10 bg-white">
             <div className="flex flex-col space-y-10">
