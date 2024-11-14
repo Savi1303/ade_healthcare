@@ -1,0 +1,101 @@
+'use client';
+import Image from 'next/image';
+import React, { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { CgCloseR } from "react-icons/cg";
+
+const Navbar: React.FC = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    // Function to toggle the menu
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    return (
+        <div className="bg-white shadow-md">
+            <div className="container mx-auto flex justify-between items-center py-4 px-4 sm:px-8">
+                {/* Logo */}
+                <div className="flex items-center">
+                    <Image
+                        src="/Pretty-Health Website/Images/nav.png"
+                        alt="Navigation logo"
+                        width={100}
+                        height={100}
+                        className="cursor-pointer"
+                    />
+                </div>
+
+                {/* Hamburger Menu for Small Screens */}
+                <div className="md:hidden flex items-center z-20">
+                    <button onClick={toggleMenu} className="text-2xl text-gray-700 focus:outline-none">
+                        {menuOpen ? <CgCloseR className="text-black" /> : <FaBars className="text-black" />}
+                    </button>
+                </div>
+
+                {/* Navigation Links */}
+                <div
+                    className={`absolute space-x-5 md:static top-0 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 md:flex items-center justify-between transition-all duration-300 ${menuOpen ? 'h-screen flex flex-col justify-start space-y-6 py-60 px-6' : 'hidden md:flex'
+                        }`}
+                >
+                    <ul className="md:flex md:space-x-6 space-y-6 md:space-y-0 items-center text-sm">
+                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition">
+                            Home
+                        </li>
+                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition">
+                            Why Us
+                        </li>
+                        <li>
+                            <select
+                                aria-label="Select Area of Care"
+                                name="area of care"
+                                id="AreaOfCare"
+                                className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                            >
+                                <option value="">Area of Care</option>
+                                <option value="Primary Care">Primary Care</option>
+                                <option value="Specialty Care">Specialty Care</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select
+                                aria-label="Programs & Promotion"
+                                name="programs"
+                                id="Programs"
+                                className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                            >
+                                <option value="">Programs & Promotion</option>
+                                <option value="Health Programs">Health Programs</option>
+                                <option value="Promotions">Promotions</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select
+                                aria-label="More"
+                                name="more"
+                                id="More"
+                                className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                            >
+                                <option value="">More</option>
+                                <option value="FAQ">FAQ</option>
+                                <option value="Contact Support">Contact Support</option>
+                            </select>
+                        </li>
+                    </ul>
+
+                    {/* Buttons */}
+                    <div className="md:flex items-center space-x-4 mt-6 md:mt-0">
+                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-4 py-2 rounded-md transition">
+                            Contact Us
+                        </button>
+                        <button className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 border border-blue-600 text-sm font-medium px-4 py-2 rounded-md transition">
+                            Talk to a Doctor
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Navbar;
