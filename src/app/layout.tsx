@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Libre_Franklin } from 'next/font/google'
 import "./globals.css";
 
 const geistSans = localFont({
@@ -12,6 +13,12 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const libreFranklin = Libre_Franklin({
+  weight: [ '100', '300', '600', '700', '900' ],
+  style: [ 'normal', 'italic' ],
+  subsets: [ 'latin' ],
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,9 +33,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
+        className={`${ libreFranklin.className } antialiased bg-white text-black`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
         {children}
+        {/* <div className="bg-[#D8D8FF] bg-[#0094DE] bg-[#008000] bg-[#6867AD] bg-[#331C4C] bg-[#4E96D1] bg-[#F3E8FF] bg-[#B6B5FF] bg-[#E8D3FF] bg-[#FFE6D4] bg-[#D9D9D9] bg-[#B6B5FF] bg-[#BFA161]"></div> */}
       </body>
     </html>
   );
