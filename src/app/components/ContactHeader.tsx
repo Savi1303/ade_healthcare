@@ -15,7 +15,7 @@ const ContactHeader = () => {
    </div>
 
     <article>
-        <span className='text-[#36b7ff] font-bold text-[12px]'>Contact us</span>
+        <span className='text-[#0094DE] font-bold text-[12px]'>Contact us</span>
         <h1 className='text-3xl md:text-5xl'>You’ve Got Questions <br />
         <span className='font-bold'>Feel Free to Ask</span></h1>
     </article>
