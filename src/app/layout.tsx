@@ -37,7 +37,7 @@ export default function RootLayout({
         // className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
         {children}
-        {/* <div className="bg-[#D8D8FF] bg-[#0094DE] bg-[#008000] bg-[#6867AD] bg-[#331C4C] bg-[#4E96D1] bg-[#F3E8FF] bg-[#B6B5FF] bg-[#E8D3FF] bg-[#FFE6D4] bg-[#D9D9D9] bg-[#B6B5FF] bg-[#BFA161]"></div> */}
+        {/* <div className="bg-[#D8D8FF] bg-[#0094DE] bg-[#008000] bg-[#6867AD] bg-[#331C4C] bg-[#4E96D1] bg-[#F3E8FF] bg-[#B6B5FF] bg-[#E8D3FF] bg-[#FFE6D4] bg-[#D9D9D9] bg-[#BFA161]"></div> */}
       </body>
     </html>
   );
