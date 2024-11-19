@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { CgCloseR } from "react-icons/cg";
 
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -39,10 +40,14 @@ const Navbar = () => {
                         }`}
                 >
                     <ul className="md:flex md:space-x-6 space-y-6 md:space-y-0 items-center text-sm">
-                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition">
+                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition"
+                            onClick={() => window.location.href = "/"}
+                        >
                             Home
                         </li>
-                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition">
+                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition"
+                            onClick={() => window.location.href = "/about_us"}
+                        >
                             Why Us
                         </li>
                         <li>
@@ -51,10 +56,16 @@ const Navbar = () => {
                                 name="area of care"
                                 id="AreaOfCare"
                                 className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                onChange={(e) => {
+                          
+                                    if (e.target.value === "Specialty Care") {
+                                        window.location.href = "/diagnostics";
+                                    }
+                                }}
                             >
                                 <option value="">Area of Care</option>
                                 <option value="Primary Care">Primary Care</option>
-                                <option value="Specialty Care">Specialty Care</option>
+                                <option value="Specialty Care">Diagnostics</option>
                             </select>
                         </li>
                         <li>
@@ -63,6 +74,11 @@ const Navbar = () => {
                                 name="programs"
                                 id="Programs"
                                 className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                onChange={(e) => {
+                                    if (e.target.value === "Health Programs ") {
+                                        window.location.href = "/school-health";
+                                    }
+                                }}
                             >
                                 <option value="">Programs & Promotion</option>
                                 <option value="Health Programs">Health Programs</option>
@@ -75,17 +91,27 @@ const Navbar = () => {
                                 name="more"
                                 id="More"
                                 className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                onChange={(e) => {
+                                    if (e.target.value === "FAQ") {
+                                        window.location.href = "/FAQs";
+                                    }
+                                    if (e.target.value === "Contact Us") {
+                                        window.location.href = "/contact-us";
+                                    }
+                                }}
                             >
                                 <option value="">More</option>
                                 <option value="FAQ">FAQ</option>
-                                <option value="Contact Support">Contact Support</option>
+                                <option value="Contact Us">Contact Us</option>
                             </select>
                         </li>
                     </ul>
 
                     {/* Buttons */}
                     <div className="md:flex items-center space-x-4 mt-6 md:mt-0">
-                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-4 py-2 rounded-md transition">
+                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-4 py-2 rounded-md transition"
+                            onClick={() => window.location.href = "/contact-us"}
+                        >
                             Contact Us
                         </button>
                         <button className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 border border-blue-600 text-sm font-medium px-4 py-2 rounded-md transition">

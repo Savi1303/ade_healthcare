@@ -37,8 +37,8 @@ const ContactForm = () => {
 
         <div className="group flex flex-col gap-[15px] md:flex-row md:justify-between">
             <div className="form-group flex gap-[10px]  items-center">
-              <input type="checkbox" name="terms" id="" className='border border-[#0094DE] p-[10px]' />
-              <label htmlFor="" className='text-[11px] md:text-[13px]'>I agree with Terms of Use and Privacy Policy</label>
+              <input type="checkbox" name="terms" id="terms" className='border border-[#0094DE] p-[10px]' />
+              <label htmlFor="terms" className='text-[11px] md:text-[13px]'>I agree with Terms of Use and Privacy Policy</label>
             </div>
             <button type='submit' className='text-white bg-[#4E96D1] py-[10px] px-[30px] rounded-[5px] w-full md:w-fit'>Send</button>
         </div>
