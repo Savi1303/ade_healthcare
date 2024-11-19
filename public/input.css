@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, input, button{
+    font-family: "Libre Franklin", serif;
+}
+
+:root {
+    /* PRIMARY COLORS */
+    --primary-white: #FFFFFF; /* or use: #F3E8FF as a variation */
+    --primary-light-purple: #F3E8FF;
+    --primary-blue: #4E96D1;
+    --primary-dark-purple: #331C4C;
+    --primary-lavender: #6867AD;
+    --primary-green: #008000;
+    --primary-light-blue: #0094DE;
+    --primary-soft-purple: #D8D8FF;
+  
+    /* CARDS COLORS */
+    --card-light-purple: #B6B5FF;
+    --card-soft-purple: #E8D3FF;
+    --card-light-orange: #FFE6D4;
+    --card-gray: #D9D9D9;
+    --card-muted-purple: #B6B5FF; /* Duplicate of --card-light-purple */
+    --card-gold: #BFA161;
+  }
+  
