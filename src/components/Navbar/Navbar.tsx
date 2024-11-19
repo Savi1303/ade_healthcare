@@ -21,15 +21,15 @@ const Navbar = () => {
                     <Image
                         src="/Pretty-Health Website/Images/nav.png"
                         alt="Navigation logo"
-                        width={100}
-                        height={100}
+                        width={150}
+                        height={150}
                         className="cursor-pointer"
                     />
                 </div>
 
                 {/* Hamburger Menu for Small Screens */}
                 <div className="md:hidden flex items-center z-20">
-                    <button onClick={toggleMenu} className="text-2xl text-gray-700 focus:outline-none">
+                    <button onClick={toggleMenu} className="text-2xl text-grey-700 focus:outline-none">
                         {menuOpen ? <CgCloseR className="text-black" /> : <FaBars className="text-black" />}
                     </button>
                 </div>
@@ -39,13 +39,13 @@ const Navbar = () => {
                     className={`absolute space-x-5 md:static top-0 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 md:flex items-center justify-between transition-all duration-300 ${menuOpen ? 'h-screen flex flex-col justify-start space-y-6 py-60 px-6' : 'hidden md:flex'
                         }`}
                 >
-                    <ul className="md:flex md:space-x-6 space-y-6 md:space-y-0 items-center text-sm">
-                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition"
+                    <ul className="md:flex md:space-x-6 space-y-6 md:space-y-0 items-center text-sm font-bold">
+                        <li className="text-black-700 font-medium hover:text-blue-600 cursor-pointer transition"
                             onClick={() => window.location.href = "/"}
                         >
                             Home
                         </li>
-                        <li className="text-gray-700 font-medium hover:text-blue-600 cursor-pointer transition"
+                        <li className="text-black-700 font-medium hover:text-blue-600 cursor-pointer transition"
                             onClick={() => window.location.href = "/about_us"}
                         >
                             Why Us
@@ -55,7 +55,7 @@ const Navbar = () => {
                                 aria-label="Select Area of Care"
                                 name="area of care"
                                 id="AreaOfCare"
-                                className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600 rounded-lg"
                                 onChange={(e) => {
                           
                                     if (e.target.value === "Specialty Care") {
@@ -73,7 +73,7 @@ const Navbar = () => {
                                 aria-label="Programs & Promotion"
                                 name="programs"
                                 id="Programs"
-                                className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
                                 onChange={(e) => {
                                     if (e.target.value === "Health Programs ") {
                                         window.location.href = "/school-health";
@@ -90,7 +90,7 @@ const Navbar = () => {
                                 aria-label="More"
                                 name="more"
                                 id="More"
-                                className="text-gray-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
                                 onChange={(e) => {
                                     if (e.target.value === "FAQ") {
                                         window.location.href = "/FAQs";
@@ -109,12 +109,12 @@ const Navbar = () => {
 
                     {/* Buttons */}
                     <div className="md:flex items-center space-x-4 mt-6 md:mt-0">
-                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-blue-700 hover:text-white text-sm font-medium px-4 py-2 rounded-md transition"
+                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-[#4E96D1] hover:text-white text-sm font-medium px-4 py-2 rounded-md transition"
                             onClick={() => window.location.href = "/contact-us"}
                         >
                             Contact Us
                         </button>
-                        <button className="bg-blue-600 text-white hover:bg-white hover:text-blue-600 border border-blue-600 text-sm font-medium px-4 py-2 rounded-md transition">
+                        <button className="bg-[#4E96D1] text-white hover:bg-white hover:text-blue-600 border border-blue-600 text-sm font-medium px-4 py-2 rounded-md transition">
                             Talk to a Doctor
                         </button>
                     </div>

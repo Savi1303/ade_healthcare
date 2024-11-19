@@ -8,14 +8,14 @@ const ContactHeader = () => {
    <Image 
       src="/Pretty-Health Website/Images/Icon (4).png" // Path relative to the public folder
       alt="Contact Icon"
-      width={50} // Set width and height based on your design needs
-      height={50}
+      width={70} // Set width and height based on your design needs
+      height={70}
       className='mb-[20px]'
     />
    </div>
 
     <article>
-        <span className='text-[#0094DE] font-bold text-[12px]'>Contact us</span>
+        <span className='text-[#0094DE] font-bold text-[17px]'>Contact us</span>
         <h1 className='text-3xl md:text-5xl'>You’ve Got Questions <br />
         <span className='font-bold'>Feel Free to Ask</span></h1>
     </article>

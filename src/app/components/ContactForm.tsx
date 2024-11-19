@@ -11,28 +11,28 @@ const ContactForm = () => {
         <div className="group flex md:flex-row flex-col gap-[15px] md:gap-[40px]">
             <div className="form-group flex flex-col gap-[10px]">
                 <label htmlFor="" className='text-[13px]'>First Name</label>
-                <input type="text" placeholder='Enter First Name' className='border border-[#0094DE] md:w-[250px] outline-none md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px]' />
+                  <input type="text" placeholder='Enter First Name' className='border border-[#0094DE] md:w-[250px] outline-none md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50' />
             </div>
             <div className="form-group flex flex-col gap-[10px]">
                 <label htmlFor="" className='text-[13px]'>Last Name</label>
-                <input type="text" placeholder='Enter Last Name' className='border border-[#0094DE] md:w-[250px] outline-none md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px]' />
+                <input type="text" placeholder='Enter Last Name' className='border border-[#0094DE] md:w-[250px] outline-none md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50 ' />
             </div>
         </div>
 
         <div className="group flex flex-col md:flex-row gap-[15px] md:gap-[40px]">
             <div className="form-group flex flex-col gap-[10px]">
                 <label htmlFor="" className='text-[13px]'>Email</label>
-                <input type="email" placeholder='Enter your Email' className='border border-[#0094DE] outline-none md:w-[250px] md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px]' />
+                <input type="email" placeholder='Enter your Email' className='border border-[#0094DE] outline-none md:w-[250px] md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50' />
             </div>
             <div className="form-group flex flex-col gap-[10px]">
                 <label htmlFor="" className='text-[13px]'>Phone Number</label>
-                <input type="text" placeholder='Enter Phone Number' className='border border-[#0094DE] outline-none md:w-[250px] md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px]' />
+                <input type="text" placeholder='Enter Phone Number' className='border border-[#0094DE] outline-none md:w-[250px] md:py-[5px] pl-[20px] py-[10px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50' />
             </div>
         </div>
 
         <div className="form-group flex flex-col gap-[10px]">
             <label htmlFor="" className='text-[13px]'>Message</label>
-            <textarea name="" id="" placeholder='Enter your Message' className='border border-[#0094DE] outline-none pl-[20px] pt-[10px]  rounded-[5px] placeholder:text-black placeholder:text-[12px]'></textarea>
+            <textarea name="" id="" placeholder='Enter your Message' className='border border-[#0094DE] outline-none pl-[20px] pt-[10px] h-[150px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50'></textarea>
         </div>
 
         <div className="group flex flex-col gap-[15px] md:flex-row md:justify-between">

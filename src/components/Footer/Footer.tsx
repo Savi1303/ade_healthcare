@@ -5,7 +5,7 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#250c2c] text-white rounded-tl-[60px] rounded-tr-[60px]">
+        <footer className="bg-[#250c2c] text-white lg:rounded-tl-[60px] lg:rounded-tr-[60px]">
             <div className="container mx-auto py-12 px-6 md:px-10">
                 {/* Top Section */}
                 <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
