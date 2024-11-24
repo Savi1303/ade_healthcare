@@ -4,8 +4,6 @@ import { IoSettings } from 'react-icons/io5';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import { BiPlusCircle } from 'react-icons/bi';
-import 'animate.css';
-
 
 const PrettyHealthCare = [
     {
@@ -34,11 +32,11 @@ const PrettyHealth = () => {
             <div className="max-w-7xl mx-auto px-6 sm:px-10">
                 <div>
                     {/* Heading */}
-                    <div className="text-center mb-10 animate__animated animate__slideInDown">
-                        <h2 className="text-sm font-bold text-indigo-600 mb-4">
+                    <div className="text-center mb-10">
+                        <h2 className="text-lg lg:text-sm font-bold text-indigo-600 mb-4">
                             Why Choose Pretty Health
                         </h2>
-                        <p className="text-gray-900 text-4xl w-[450px] mx-auto sm:w-[345px] md:w-[345px]">
+                        <p className="text-gray-900 lg:text-4xl text-2xl w-[450px] mx-auto sm:w-[345px] md:w-[345px]">
                             We Are Different to{' '}
                             <span className="text-gray-900 font-bold">Protect Your Health</span>
                         </p>
@@ -59,7 +57,7 @@ const PrettyHealth = () => {
 
                 <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-5 w-full animate__animated animate__slideInUp">
                     <div className="lg:w-1/2 flex flex-col bg-indigo-50 p-5 rounded-lg">
-                        <p className="text-xs text-indigo-500 font-bold">LAB TEST</p>
+                        <p className="text-lg lg:text-xs text-indigo-500 font-bold">LAB TEST</p>
 
                         <h3 className="text-2xl w-full lg:w-[350px] font-thin mt-10">
                             We Have Lab Test Facilities{' '}
@@ -92,7 +90,7 @@ const PrettyHealth = () => {
                                 </span>
 
                                 {/* Pricing Section */}
-                                <span className="text-xs font-thin text-gray-600">
+                                <span className="text-xs font-thin text gray-600">
                                     STARTING FROM{' '}
                                     <span className="text-gray-800 font-extrabold">N3000</span>
                                 </span>

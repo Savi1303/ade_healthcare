@@ -18,6 +18,7 @@ const PrioritySection = () => {
             <h1 className='text-[#6867AD]'>and have had positive, transformative</h1>
             <h1 className='text-[#6867AD]'>experiences</h1>
         </div>
+        
         <div className='mt-8 flex justify-center items-center flex-col md:flex-row gap-4'>
             <div className="flex flex-col items-end justify-center basis-full md:basis-1/2 gap-4">
                 <div className="bg-[#E8D3FF] rounded-xl flex gap-4 p-6 items-center w-full lg:w-3/4">
@@ -41,6 +42,7 @@ const PrioritySection = () => {
                     </div>
                 </div>
             </div>
+            
             <div className="flex flex-col items-end justify-center basis-full md:basis-1/2 gap-4">
                 <Image src={ grid2Image } alt='Doctor standing in front of two talking patients image' className='w-full' />
                 <div className='w-full rounded-xl bg-[#B6B5FF] p-8'>
