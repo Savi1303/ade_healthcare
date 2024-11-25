@@ -1,37 +1,49 @@
 'use client';
 import Image from 'next/image';
-import React, { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { CgCloseR } from "react-icons/cg";
-
+import Link from 'next/link';
+import NavLinks from './NavLinks/NavLinks';
+import NavButton from './NavButton/NavButton';
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    // Function to toggle the menu
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
     };
 
     return (
-        <div className="bg-white shadow-md">
-            <div className="container mx-auto flex justify-between items-center py-4 px-4 sm:px-8">
+        <div className="bg-white shadow-md top-0 left-0 w-full z-50">
+            <div className="container mx-auto flex justify-between items-center px-6 py-4">
                 {/* Logo */}
-                <div className="flex items-center">
+                <div className="flex items-center z-50">
                     <Image
                         src="/Pretty-Health Website/Images/nav.png"
                         alt="Navigation logo"
                         width={150}
-                        height={150}
+                        height={50}
                         className="cursor-pointer"
                         onClick={() => window.location.href = "/"}
                     />
                 </div>
 
-                {/* Hamburger Menu for Small Screens */}
-                <div className="md:hidden flex items-center z-20">
-                    <button onClick={toggleMenu} className="text-2xl text-grey-700 focus:outline-none">
-                        {menuOpen ? <CgCloseR className="text-black" /> : <FaBars className="text-black" />}
+                {/* Desktop Navigation */}
+                <ul className="hidden lg:flex items-center gap-3 text-sm">
+                    <li>
+                        <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Why Us</Link>
+                    </li>
+                    <NavLinks />
+                    <NavButton />
+                </ul>
+
+                {/* Mobile Menu Button */}
+                <div className="lg:hidden z-50">
+                    <button onClick={toggleMobileMenu} className="text-gray-800 focus:outline-none">
+                        {isMobileMenuOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
                     </button>
                 </div>
 

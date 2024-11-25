@@ -11,25 +11,25 @@ const Story = () => {
                     alt="Pretty Health Story"
                     width={500}
                     height={400}
-                    className="object-contain"
+                    className="object-contain w-full max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl"
                 />
             </div>
 
             {/* Right Content */}
-            <div className="w-full md:w-1/2 space-y-3 text-center md:text-left">
+            <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
                 {/* Section Label */}
-                <p className="text-xs font-semibold text-indigo-600 tracking-wider">
+                <p className="text-xs md:text-sm lg:text-base font-semibold text-indigo-600 tracking-wider">
                     Our Story
                 </p>
 
                 {/* Section Title */}
-                <h3 className="text-2xl md:text-4xl font-thin text-gray-800 md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-thin text-gray-800 md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
                     What Our Patients Tell Others{' '}
                     <span className="text-black font-extrabold">About Pretty Health</span>
                 </h3>
 
                 {/* Section Description */}
-                <p className="text-gray-600 leading-relaxed md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
+                <p className="text-gray-600 text-justify leading-relaxed md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique molestiae
                     vero cupiditate repudiandae cumque. Natus molestiae sunt porro? Veniam vel
                     enim obcaecati excepturi, repellendus iste dignissimos cupiditate velit

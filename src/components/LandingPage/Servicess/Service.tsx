@@ -3,7 +3,6 @@ import ServiceCard from './ServiceCard/ServiceCard';
 import { FaArrowRight } from 'react-icons/fa';
 import 'animate.css';
 
-
 const services = [
     {
         image: '/Pretty-Health Website/Images/image 3.png',
@@ -53,7 +52,7 @@ const Service = () => {
             <div className="container mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
                 {/* Section Header */}
                 <div className="text-center">
-                    <span className="text-sm font-semibold text-indigo-600">Our Services</span>
+                    <span className="lg:text-xs text-lg font-semibold text-indigo-600">Our Services</span>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-thin text-gray-800 mt-2 md:w-[500px] mx-auto">
                         We Serve in Different{' '}
                         <span className="font-extrabold">Areas For Our Patients</span>
@@ -61,7 +60,7 @@ const Service = () => {
                 </div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 animate__animated animate__zoomIn">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
                     {services.map((service, index) => (
                         <ServiceCard
                             key={index}
@@ -72,15 +71,17 @@ const Service = () => {
                     ))}
                 </div>
 
-                {/* View */}
+                {/* View All Link */}
                 <p className="text-gray-600 text-sm text-center animate__animated animate__slideInLeft">
                     We have 8+ more care services including an emergency department.{' '}
                     <a
                         href="#"
-                        className="text-indigo-600 font-semibold hover:underline inline-flex items-center"
+                        className="text-indigo-600 font-semibold inline-flex items-center group"
                     >
-                        View All
-                        <FaArrowRight className="ml-1" />
+                        <span className="inline-flex items-center border-b-2 border-transparent group-hover:border-indigo-600">
+                            View All
+                            <FaArrowRight className="ml-1" />
+                        </span>
                     </a>
                 </p>
             </div>

@@ -2,16 +2,20 @@ import React from 'react';
 import CardVisit from './Card/CardVisit';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
-import 'animate.css';
 
-const colors = ['bg-[#5183e0]', 'bg-[#8aa9e0]', 'bg-[#cca7ce]', 'bg-[#d69c75]'];
+const colors = [
+    'bg-[#5183e0]',
+    'bg-[#8aa9e0]',
+    'bg-[#cca7ce]',
+    'bg-[#d69c75]', 
+];
 
 const VisitInfo = () => {
     return (
         <div className="p-6 sm:p-8 lg:p-10 bg-white">
             <div className="flex flex-col space-y-10">
                 {/* Cards Section */}
-                <div className="flex flex-wrap gap-5 justify-center sm:justify-start animate__animated animate__bounceInRight">
+                <div className="flex flex-wrap gap-5 justify-center md:grid-cols-2">
                     {colors.map((color, index) => (
                         <CardVisit key={index} color={color} />
                     ))}
@@ -32,13 +36,13 @@ const VisitInfo = () => {
 
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2 space-y-6 text-gray-800">
-                        <span className="text-sm font-semibold text-indigo-400">
+                        <span className="lg:text-xs text-lg font-semibold text-indigo-400">
                             About PrettyHealth
                         </span>
 
                         <h2 className="text-xl sm:text-2xl lg:text-4xl font-thin text-gray-800 leading-tight">
                             We Provide Finest Patient&#39;s {' '} <br />
-                            <span className='text-black font-black'>
+                            <span className="text-black font-black">
                                 Care & Amenities
                             </span>
                         </h2>
@@ -66,13 +70,12 @@ const VisitInfo = () => {
                             personalized and compassionate medical services.
                         </p>
 
-                        <a
-                            href="#"
-                            className="flex items-center space-x-2 text-white bg-[#2e1635] hover:bg-[#451652] px-4 py-2 rounded-full transition duration-300 ease-in-out w-[150px] sm:w-[180px] lg:w-[200px]"
-                        >
-                            <FaArrowRight />
-                            <span>Learn More</span>
-                        </a>
+                        <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-800 text-white w-fit">
+                            <div className="flex justify-center items-center bg-white text-blue-500 w-4 h-4 rounded-full">
+                                <FaArrowRight className="w-2 h-2" />
+                            </div>
+                            <p>Learn More</p>
+                        </button>
                     </div>
                 </div>
             </div>

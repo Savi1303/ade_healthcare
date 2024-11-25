@@ -1,4 +1,4 @@
-import Image from 'next/image'
+  import Image from 'next/image'
 import blogImage from '../../../../public/Pretty-Health Website/Images/Rectangle 7.png'
 import { ArrowRight } from 'lucide-react'
 
