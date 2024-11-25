@@ -27,20 +27,15 @@ const LandingPage = () => {
         };
 
         const windowHeight = window.innerHeight;
-
-        // Create a new visibility state object
         const newVisibility = { ...visibleSections };
-
-        for (const [key, section] of Object.entries(sections)) {
-            const rect = section.getBoundingClientRect();
-            // Check if the section is in the viewport
-            if (rect.top <= windowHeight && rect.bottom >= 0) {
-                newVisibility[key] = true; // Set to true if in view
+        for (const [key, section] of Object.entries(sections) as Array<[keyof typeof visibleSections, HTMLElement | null]>) {
+            const rect = section?.getBoundingClientRect();
+            if (rect && rect.top <= windowHeight && rect.bottom >= 0) {
+                newVisibility[key] = true;
             } else {
-                newVisibility[key] = false; // Reset to false if out of view
+                newVisibility[key] = false;
             }
         }
-
         setVisibleSections(newVisibility);
     };
 
@@ -56,19 +51,19 @@ const LandingPage = () => {
             <div id="homeView" className={`${visibleSections.homeView ? 'animate__animated animate__fadeIn' : ''}`}>
                 <HomeView />
             </div>
-            <div id="visitInfo" className={`${visibleSections.visitInfo ? 'animate__animated animate__backInLeft' : ''}`}>
+            <div id="visitInfo" className={`${visibleSections.visitInfo ? 'animate__animated animate__backInRight' : ''}`}>
                 <VisitInfo />
             </div>
             <div id="service" className={`${visibleSections.service ? 'animate__animated animate__backInLeft' : ''}`}>
                 <Service />
             </div>
-            <div id="yourHealth" className={`${visibleSections.yourHealth ? 'animate__animated animate__backInLeft' : ''}`}>
+            <div id="yourHealth" className={`${visibleSections.yourHealth ? 'animate__animated animate__backInRight' : ''}`}>
                 <YourHealth />
             </div>
             <div id="prettyHealth" className={`${visibleSections.prettyHealth ? 'animate__animated animate__backInLeft' : ''}`}>
                 <PrettyHealth />
             </div>
-            <div id="blog" className={`${visibleSections.blog ? 'animate__animated animate__backInLeft' : ''}`}>
+            <div id="blog" className={`${visibleSections.blog ? 'animate__animated animate__backInRight' : ''}`}>
                 <Blog />
             </div>
         </div>

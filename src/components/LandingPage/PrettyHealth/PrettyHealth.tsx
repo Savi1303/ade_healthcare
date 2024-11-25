@@ -36,7 +36,7 @@ const PrettyHealth = () => {
                         <h2 className="text-lg lg:text-sm font-bold text-indigo-600 mb-4">
                             Why Choose Pretty Health
                         </h2>
-                        <p className="text-gray-900 lg:text-4xl text-2xl w-[450px] mx-auto sm:w-[345px] md:w-[345px]">
+                        <p className="text-gray-900 lg:text-4xl text-2xl lg:w-[450px] mx-auto sm:w-[345px] md:w-[345px]">
                             We Are Different to{' '}
                             <span className="text-gray-900 font-bold">Protect Your Health</span>
                         </p>

@@ -1,8 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
-import NavLinks from './NavLinks/NavLinks';
-import NavButton from './NavButton/NavButton';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -26,19 +23,7 @@ const Navbar = () => {
                         className="cursor-pointer"
                         onClick={() => window.location.href = "/"}
                     />
-                </div>
-
-                {/* Desktop Navigation */}
-                <ul className="hidden lg:flex items-center gap-3 text-sm">
-                    <li>
-                        <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Home</Link>
-                    </li>
-                    <li>
-                        <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Why Us</Link>
-                    </li>
-                    <NavLinks />
-                    <NavButton />
-                </ul>
+            </div>
 
                 {/* Mobile Menu Button */}
                 <div className="lg:hidden z-50">
@@ -49,7 +34,7 @@ const Navbar = () => {
 
                 {/* Navigation Links */}
                 <div
-                    className={`absolute space-x-5 md:static top-0 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 md:flex items-center justify-between transition-all duration-300 ${menuOpen ? 'h-screen flex flex-col justify-start space-y-6 py-60 px-6' : 'hidden md:flex'
+                    className={`absolute space-x-5 md:static top-0 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 md:flex items-center justify-between transition-all duration-300 ${isMobileMenuOpen ? 'h-screen flex flex-col justify-start space-y-6 py-60 px-6' : 'hidden md:flex'
                         }`}
                 >
                     <ul className="md:flex md:space-x-6 space-y-6 md:space-y-0 items-center text-sm font-bold">
