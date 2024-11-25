@@ -24,6 +24,7 @@ const Navbar = () => {
                         width={150}
                         height={150}
                         className="cursor-pointer"
+                        onClick={() => window.location.href = "/"}
                     />
                 </div>
 
@@ -75,7 +76,7 @@ const Navbar = () => {
                                 id="Programs"
                                 className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
                                 onChange={(e) => {
-                                    if (e.target.value === "Health Programs ") {
+                                    if (e.target.value === "Health Programs") {
                                         window.location.href = "/school-health";
                                     }
                                 }}

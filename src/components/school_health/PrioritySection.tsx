@@ -45,7 +45,7 @@ const PrioritySection = () => {
                 <Image src={ grid2Image } alt='Doctor standing in front of two talking patients image' className='w-full' />
                 <div className='w-full rounded-xl bg-[#B6B5FF] p-8'>
                     <Image src={ boldQuoteImage } alt='Bold Quotes Image' width={ 75 } />
-                    <p className='mt-4'>"I had a great experience at this healthcare clinic. I was seen quickly, and the doctor was able to diagnose and treat my condition very patiently"</p>
+                    <p className='mt-4'>&quot;I had a great experience at this healthcare clinic. I was seen quickly, and the doctor was able to diagnose and treat my condition very patiently&quot;</p>
                     <div className='flex gap-3 items-center mt-14'>
                         <Image src={ avatarImage } alt='Avatar Image' width={ 55 } />
                         <div className='space-y-1'>
