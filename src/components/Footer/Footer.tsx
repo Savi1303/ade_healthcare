@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import React from 'react';
 import { FaYoutube, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from 'react-icons/fa6';
@@ -14,8 +14,8 @@ const Footer = () => {
                         <Image
                             src="/Pretty-Health Website/Images/footer _img.png"
                             alt="Footer Logo"
-                            width={100}
-                            height={100}
+                            width={150}
+                            height={120}
                         />
                         <p className="text-sm font-bold">
                             Location: <br />

@@ -47,7 +47,7 @@ const LandingPage = () => {
     }, []);
 
     return (
-        <div>
+        <div className="overflow-hidden">
             <div id="homeView" className={`${visibleSections.homeView ? 'animate__animated animate__fadeIn' : ''}`}>
                 <HomeView />
             </div>

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 import React from 'react';
 import { PiQuotes } from "react-icons/pi";
 import { FaArrowRight, FaStar } from 'react-icons/fa';
