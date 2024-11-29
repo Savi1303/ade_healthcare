@@ -18,12 +18,9 @@ const LandingPage = () => {
 
     const handleScroll = () => {
         const sections = {
-            homeView: document.getElementById('homeView'),
             visitInfo: document.getElementById('visitInfo'),
             service: document.getElementById('service'),
             yourHealth: document.getElementById('yourHealth'),
-            prettyHealth: document.getElementById('prettyHealth'),
-            blog: document.getElementById('blog'),
         };
 
         const windowHeight = window.innerHeight;
@@ -48,7 +45,7 @@ const LandingPage = () => {
 
     return (
         <div>
-            <div id="homeView" className={`${visibleSections.homeView ? 'animate__animated animate__fadeIn' : ''}`}>
+            <div id="homeView" >
                 <HomeView />
             </div>
             <div id="visitInfo" className={`${visibleSections.visitInfo ? 'animate__animated animate__backInRight' : ''}`}>
@@ -60,10 +57,10 @@ const LandingPage = () => {
             <div id="yourHealth" className={`${visibleSections.yourHealth ? 'animate__animated animate__backInRight' : ''}`}>
                 <YourHealth />
             </div>
-            <div id="prettyHealth" className={`${visibleSections.prettyHealth ? 'animate__animated animate__backInLeft' : ''}`}>
+            <div id="prettyHealth">
                 <PrettyHealth />
             </div>
-            <div id="blog" className={`${visibleSections.blog ? 'animate__animated animate__backInRight' : ''}`}>
+            <div id="blog">
                 <Blog />
             </div>
         </div>
