@@ -1,7 +1,7 @@
 import React from 'react';
 import ServiceCard from './ServiceCard/ServiceCard';
 import { FaArrowRight } from 'react-icons/fa';
-import 'animate.css';
+// import 'animate.css';
 
 const services = [
     {
