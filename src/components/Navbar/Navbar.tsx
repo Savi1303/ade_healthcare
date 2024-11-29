@@ -107,12 +107,12 @@ const Navbar = () => {
 
                     {/* Buttons */}
                     <div className="md:flex items-center space-x-4 mt-6 md:mt-0">
-                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-[#4E96D1] hover:text-white text-sm font-medium px-4 py-2 rounded-md transition"
+                        <button className="bg-white border border-blue-600 text-blue-600 hover:bg-[#0094DE] hover:text-white text-sm font-medium px-4 py-2 rounded-md transition"
                             onClick={() => window.location.href = "/contact-us"}
                         >
                             Contact Us
                         </button>
-                        <button className="bg-[#4E96D1] text-white hover:bg-white hover:text-blue-600 border border-blue-600 text-sm font-medium px-4 py-2 rounded-md transition">
+                        <button className="bg-[#0094DE] text-white hover:bg-white hover:text-blue-600 border border-blue-600 text-sm font-medium px-4 py-2 rounded-md transition">
                             Talk to a Doctor
                         </button>
                     </div>

@@ -40,7 +40,6 @@ const Footer = () => {
                                 <li className="text-gray-300 hover:text-gray-500 cursor-pointer">Overview</li>
                                 <li className="text-gray-300 hover:text-gray-500 cursor-pointer">Browse</li>
                                 <li className="text-gray-300 hover:text-gray-500 cursor-pointer">Accessibility</li>
-                                <li className="text-gray-300 hover:text-gray-500 cursor-pointer">Five</li>
                             </ul>
                         </div>
 

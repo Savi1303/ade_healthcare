@@ -9,7 +9,7 @@ interface PrettyCardProps {
 
 const PrettyCard: React.FC<PrettyCardProps> = ({ icon, title, description }) => {
     return (
-        <div className="flex flex-col p-6 bg-white w-full sm:w-[300px]">
+        <div className="flex flex-col p-6 bg-white w-full sm:w-[290px]">
             {/* Icon or Image */}
             <div className="w-16 h-16 flex items-center justify-center mb-4">
                 {icon}
