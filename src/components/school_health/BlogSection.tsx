@@ -13,7 +13,7 @@ const BlogSection = () => {
                 <p className='font-bold'>Protect Your Health</p>
             </SubHeader>
         </div>
-        <div className='flex flex-wrap gap-4 flex-col md:flex-row items-center justify-center mt-12 px-6'>
+        <div className='flex flex-wrap gap-4 flex-col md:flex-row items-center justify-center mt-12'>
             {
                 blogPosts.map( ( post, i ) => <BlogCard title={ post.title } readTime={ post.readTime } date={ post.date } type={ post.type } key={` ${ post.date } + ${ i } `} />)
             }

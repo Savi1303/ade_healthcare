@@ -13,7 +13,7 @@ const FindLocation = () => {
             nearest...</p>
         </div>
         <div className="basis-1/12 flex justify-center">
-            <div className="bg-blue-500 text-white h-14 w-14 rounded-full flex items-center justify-center cursor-pointer">
+            <div className="bg-blue-500 hover:bg-blue-600 transition text-white h-14 w-14 rounded-full flex items-center justify-center cursor-pointer">
                 <ArrowRight className="w-6 h-6" />
             </div>
         </div>

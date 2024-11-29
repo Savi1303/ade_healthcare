@@ -23,8 +23,8 @@ const ServicesSection = () => {
             }
         </div>
         <div className="flex gap-1 items-center justify-center mt-4 px-4">
-            <p className="text-sm text-center">We have 8+ more Care Service including Emergency Department. <span className="font-bold cursor-pointer">View All</span></p>
-            <ArrowRight className="w-5 h-5 hidden md:block cursor-pointer" />
+            <p className="text-sm text-center">We have 8+ more Care Service including Emergency Department. <span className="font-bold cursor-pointer hover:underline hover:underline-offset-2 transition">View All</span></p>
+            <ArrowRight className="w-5 h-5 hidden md:block cursor-pointer hover:scale-110" />
         </div>
     </div>
   )

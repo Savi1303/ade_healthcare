@@ -34,7 +34,7 @@ const PrioritySection = () => {
                     </div>
                 </div>
                 <Image src={ grid1Image } alt='Doctors in operating room image' className='w-full' />
-                <div className='w-1/2 md:w-3/4 lg:w-1/2 rounded-xl py-4 bg-[#B6B5FF] text-center flex flex-col items-center'>
+                <div className='w-full md:w-3/4 lg:w-1/2 rounded-xl py-4 bg-[#B6B5FF] text-center flex flex-col items-center'>
                     <p className='text-lg font-semibold'>Average Google Ratings</p>
                     <div className="flex gap-2 items-center mt-4">
                         <Star className='w-8 h-8' />
