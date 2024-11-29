@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import MiniHeader from '../general/MiniHeader'
 import { ArrowRight, Star } from 'lucide-react'
 import Image from 'next/image'
@@ -9,7 +9,7 @@ import compliantImage from '../../../public/Pretty-Health Website/Images/Frame 3
 import grid1Image from '../../../public/Pretty-Health Website/Images/Rectangle 5.png';
 import grid2Image from '../../../public/Pretty-Health Website/Images/Rectangle 4.png';
 import boldQuoteImage from '../../../public/Pretty-Health Website/Images/ph_quotes-bold.png';
-import avatarImage from '../../../public/Pretty-Health Website/Images/Photo by Etty Fidele.png';
+import avatarImage from '../../../public/Pretty-Health Website/Images/Photo by Etty Fidele.png'
 
 const PrioritySection = () => {
     // Testimonials array
@@ -38,6 +38,13 @@ const PrioritySection = () => {
     ];
 
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
+    const [isVisible, setIsVisible] = useState(false);
+
+    // Refs for scroll animation
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const headerRef = useRef<HTMLDivElement>(null);
+    const leftColumnRef = useRef<HTMLDivElement>(null);
+    const rightColumnRef = useRef<HTMLDivElement>(null);
 
     // Automated carousel effect
     useEffect(() => {
@@ -48,18 +55,61 @@ const PrioritySection = () => {
         return () => clearInterval(interval);
     }, []);
 
+    // Scroll-based visibility and animation
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                    }
+                });
+            },
+            { threshold: 0.1 } // Trigger when 10% of the section is visible
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div className='px-6 md:px-8 lg:px-10 xl:px-20  py-8'>
-            <MiniHeader text='Your Health Is Our Top Priority' />
-            <div className='text-4xl font-medium'>
-                <h1>Our track record speaks for itself. Many</h1>
-                <h1>individuals have chosen <span className='text-[#6867AD]'>our medical center</span></h1> 
-                <h1 className='text-[#6867AD]'>and have had positive, transformative</h1>
-                <h1 className='text-[#6867AD]'>experiences</h1>
+        <div 
+            ref={sectionRef} 
+            className={`
+                px-6 md:px-8 lg:px-10 xl:px-20 py-8 
+                transition-all duration-1000 ease-out
+                ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
+            `}
+        >
+            <div ref={headerRef} className={`
+                transition-all duration-1000 delay-200 ease-out
+                ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}
+            `}>
+                <MiniHeader text='Your Health Is Our Top Priority' />
+                <div className='text-4xl font-medium'>
+                    <h1>Our track record speaks for itself. Many</h1>
+                    <h1>individuals have chosen <span className='text-[#6867AD]'>our medical center</span></h1> 
+                    <h1 className='text-[#6867AD]'>and have had positive, transformative</h1>
+                    <h1 className='text-[#6867AD]'>experiences</h1>
+                </div>
             </div>
             
             <div className='mt-8 flex justify-center items-center flex-col md:flex-row gap-4'>
-                <div className="flex flex-col items-end justify-center basis-full md:basis-1/2 gap-4">
+                <div 
+                    ref={leftColumnRef}
+                    className={`
+                        flex flex-col items-end justify-center basis-full md:basis-1/2 gap-4
+                        transition-all duration-1000 delay-400 ease-out
+                        ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}
+                    `}
+                >
                     <div className="bg-[#E8D3FF] rounded-xl flex gap-4 p-6 items-center w-full lg:w-3/4">
                         <Image src={compliantImage} alt='Compliant Image' width={75} />
                         <div className='space-y-4'>
@@ -82,7 +132,14 @@ const PrioritySection = () => {
                     </div>
                 </div>
                 
-                <div className="flex flex-col items-end justify-center basis-full md:basis-1/2 gap-4">
+                <div 
+                    ref={rightColumnRef}
+                    className={`
+                        flex flex-col items-end justify-center basis-full md:basis-1/2 gap-4
+                        transition-all duration-1000 delay-600 ease-out
+                        ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}
+                    `}
+                >
                     <Image src={testimonials[currentTestimonial].image} alt='Doctor standing in front of two talking patients image' className='w-full' />
                     <div className='w-full rounded-xl bg-[#B6B5FF] p-8'>
                         <Image src={boldQuoteImage} alt='Bold Quotes Image' width={75} />
