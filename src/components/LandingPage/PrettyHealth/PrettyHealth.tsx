@@ -4,6 +4,7 @@ import { IoSettings } from 'react-icons/io5';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import { BiPlusCircle } from 'react-icons/bi';
+import Link from 'next/link';
 
 const PrettyHealthCare = [
     {
@@ -33,7 +34,7 @@ const PrettyHealth = () => {
                 <div>
                     {/* Heading */}
                     <div className="text-center mb-10">
-                        <h2 className="text-lg lg:text-sm font-bold text-indigo-600 mb-4">
+                        <h2 className="lg:text-md text-lg font-bold text-indigo-600 mb-4">
                             Why Choose Pretty Health
                         </h2>
                         <p className="text-gray-900 lg:text-4xl text-2xl lg:w-[450px] mx-auto sm:w-[345px] md:w-[345px]">
@@ -171,7 +172,7 @@ const PrettyHealth = () => {
                             layout="responsive"
                         />
 
-                        <div className="absolute bottom-20 flex items-center bg-white space-x-5 px-10 py-2 border rounded-lg">
+                        <div className="absolute bottom-20 flex items-center bg-white space-x-5 px-5 py-2 border rounded-lg">
                             <BiPlusCircle size={44} className="bg-[#fdfdfd] rounded-full border font-2xl" />
 
                             <div>
@@ -179,17 +180,17 @@ const PrettyHealth = () => {
                                     Precision Proficiency Award
                                 </span>
 
-                                <p className="text-xs max-w-xs text-gray-600">
+                                <p className="text-xs max-w-xs text-gray-600 line-clamp-1 md:line-clamp-3">
                                     Awarded to Our Lab Test Center for consistency achieving unparalleled precision in test results.
                                 </p>
                             </div>
 
-                            <a
+                            <Link
                                 href="#"
-                                className="text-white p-3 flex items-center border rounded-full bg-[#8cabe4] hover:bg-[#273c61] transition duration-300 ease-in-out"
+                                className="text-white p-3 flex items-center border rounded-full bg-blue-600 hover:bg-[#273c61] transition duration-300 ease-in-out"
                             >
                                 <FaArrowRight />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

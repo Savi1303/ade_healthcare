@@ -9,7 +9,7 @@ const YourHealth = () => {
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
                 {/* Header Section */}
                 <div className="text-center md:text-left animate__animated animate__slideInRight">
-                    <span className="lg:text-xs text-lg font-bold text-indigo-600">
+                    <span className="lg:text-md text-lg font-bold text-indigo-600">
                         Your Health is Our Top Priority
                     </span>
                     <p className="text-2xl md:text-3xl text-gray-900 font-thin mt-2 md:w-[650px] mx-auto md:mx-0 leading-relaxed">

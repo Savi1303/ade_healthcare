@@ -36,7 +36,7 @@ const VisitInfo = () => {
 
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2 space-y-6 text-gray-800">
-                        <span className="lg:text-xs text-lg font-semibold text-indigo-400">
+                        <span className="lg:text-md text-lg font-semibold text-indigo-400">
                             About PrettyHealth
                         </span>
 

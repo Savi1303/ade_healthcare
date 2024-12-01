@@ -6,7 +6,7 @@ const Blog = () => {
         <div className="container mx-auto p-5">
             {/* Header Section */}
             <div className="text-center mb-10">
-                <h2 className="text-xl lg:text-sm font-bold text-indigo-400">
+                <h2 className="lg:text-md text-lg font-bold text-indigo-400">
                     Blog & Articles
                 </h2>
                 <h3 className="text-xl sm:text-2xl md:text-3xl mt-3 text-gray-600">

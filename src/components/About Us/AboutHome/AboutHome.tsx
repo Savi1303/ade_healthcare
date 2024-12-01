@@ -8,7 +8,7 @@ const AboutHome = () => {
     return (
         <div>
             {/* Hero Section */}
-            <div className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center bg-gray-100 bg-opacity-90">
+            <div className="relative h-[400px] md:h-[500px] w-full top-10 flex items-center justify-center bg-gray-100 bg-opacity-90">
                 {/* Background Image */}
                 <Image
                     src="/Pretty-Health Website/Images/Group 20650.png"
@@ -46,16 +46,18 @@ const AboutHome = () => {
                         </p>
 
                         {/* Button */}
-                        <button className="mt-6 flex items-center text-sm px-4 py-2 text-indigo-600 bg-white rounded-full w-[150px] transition hover:bg-indigo-600 hover:text-white">
-                            <FaArrowRight className="mr-2" />
-                            Learn More
-                        </button>
+                        <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                        <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">
+                                <FaArrowRight className="w-2 h-2" />
+                            </div>
+                        <p>Learn More</p>
+                    </button>
                     </div>
                 </div>
             </div>
 
             {/* Info Section */}
-            <div className="px-4 md:px-20 mt-8">
+            <div className="px-4 md:px-20 mt-[72px]">
                 <div className="flex flex-col md:flex-row border rounded-lg bg-[#250c2c] text-white p-6 md:p-10 space-y-6 md:space-y-0 md:space-x-5">
                     {/* Emergency Services */}
                     <div className="w-full md:w-1/2 space-y-5">
