@@ -105,7 +105,7 @@ const ContactForm: React.FC = () => {
     <div className="form-container">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col gap-[15px] font-semibold md:py-[20px] md:pl-[20px] md:border-l-2 md:border-blue-500"
+        className="flex flex-col gap-[15px] font-semibold md:py-[20px] md:pl-[20px] md:border-l-2 lg:border-blue-500"
       >
         {/* First and Last Name */}
         <div className="group flex md:flex-row flex-col gap-[15px] md:gap-[40px]">

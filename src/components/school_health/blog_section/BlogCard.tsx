@@ -26,7 +26,7 @@ const BlogCard = ({
             className={`
                 w-[350px] md:w-[375px] 
                 flex flex-col items-center 
-                border rounded-t-3xl rounded-b-3xl border-black
+                border rounded-t-3xl rounded-b-3xl border-gray-500
                 transition-all duration-1000 ease-out
                 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
                 ${isVisible ? `delay-[${500 + index * 200}ms]` : ''}
@@ -93,7 +93,7 @@ const BlogCard = ({
                     className={`
                         flex gap-2 items-center cursor-pointer 
                         text-sm mt-6 hover:scale-105 transition
-                        transition-all duration-1000 ease-out
+                        duration-1000 ease-out
                         ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}
                         ${isVisible ? `delay-[${1000 + index * 200}ms]` : ''}
                     `}

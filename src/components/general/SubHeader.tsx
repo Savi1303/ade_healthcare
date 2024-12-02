@@ -4,7 +4,7 @@ interface SubHeaderProps {
 }
 const SubHeader = ({ text, className, children }: React.PropsWithChildren< SubHeaderProps > ) => {
   return (
-    <div className={` text-3xl lg:text-4xl ${ className } `}>
+    <div className={` text-4xl lg:text-5xl ${ className } `}>
       <h1>{ text }</h1>
       { children }
     </div>

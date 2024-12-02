@@ -56,7 +56,7 @@ const BlogSection = () => {
             </div>
             <div 
                 className={`
-                    flex flex-wrap gap-4 flex-col md:flex-row items-center justify-center mt-12
+                    flex flex-wrap gap-6 flex-col md:flex-row items-center justify-center mt-12
                     transition-all duration-1000 ease-out
                     ${isVisible ? 'opacity-100' : 'opacity-0'}
                     ${isVisible ? 'delay-400' : ''}
