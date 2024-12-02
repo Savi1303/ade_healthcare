@@ -4,7 +4,7 @@ import FindLocation from "../general/FindLocation";
 import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const heroRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

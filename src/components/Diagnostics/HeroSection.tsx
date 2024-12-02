@@ -1,11 +1,47 @@
+'use client'
 import Image from 'next/image';
+import { ArrowRight } from "lucide-react";
 import FindLocation from '../general/FindLocation';
+import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
+  const [isVisible, setIsVisible] = useState(true); // Change from false to true
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.2 } // Trigger when 20% of the section is visible
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       {/* Desktop and Tablet Version */}
-      <div className="hidden md:flex flex-col md:flex-row bg-[url('/Pretty-Health%20Website/Images/Group%2020652.png')] bg-cover bg-center py-20">
+      <div
+        ref={heroRef}
+        className={`
+          hidden md:flex flex-col md:flex-row 
+          bg-[url('/Pretty-Health%20Website/Images/Group%2020652.png')] 
+          bg-cover bg-center py-20
+          transition-all duration-1000 ease-in-out
+          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+        `}
+      >
         <div className="basis-full md:basis-3/5 flex flex-col justify-center">
           <div className="px-6 md:px-12 lg:px-16 xl:px-20 space-y-4 mb-12">
             <div>
@@ -30,8 +66,17 @@ const HeroSection = () => {
       </div>
 
       {/* Mobile Version */}
-      <div className="flex md:hidden bg-[url('/Pretty-Health%20Website/Images/Group%2020652.png')] bg-cover bg-center py-20">
-        <div className="text-center  px-6 space-y-4">
+      <div 
+        ref={heroRef}
+        className={`
+          flex md:hidden 
+          bg-[url('/Pretty-Health%20Website/Images/Group%2020652.png')] 
+          bg-cover bg-center py-20
+          transition-all duration-1000 ease-in-out
+          ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+        `}
+      >
+        <div className="text-center px-6 space-y-4">
           <h1 className="font-bold text-3xl">Get Educated TO</h1>
           <h1 className="text-3xl font-light">Restore Your Health</h1>
           <p className="text-base text-white">
