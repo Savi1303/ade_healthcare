@@ -27,7 +27,7 @@ const VisitInfo = () => {
                     {/* Image Section */}
                     <div className="w-full lg:w-1/2">
                         <Image
-                            src="/Pretty-Health Website/new_images/Union.png"
+                            src="/Pretty-Health Website/Images/Union.png"
                             alt="UnionPix"
                             width={600}
                             height={270}

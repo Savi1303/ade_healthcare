@@ -33,7 +33,7 @@ const Navbar = () => {
                     <li onClick={() => window.location.href = "/"}>
                         <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Home</Link>
                     </li>
-                    <li onClick={() => window.location.href = "/about_us"}>
+                    <li onClick={() => window.location.href = "/about-us"}>
                         <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Why Us</Link>
                     </li>
                     <NavLinks isMobile={false} />
@@ -65,7 +65,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link
-                            href="/about_us"
+                            href="/about-us"
                             className="text-gray-800 hover:text-indigo-600 transition py-2 px-3 text-lg w-full block text-left"
                             onClick={toggleMobileMenu}
                         >
