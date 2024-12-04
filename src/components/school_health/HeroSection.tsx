@@ -1,5 +1,5 @@
 'use client'
-import { ArrowRight } from "lucide-react";
+import { FaArrowRight } from 'react-icons/fa';
 import FindLocation from "../general/FindLocation";
 import { useEffect, useRef, useState } from "react";
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
           </p>
           <button className="px-3 py-1 flex items-center gap-2 rounded-full bg-blue-500 hover:bg-blue-600 transition text-white w-fit">
             <div className="flex justify-center items-center bg-white text-blue-500 w-4 h-4 rounded-full">
-              <ArrowRight className="w-2 h-2" />
+              < FaArrowRight className="w-2 h-2" />
             </div>
             <p>Learn More</p>
           </button>
