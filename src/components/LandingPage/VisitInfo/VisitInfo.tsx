@@ -28,8 +28,8 @@ const VisitInfo = () => {
                         <Image
                             src="/Pretty-Health Website/Images/Union.png"
                             alt="UnionPix"
-                            width={500}
-                            height={200}
+                            width={600}
+                            height={270}
                             className="mx-auto lg:mx-0"
                         />
                     </div>

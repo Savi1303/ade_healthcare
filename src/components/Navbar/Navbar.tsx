@@ -44,51 +44,26 @@ const Navbar = () => {
                             Home
                         </li>
                         <li className="text-black-700 font-medium hover:text-blue-600 cursor-pointer transition"
-                            onClick={() => window.location.href = "/about_us"}
+                            onClick={() => window.location.href = "/about-us"}
                         >
                             Why Us
                         </li>
-                        <li>
-                            <select
-                                aria-label="Select Area of Care"
-                                name="area of care"
-                                id="AreaOfCare"
-                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600 rounded-lg"
-                                onChange={(e) => {
-                          
-                                    if (e.target.value === "Specialty Care") {
-                                        window.location.href = "/diagnostics";
-                                    }
-                                }}
-                            >
-                                <option value="">Area of Care</option>
-                                <option value="Primary Care">Primary Care</option>
-                                <option value="Specialty Care">Diagnostics</option>
-                            </select>
+                        <li className="text-black-700 font-medium hover:text-blue-600 cursor-pointer transition"
+                            onClick={() => window.location.href = "/diagnostics"}
+                        >
+                           Area of Care
                         </li>
-                        <li>
-                            <select
-                                aria-label="Programs & Promotion"
-                                name="programs"
-                                id="Programs"
-                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
-                                onChange={(e) => {
-                                    if (e.target.value === "Health Programs") {
-                                        window.location.href = "/school-health";
-                                    }
-                                }}
-                            >
-                                <option value="">Programs & Promotion</option>
-                                <option value="Health Programs">Health Programs</option>
-                                <option value="Promotions">Promotions</option>
-                            </select>
+                        <li className="text-black-700 font-medium hover:text-blue-600 cursor-pointer transition"
+                            onClick={() => window.location.href = "/school-health"}
+                        >
+                           Programs & Promotion
                         </li>
-                        <li>
+                        <li className="relative group ">
                             <select
-                                aria-label="More"
-                                name="more"
-                                id="More"
-                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer hover:text-blue-600"
+                                // aria-label="More"
+                                // name="more"
+                                // id="More"
+                                className="text-black-700 font-medium bg-transparent p-0 m-0 outline-none cursor-pointer group-hover:text-blue-600"
                                 onChange={(e) => {
                                     if (e.target.value === "FAQ") {
                                         window.location.href = "/FAQs";
@@ -98,9 +73,9 @@ const Navbar = () => {
                                     }
                                 }}
                             >
-                                <option value="">More</option>
-                                <option value="FAQ">FAQ</option>
-                                <option value="Contact Us">Contact Us</option>
+                                <option value="" className="hidden">More</option>
+                                <option value="FAQ"   className="block px-3 py-1 font-medium text-black hover:bg-blue-700" >FAQ</option>
+                                <option value="Contact Us" className="block px-3 py-1 font-medium text-black hover:bg-blue-700">Contact Us</option>
                             </select>
                         </li>
                     </ul>
@@ -119,7 +94,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-    );
+    )
 };
 
 export default Navbar;
