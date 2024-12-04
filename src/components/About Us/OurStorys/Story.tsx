@@ -18,7 +18,7 @@ const Story = () => {
             {/* Right Content */}
             <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
                 {/* Section Label */}
-                <p className="text-xs md:text-sm lg:text-base font-semibold text-indigo-600 tracking-wider">
+                <p className="text-lg font-semibold text-indigo-600 tracking-wider">
                     Our Story
                 </p>
 

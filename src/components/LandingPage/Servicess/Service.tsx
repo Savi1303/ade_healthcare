@@ -49,10 +49,10 @@ const services = [
 const Service = () => {
     return (
         <div className="py-16 bg-[#c0cceb94]">
-            <div className="container mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
+            <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
                 {/* Section Header */}
                 <div className="text-center">
-                    <span className="lg:text-xs text-lg font-semibold text-indigo-600">Our Services</span>
+                    <span className="text-lg font-semibold text-blue-600">Our Services</span>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-thin text-gray-800 mt-2 md:w-[500px] mx-auto">
                         We Serve in Different{' '}
                         <span className="font-extrabold">Areas For Our Patients</span>
@@ -60,7 +60,7 @@ const Service = () => {
                 </div>
 
                 {/* Services Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+                <div className="grid grid-cols-1 justify-center sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-5">
                     {services.map((service, index) => (
                         <ServiceCard
                             key={index}
@@ -72,7 +72,7 @@ const Service = () => {
                 </div>
 
                 {/* View All Link */}
-                <p className="text-gray-600 text-sm text-center animate__animated animate__slideInLeft">
+                <p className="text-gray-950 text-md text-center">
                     We have 8+ more care services including an emergency department.{' '}
                     <a
                         href="#"

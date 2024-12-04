@@ -9,23 +9,23 @@ const YourHealth = () => {
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
                 {/* Header Section */}
                 <div className="text-center md:text-left animate__animated animate__slideInRight">
-                    <span className="lg:text-xs text-lg font-bold text-indigo-600">
+                    <span className="text-lg font-bold text-blue-600">
                         Your Health is Our Top Priority
                     </span>
                     <p className="text-2xl md:text-3xl text-gray-900 font-thin mt-2 md:w-[650px] mx-auto md:mx-0 leading-relaxed">
                         Our track record speaks for itself. Many individuals have chosen{' '}
-                        <span className="text-indigo-400 font-thin">
+                        <span className="text-blue-400 font-thin">
                             our medical center and have had positive, transformative experiences.
                         </span>
                     </p>
                 </div>
 
                 {/* Content Section */}
-                <div className="mt-8 flex justify-center items-center flex-col lg:flex-row gap-4">
+                <div className="mt-8 flex justify-center items-end flex-col lg:flex-row gap-4">
                     {/* Left Column */}
                     <div className="flex flex-col items-end justify-center basis-full lg:basis-1/2 gap-4">
                         {/* Card Section */}
-                        <div className="bg-[#E8D3FF] rounded-xl flex gap-4 p-6 items-center w-full lg:w-3/4">
+                        <div className="bg-[#E8D3FF] rounded-xl flex gap-4 p-6 items-center w-full md:w-3/4">
                             {/* Image */}
                             <Image
                                 src="/Pretty-Health Website/Images/Frame 37.png"
@@ -51,7 +51,7 @@ const YourHealth = () => {
                         </div>
 
                         {/* Image */}
-                        <div className="border border-gray-300 rounded-lg overflow-hidden">
+                        <div className="rounded-lg overflow-hidden">
                             <Image
                                 src="/Pretty-Health Website/Images/Rectangle 5.png"
                                 alt="Google Ratings"
@@ -90,7 +90,7 @@ const YourHealth = () => {
                         {/* Testimonial */}
                         <div className="space-y-6 p-6 bg-[#c8dcec] hover:bg-opacity-90 cursor-pointer rounded-2xl shadow-lg transition duration-300 ease-in-out">
                             <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="text-gray-600 text-lg leading-relaxed">
                                 &#34;I had a great experience at this healthcare clinic . I was seen quickly, and the doctor was able to diagnose and treat my condition very patiently.&#34;
                             </p>
                             <div className="flex items-center space-x-4">
@@ -102,8 +102,8 @@ const YourHealth = () => {
                                     className="w-12 h-12 rounded-full object-cover border border-gray-300"
                                 />
                                 <div>
-                                    <h3 className="text-gray-800 font-semibold">Jane Ronan</h3>
-                                    <p className="text-sm text-gray-600">Cardio Patient</p>
+                                    <h3 className="text-gray-800 text-lg font-semibold">Jane Ronan</h3>
+                                    <p className="text-lg text-gray-600">Cardio Patient</p>
                                 </div>
                             </div>
                         </div>

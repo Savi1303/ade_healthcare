@@ -11,15 +11,15 @@ const AboutHome = () => {
             <div className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center bg-gray-100 bg-opacity-90">
                 {/* Background Image */}
                 <Image
-                    src="/Pretty-Health Website/Images/Group 20650.png"
+                    src="/Pretty-Health Website/new_images/Group 6.png"
                     alt="Background Image"
                     layout="fill"
                     objectFit="cover"
-                    className="absolute inset-0 -z-5 "
+                    className="absolute"
                 />
 
                 {/* Foreground Content */}
-                <div className="absolute flex flex-col md:flex-row justify-center items-center px-6 md:px-32 w-full space-y-6 md:space-y-0">
+                <div className="absolute flex md:flex-row justify-between items-center px-6 md:px-6 lg:px-32 w-full space-y-6 md:space-y-0">
                     {/* Top Image */}
                     <div className="w-full md:w-1/2 md:flex justify-center hidden">
                         <Image
@@ -33,13 +33,13 @@ const AboutHome = () => {
 
                     {/* Text Content */}
                     <div className="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-6 text-center md:text-left">
-                        <h3 className="text-3xl md:text-5xl font-bold text-white">
+                        <h3 className="text-3xl md:text-2xl font-bold text-white">
                             100,000+ Patients
                         </h3>
-                        <span className="text-xl md:text-3xl font-thin text-white">
+                        <span className="text-xl md:text-2xl font-thin text-white">
                             Trust in Our Clinic
                         </span>
-                        <p className="mt-4 text-gray-800 text-sm font-medium">
+                        <p className="mt-4 text-gray-800 text-lg font-medium line-clamp-2 md:line-clamp-3 lg:line-clamp-none">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi 
                             porro non minus soluta illo, perferendis vitae veniam, similique eligendi 
                             molestias dignissimos commodi totam earum harum, culpa alias nam.
