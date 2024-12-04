@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from 'react';
 import HomeView from './HomeView/HomeView';
 import VisitInfo from './VisitInfo/VisitInfo';
 import Service from './Servicess/Service';

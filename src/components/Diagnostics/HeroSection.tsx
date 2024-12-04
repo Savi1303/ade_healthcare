@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import { ArrowRight } from "lucide-react";
+// import { ArrowRight } from "lucide-react";
 import FindLocation from '../general/FindLocation';
 import { useEffect, useRef, useState } from "react";
 
@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="basis-full md:basis-3/5 flex flex-col justify-center">
           <div className="px-6 md:px-12 lg:px-16 xl:px-20 space-y-4 mb-12">
             <div>
-              <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">Get Educated TO</h1>
+              <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">Get Educated To</h1>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-light">Restore Your Health</h1>
             </div>
             <p className="text-base md:text-lg">
@@ -60,7 +60,7 @@ const HeroSection = () => {
             alt="Cardiology"
             width={500}
             height={500}
-            className="w-full max-w-[400px] mb-[25px]"
+            className="w-full w-h-[120%] h-full max-w-[400px] mb-[25px]"
           />
         </div>
       </div>
