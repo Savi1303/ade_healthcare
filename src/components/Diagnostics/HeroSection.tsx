@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image';
-import { ArrowRight } from "lucide-react";
 import FindLocation from '../general/FindLocation';
 import { useEffect, useRef, useState } from "react";
 
