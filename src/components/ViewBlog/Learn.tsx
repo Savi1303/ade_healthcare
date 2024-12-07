@@ -78,7 +78,7 @@ const Learn = () => {
         </div>
       </div>
 
-      <div className="container flex flex-col md:flex-row gap-2 bg-white border border-black rounded-lg p-2">
+      <div className="container flex flex-col md:flex-row gap-2 md:gap-5 lg:gap-2">
         {cardData.map((card, index) => (
           <div
             key={index}
