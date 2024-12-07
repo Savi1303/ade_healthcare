@@ -4,6 +4,7 @@ import { IoSettings } from 'react-icons/io5';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import { BiPlusCircle } from 'react-icons/bi';
+import Link from 'next/link';
 
 const PrettyHealthCare = [
     {
@@ -33,7 +34,7 @@ const PrettyHealth = () => {
                 <div>
                     {/* Heading */}
                     <div className="text-center mb-10">
-                        <h2 className="text-lg lg:text-sm font-bold text-indigo-600 mb-4">
+                        <h2 className="text-lg font-bold text-blue-600 mb-4">
                             Why Choose Pretty Health
                         </h2>
                         <p className="text-gray-900 lg:text-4xl text-2xl lg:w-[450px] mx-auto sm:w-[345px] md:w-[345px]">
@@ -57,7 +58,7 @@ const PrettyHealth = () => {
 
                 <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-5 w-full animate__animated animate__slideInUp">
                     <div className="lg:w-1/2 flex flex-col bg-indigo-50 p-5 rounded-lg">
-                        <p className="text-lg lg:text-xs text-indigo-500 font-bold">LAB TEST</p>
+                        <p className="text-lg text-blue-600 font-bold">LAB TEST</p>
 
                         <h3 className="text-2xl w-full lg:w-[350px] font-thin mt-10">
                             We Have Lab Test Facilities{' '}
@@ -68,7 +69,7 @@ const PrettyHealth = () => {
                             {/* Card 1 */}
                             <div className="bg-white p-5 rounded-lg w-full lg:w-1/2 shadow-md space-y-5 flex flex-col items-start">
                                 {/* Discount Badge */}
-                                <span className="self-end text-xs bg-indigo-100 text-[#5fa759] px-3 py-1 rounded-3xl">
+                                <span className="self-end text-lg bg-indigo-100 text-[#5fa759] px-3 py-1 rounded-3xl">
                                     40% Off
                                 </span>
 
@@ -85,30 +86,29 @@ const PrettyHealth = () => {
 
                                 {/* Content Section */}
                                 <p className="text-lg font-semibold text-gray-700">X-Rays</p>
-                                <span className="text-gray-500 text-xs font-thin w-[200px]">
+                                <span className="text-gray-500 text-lg font-thin sm:w-[300px] lg:w-[200px]">
                                     We do all kinds of MRI & ICT Scan for our patients
                                 </span>
 
                                 {/* Pricing Section */}
-                                <span className="text-xs font-thin text gray-600">
+                                <span className="text-lg font-thin text-gray-600">
                                     STARTING FROM{' '}
-                                    <span className="text-gray-800 font-extrabold">N3000</span>
+                                    <span className="text-gray-800 text-lg font-extrabold">N3000</span>
                                 </span>
 
                                 {/* CTA Section */}
-                                <span className="flex items-center border space-x-2 text-white px-3 py-1 rounded-3xl bg-[#3cb5d3] cursor-pointer hover:bg-[#349bb3] focus:ring-2 focus:ring-[#3cb5d3] focus:outline-none">
-                                    <FaArrowRight
-                                        size={10}
-                                        className="flex text-center text-black bg-white rounded-full p-3"
-                                    />
-                                    <span className="text-sm font-medium">Schedule A Test</span>
-                                </span>
+                                <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                                    <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">
+                                        <FaArrowRight className="w-2 h-2" />
+                                    </div>
+                                    <p className='text-lg'>Schedule A Test</p>
+                                </button>
                             </div>
 
                             {/* Card 2 */}
                             <div className="bg-white p-5 rounded-lg w-full lg:w-1/2 shadow-md space-y-5 flex flex-col items-start">
                                 {/* Discount Badge */}
-                                <span className="self-end text-xs bg-indigo-100 text-[#5fa759] px-3 py-1 rounded-3xl">
+                                <span className="self-end text-lg bg-indigo-100 text-[#5fa759] px-3 py-1 rounded-3xl">
                                     40% Off
                                 </span>
 
@@ -125,24 +125,23 @@ const PrettyHealth = () => {
 
                                 {/* Content Section */}
                                 <p className="text-lg font-semibold text-gray-700">X-Rays</p>
-                                <span className="text-gray-500 text-xs font-thin w-[200px]">
+                                <span className="text-gray-500 text-lg font-thin sm:w-[300px] lg:w-[200px]">
                                     We do all kinds of MRI & ICT Scan for our patients
                                 </span>
 
                                 {/* Pricing Section */}
-                                <span className="text-xs font-thin text-gray-600">
+                                <span className="text-lg font-thin text-gray-600">
                                     STARTING FROM{' '}
-                                    <span className="text-gray-800 font-extrabold">N3000</span>
+                                    <span className="text-gray-800 text-lg font-extrabold">N3000</span>
                                 </span>
 
                                 {/* CTA Section */}
-                                <span className="flex items-center border space-x-2 text-white px-3 py-1 rounded-3xl bg-[#3cb5d3] cursor-pointer hover:bg-[#349bb3] focus:ring-2 focus:ring-[#3cb5d3] focus:outline-none">
-                                    <FaArrowRight
-                                        size={10}
-                                        className="flex text-center text-black bg-white rounded-full p-3"
-                                    />
-                                    <span className="text-sm font-medium">Schedule A Test</span>
-                                </span>
+                                <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                                    <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">
+                                        <FaArrowRight className="w-2 h-2" />
+                                    </div>
+                                    <p className='text-lg'>Schedule A Test</p>
+                                </button>
                             </div>
                         </div>
 
@@ -169,27 +168,28 @@ const PrettyHealth = () => {
                             width={600}
                             height={0}
                             layout="responsive"
+                            className='mt-10'
                         />
 
-                        <div className="absolute bottom-20 flex items-center bg-white space-x-5 px-10 py-2 border rounded-lg">
-                            <BiPlusCircle size={44} className="bg-[#fdfdfd] rounded-full border font-2xl" />
+                        <div className="absolute bottom-20 left-0 flex items-center bg-white space-x-5 px-10 py-2 border rounded-br-full rounded-tr-full">
+                            <BiPlusCircle size={44} className="bg-[#fdfdfd] rounded-full border font-2xl hidden md:flex" />
 
                             <div>
-                                <span className="font-extrabold text-xs text-gray-800 uppercase">
+                                <span className="font-extrabold text-[10px] lg:text-xs text-lg text-gray-800 uppercase">
                                     Precision Proficiency Award
                                 </span>
 
-                                <p className="text-xs max-w-xs text-gray-600">
+                                <p className="lg:text-xs text-lg max-w-xs text-gray-600 line-clamp-1 lg:line-clamp-none">
                                     Awarded to Our Lab Test Center for consistency achieving unparalleled precision in test results.
                                 </p>
                             </div>
 
-                            <a
+                            <Link
                                 href="#"
-                                className="text-white p-3 flex items-center border rounded-full bg-[#8cabe4] hover:bg-[#273c61] transition duration-300 ease-in-out"
+                                className="text-white p-3 flex items-center border rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300 ease-in-out"
                             >
                                 <FaArrowRight />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

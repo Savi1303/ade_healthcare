@@ -18,12 +18,12 @@ const ServiceCard: React.FC<{ image: string; title: string; description: string 
             <p className="text-gray-800 font-bold text-lg text-center">{title}</p>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm text-center">{description}</p>
+            <p className="text-black text-lg lg:text-[14px] text-center line-clamp-2 lg:line-clamp-none">{description}</p>
 
             {/* Learn More Button */}
             <a
                 href="#"
-                className="flex items-center justify-center space-x-2 text-indigo-600 hover:text-indigo-800 text-sm"
+                className="flex items-center justify-center space-x-2 text-blue-600 hover:text-black text-md"
             >
                 <FaArrowRight />
                 <span>Read More</span>

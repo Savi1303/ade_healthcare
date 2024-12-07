@@ -15,11 +15,12 @@ const VisitInfo = () => {
         <div className="p-6 sm:p-8 lg:p-10 bg-white">
             <div className="flex flex-col space-y-10">
                 {/* Cards Section */}
-                <div className="flex flex-wrap gap-5 justify-center md:grid-cols-2">
-                    {colors.map((color, index) => (
-                        <CardVisit key={index} color={color} />
-                    ))}
-                </div>
+                <div className="flex flex-wrap gap-2 justify-center sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 border rounded-3xl border-gray-400 p-5">
+    {colors.map((color, index) => (
+        <CardVisit key={index} color={color} />
+    ))}
+</div>
+
 
                 {/* About Section */}
                 <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 animate__animated animate__bounceInLeft">
@@ -28,15 +29,15 @@ const VisitInfo = () => {
                         <Image
                             src="/Pretty-Health Website/Images/Union.png"
                             alt="UnionPix"
-                            width={500}
-                            height={200}
+                            width={600}
+                            height={270}
                             className="mx-auto lg:mx-0"
                         />
                     </div>
 
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2 space-y-6 text-gray-800">
-                        <span className="lg:text-xs text-lg font-semibold text-indigo-400">
+                        <span className="text-lg font-semibold text-blue-600">
                             About PrettyHealth
                         </span>
 
@@ -70,11 +71,11 @@ const VisitInfo = () => {
                             personalized and compassionate medical services.
                         </p>
 
-                        <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-800 text-white w-fit">
-                            <div className="flex justify-center items-center bg-white text-blue-500 w-4 h-4 rounded-full">
+                        <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                            <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">
                                 <FaArrowRight className="w-2 h-2" />
                             </div>
-                            <p>Learn More</p>
+                            <p className='text-sm'>Learn More</p>
                         </button>
                     </div>
                 </div>

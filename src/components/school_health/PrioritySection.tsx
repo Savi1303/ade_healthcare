@@ -143,7 +143,7 @@ const PrioritySection = () => {
                     <Image src={testimonials[currentTestimonial].image} alt='Doctor standing in front of two talking patients image' className='w-full' />
                     <div className='w-full rounded-xl bg-[#B6B5FF] p-8'>
                         <Image src={boldQuoteImage} alt='Bold Quotes Image' width={75} />
-                        <p className='mt-4'>"{testimonials[currentTestimonial].quote}"</p>
+                        <p className='mt-4'>&quot;{testimonials[currentTestimonial].quote}&quot;</p>
                         <div className='flex gap-3 items-center mt-14'>
                             <Image src={testimonials[currentTestimonial].avatar} alt='Avatar Image' width={55} />
                             <div className='space-y-1'>

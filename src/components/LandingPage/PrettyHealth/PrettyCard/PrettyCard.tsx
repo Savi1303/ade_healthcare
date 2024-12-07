@@ -16,15 +16,15 @@ const PrettyCard: React.FC<PrettyCardProps> = ({ icon, title, description }) => 
             </div>
 
             {/* Title */}
-            <h3 className="text-gray-800 font-bold text-lg mb-2">{title}</h3>
+            <h3 className="text-black font-bold text-lg mb-2">{title}</h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-sm mb-4">{description}</p>
+            <p className="text-gray-950 text-lg mb-4">{description}</p>
 
             {/* Read More */}
             <a
                 href="#"
-                className="flex space-x-2 items-center font-medium"
+                className="flex space-x-2 items-center text-lg font-medium"
             >
                 <FaArrowRight />
                 <span>Learn More</span>
