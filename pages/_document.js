@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Add any custom head elements here */}
+          {/* Add your custom head elements here */}
         </Head>
         <body>
           <Main />
@@ -16,4 +16,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument; 
+export default MyDocument;

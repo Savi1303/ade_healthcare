@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
 import { Libre_Franklin } from 'next/font/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
@@ -26,11 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${ libreFranklin.className } antialiased bg-white text-black`}
-        // className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-black`}
       >
         <Navbar />
           {children}
-        {/* <div className="bg-[#D8D8FF] bg-[#0094DE] bg-[#008000] bg-[#6867AD] bg-[#331C4C] bg-[#4E96D1] bg-[#F3E8FF] bg-[#B6B5FF] bg-[#E8D3FF] bg-[#FFE6D4] bg-[#D9D9D9] bg-[#BFA161]"></div> */}
         <Footer />
       </body>
     </html>
