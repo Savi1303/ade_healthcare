@@ -26,7 +26,8 @@ const Details: React.FC = () => {
 
     return () => {
       if (detailsRef.current) {
-        observer.unobserve(detailsRef.current);
+                // eslint-disable-next-line react-hooks/exhaustive-deps
+                observer.unobserve(detailsRef.current);
       }
     };
   }, []);

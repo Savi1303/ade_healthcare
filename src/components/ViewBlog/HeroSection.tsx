@@ -21,7 +21,8 @@ const HeroSection = () => {
 
   return () => {
     if (heroRef.current) {
-      observer.unobserve(heroRef.current);
+                // eslint-disable-next-line react-hooks/exhaustive-deps
+                observer.unobserve(heroRef.current);
     }
   };
 }, []);

@@ -53,6 +53,7 @@ const PrioritySection = () => {
         }, 5000); // Change slide every 5 seconds
 
         return () => clearInterval(interval);
+                // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Scroll-based visibility and animation
@@ -65,7 +66,7 @@ const PrioritySection = () => {
                     }
                 });
             },
-            { threshold: 0.1 } // Trigger when 10% of the section is visible
+            { threshold: 0.1 } 
         );
 
         if (sectionRef.current) {
@@ -74,6 +75,7 @@ const PrioritySection = () => {
 
         return () => {
             if (sectionRef.current) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 observer.unobserve(sectionRef.current);
             }
         };

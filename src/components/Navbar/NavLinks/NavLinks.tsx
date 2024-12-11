@@ -23,7 +23,7 @@ const NavLinks:React.FC<NavLinksProps> = ({ isMobile }) => {
         { 
             name: 'Area of Care',
             submenu: [
-                { name: 'Primary Care', value: '/clinic' },
+                { name: 'Primary Care', value: '/Clinic' },
                 { name: 'Specialty Care', value: '/diagnostics' },
             ], 
         },
