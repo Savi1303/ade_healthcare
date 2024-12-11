@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
 import { PiHeartbeatBold } from "react-icons/pi";
 import { TbCalendarTime } from "react-icons/tb";
 
@@ -32,24 +31,16 @@ const AboutHome = () => {
                     </div>
 
                     {/* Text Content */}
-                    <div className="w-full md:w-1/2 flex flex-col space-y-4 md:space-y-6 text-center md:text-left">
-                        <h3 className="text-3xl md:text-2xl font-bold text-white">
+                    <div className="w-full top-60 md:w-1/2 flex flex-col space-y-1 md:space-y-2 md:text-left">
+                        <h3 className="text-4xl md:text-4xl lg:text-6xl font-bold text-white">
                             100,000+ Patients
                         </h3>
-                        <span className="text-xl md:text-2xl font-thin text-white">
-                            Trust in Our Clinic
+                        <span className="lg:text-5xl md:text-4xl text-4xl font-thin text-white">
+                            Trust in Our Services
                         </span>
-                        <p className="mt-4 text-gray-800 text-lg font-medium line-clamp-2 md:line-clamp-3 lg:line-clamp-none">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus animi 
-                            porro non minus soluta illo, perferendis vitae veniam, similique eligendi 
-                            molestias dignissimos commodi totam earum harum, culpa alias nam.
+                        <p className="text-white text-lg lg:text-md md:text-lg font-medium">
+                            With over 100,000+ Clients, we are your go-to preventive healthcare Organsiation
                         </p>
-
-                        {/* Button */}
-                        <button className="mt-6 flex items-center text-sm px-4 py-2 text-indigo-600 bg-white rounded-full w-[150px] transition hover:bg-indigo-600 hover:text-white">
-                            <FaArrowRight className="mr-2" />
-                            Learn More
-                        </button>
                     </div>
                 </div>
             </div>
@@ -61,13 +52,9 @@ const AboutHome = () => {
                     <div className="w-full md:w-1/2 space-y-5">
                         <h2 className="flex items-center gap-2 text-xl md:text-2xl font-semibold">
                             <PiHeartbeatBold size={30} />
-                            Emergency Services
+                            Our Services
                         </h2>
-                        <p className="text-sm md:text-base text-gray-100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ullam asperiores eveniet, 
-                            accusamus explicabo exercitationem. Ipsa aspernatur quam accusantium eveniet repudiandae, 
-                            molestias vitae.
-                        </p>
+                        
                         <h4 className="text-lg md:text-2xl font-bold">
                             Call: <span className="text-indigo-300">0-123-456-7890</span>
                         </h4>
@@ -79,17 +66,11 @@ const AboutHome = () => {
                             <TbCalendarTime size={30} />
                             Opening Hours
                         </h2>
-                        <p className="text-sm md:text-base text-gray-100">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ullam asperiores eveniet, 
-                            accusamus explicabo exercitationem. Ipsa aspernatur quam accusantium eveniet repudiandae, 
-                            molestias vitae.
-                        </p>
 
-                        <div className="flex flex-col space-y-3">
+                        <div className="flex flex-col space-y-5">
                             {[
-                                { day: "Mon - Wed", time: "10:00AM - 04:00PM" },
-                                { day: "Thu - Fri", time: "10:00AM - 04:00PM" },
-                                { day: "Sat - Sun", time: "10:00AM - 04:00PM" },
+                                { day: "Mon - Fri", time: "08:00AM - 05:00PM" },
+                                { day: "Saturday", time: "09:00AM - 04:00PM" },
                             ].map((schedule, index) => (
                                 <div key={index} className="flex justify-between items-center font-bold text-sm">
                                     <span>{schedule.day}</span>

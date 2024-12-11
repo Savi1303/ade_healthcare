@@ -6,12 +6,12 @@ function NavButton() {
         { 
             name: 'Contact Us', 
             href: '/contact-us', 
-            color: 'bg-white border border-transparent hover:border-blue-600 font-black text-black' 
+            color: 'bg-white border hover:bg-blue-600 hover:text-white border-transparent hover:border-blue-600 font-black text-black' 
         },
         { 
             name: 'Talk to a Doctor', 
             href: '/', 
-            color: 'bg-blue-600 border border-blue-600 hover:bg-transparent font-black hover:text-black text-white' 
+            color: 'bg-blue-600 border border-blue-600 hover:bg-transparent font-black hover:text-blue-600 text-white' 
         },
     ];
 

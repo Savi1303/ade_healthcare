@@ -19,38 +19,31 @@ const HomeView = () => {
 
             {/* Content Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 sm:px-8 lg:px-12 space-y-6">
-                <div className='absolute space-y-4 top-16 sm:top-20 md:top-20 lg:top-20'>
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-                        Transforming Lives,
+                <div className='absolute space-y-2 top-32 sm:top-32 md:top-32 lg:top-40'>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
+                        Prevention is our
                     </h1>
-                    <span className='text-3xl sm:text-4xl md:text-5xl font-thin'>
-                        Restoring Your Health
+                    <span className='text-3xl sm:text-4xl md:text-5xl font-light'>
+                        Prescription
                     </span>
 
-                    <p className="text-xs sm:text-md md:text-lg max-w-lg">
-                        Embrace a world of comprehensive healthcare where your well-being takes
-                        center stage. At Meca, we&#39;re dedicated to providing you with personalized and
-                        compassionate medical services.
-                    </p>
-
-                    <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-[#2e1635] text-white w-fit">
-                        <div className="flex justify-center items-center bg-white text-[#2e1635] w-4 h-4 rounded-full">
-                            <FaArrowRight className="w-2 h-2" />
-                        </div>
-                        <p className='text-xs'>Learn More</p>
-                    </button>
+                    <p className="text-xs lg:text-[17px] sm:text-md md:text-[16px] max-w-lg">
+                        Nigeria&#39;s Foremost Preventive Health & Wellness Company.
+                    </p>                   
                 </div>
 
                 {/* Location Section */}
-                <div className="absolute left-0 lg:bottom-60 bottom-36 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-2 border rounded-tr-full rounded-br-full w-[400px] md:w-[650px] lg:w-[700px] ">
+                <div className="absolute left-0 lg:bottom-72 md:bottom-60 bottom-36 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[400px] md:w-[600px] lg:w-[600px] ">
                     <div className='flex gap-6'>
-                        <BiPlusCircle size={40} className='hidden md:flex mt-3 bg-[#2e1635] rounded-full border font-2xl p-2' />
+                        <BiPlusCircle size={40} className='flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2' />
 
                         <div>
-                            <span className="font-extrabold text-xs sm:text-sm md:text-base text-gray-800">FIND A LOCATION NEARBY</span>
+                            <span className="font-extrabold uppercase text-xs sm:text-sm md:text-base text-gray-800">
+                                Need Vaccination?
+                            </span>
 
-                            <p className="text-xs sm:text-sm font-thin md:text-base md:w-[450px] text-gray-600 line-clamp-1 md:line-clamp-2">
-                                Hospa medical center operates more than 120 locations. Find the nearest...
+                            <p className="text-xs sm:text-sm font-thin md:text-lg text-gray-800">
+                                Send us a message, let&#39;s get started
                             </p>
                         </div>
                     </div>

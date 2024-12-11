@@ -7,7 +7,7 @@ const colors = [
     'bg-[#5183e0]',
     'bg-[#8aa9e0]',
     'bg-[#cca7ce]',
-    'bg-[#d69c75]', 
+    'bg-[#d69c75]',
 ];
 
 const VisitInfo = () => {
@@ -16,14 +16,14 @@ const VisitInfo = () => {
             <div className="flex flex-col space-y-10">
                 {/* Cards Section */}
                 <div className="flex flex-wrap gap-2 justify-center sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 border rounded-3xl border-gray-400 p-5">
-    {colors.map((color, index) => (
-        <CardVisit key={index} color={color} />
-    ))}
-</div>
+                    {colors.map((color, index) => (
+                        <CardVisit key={index} color={color} />
+                    ))}
+                </div>
 
 
                 {/* About Section */}
-                <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 animate__animated animate__bounceInLeft">
+                <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 animate__animated animate__bounceInLeft">
                     {/* Image Section */}
                     <div className="w-full lg:w-1/2">
                         <Image
@@ -41,35 +41,28 @@ const VisitInfo = () => {
                             About PrettyHealth
                         </span>
 
-                        <h2 className="text-xl sm:text-2xl lg:text-4xl font-thin text-gray-800 leading-tight">
-                            We Provide Finest Patient&#39;s {' '} <br />
+                        <h2 className="text-xl sm:w-[350px] md:w-[550px] lg:w-[550px] sm:text-2xl lg:text-4xl font-thin text-gray-800 leading-tight">
+                            We are the largest provider of {' '}
                             <span className="text-black font-black">
-                                Care & Amenities
-                            </span>
+                            private vaccination services
+                            </span> {' '} 
+                            in Nigeria
                         </h2>
 
                         <p className="text-sm sm:text-base lg:text-lg text-gray-600">
-                            Embrace a world of comprehensive healthcare where your well-being takes
-                            center stage. At PrettyHealth, we&#39;re dedicated to providing you with
-                            personalized and compassionate medical services.
+                            Making vaccination work for you, one person at a time 
                         </p>
 
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm sm:text-base text-gray-700">
-                            <li>✔️ Seamless Care</li>
-                            <li>✔️ Warm and Welcoming Environment</li>
-                            <li>✔️ Comprehensive Care</li>
-                            <li>✔️ Expert Doctors</li>
-                            <li>✔️ Patient-Centered Care</li>
-                            <li>✔️ Personalized Approach</li>
+                            <li>✔️ Individual Vaccination</li>
+                            <li>✔️ Group Vaccination</li>
+                            <li>✔️ Travel Vaccination</li>
+                            <li>✔️ Easy Bookings</li>
+                            <li>✔️ Home Vaccination</li>
                             <li>✔️ Cutting-Edge Technology</li>
+                            <li>✔️ Expert Healthcare Workers</li>
                             <li>✔️ Positive Reviews</li>
                         </ul>
-
-                        <p className="text-sm sm:text-base lg:text-lg text-gray-600">
-                            Embrace a world of comprehensive healthcare where your well-being takes
-                            center stage. At PrettyHealth, we&#39;re dedicated to providing you with
-                            personalized and compassionate medical services.
-                        </p>
 
                         <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
                             <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">

@@ -1,26 +1,73 @@
+'use client';
+
 import Image from "next/image";
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import { PiQuotes } from "react-icons/pi";
-import { FaArrowRight, FaStar } from 'react-icons/fa';
+import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
+
+const testimonials = [
+    {
+        quote: "I had a great experience at this healthcare office. I was seen quickly, and the team were very calm and I got my HPV vaccine administered and my next appointment was set up on my phone.",
+        image: "/Pretty-Health Website/Images/Photo by Etty Fidele.png", 
+        name: "Adekunle Florence",
+        role: "Vaccination Client",
+    },
+    {
+        quote: "The staff was professional and kind. The vaccination process was smooth and the environment was clean and welcoming.",
+        image: "/Pretty-Health Website/Images/Image (1).png", 
+        name: "Chukwuma Obinna",
+        role: "Health Screening Client",
+    },
+    {
+        quote: "I appreciate the timely service and the detailed explanations I received about my health. Highly recommend Prettyhealth Care.",
+        image: "/Pretty-Health Website/Images/Image (2).png",
+        name: "Fatima Ibrahim",
+        role: "Regular Client",
+    },
+    {
+        quote: "The team made me feel comfortable during my visit, and the follow-up care has been excellent. Great service!",
+        image: "/Pretty-Health Website/Images/Image (3).png", 
+        name: "Oluwatobi Adebayo",
+        role: "Vaccination Client",
+    },
+];
 
 const YourHealth = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            nextSlide();
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [currentIndex]);
+
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+        );
+    };
+
     return (
         <div className="py-16 bg-gray-50">
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
                 {/* Header Section */}
-                <div className="text-center md:text-left animate__animated animate__slideInRight">
+                <div className="text-center md:text-left">
                     <span className="text-lg font-bold text-blue-600">
                         Your Health is Our Top Priority
                     </span>
-                    <p className="text-2xl md:text-3xl text-gray-900 font-thin mt-2 md:w-[650px] mx-auto md:mx-0 leading-relaxed">
-                        Our track record speaks for itself. Many individuals have chosen{' '}
-                        <span className="text-blue-400 font-thin">
-                            our medical center and have had positive, transformative experiences.
-                        </span>
+                    <p className="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 lg:w-[750px] md:w-[650px] mx-auto md:mx-0 leading-relaxed">
+                        Our track record speaks for itself. We led{" "}
+                        <span className="font-[900]">HPV vaccine</span> introduction in
+                        Nigeria through the private sector, using an{" "}
+                        <span className="font-[900]">innovative low-cost delivery model.</span>
                     </p>
                 </div>
 
-                {/* Content Section */}
                 <div className="mt-8 flex justify-center items-end flex-col lg:flex-row gap-4">
                     {/* Left Column */}
                     <div className="flex flex-col items-end justify-center basis-full lg:basis-1/2 gap-4">
@@ -36,17 +83,9 @@ const YourHealth = () => {
                             />
                             {/* Content */}
                             <div className="flex flex-col space-y-1">
-                                <span className="text-sm font-bold text-gray-800">HIPAA COMPLIANT</span>
-                                <p className="text-sm text-gray-600">
-                                    Pretty Health provides award-winning quality care.
+                                <p className="text-2xl text-gray-800 font-extrabold">
+                                    Prettyhealth Care provides award-winning quality care.
                                 </p>
-                                <a
-                                    href="#"
-                                    className="flex items-center space-x-2 text-indigo-600 font-medium hover:text-indigo-800 transition duration-200 ease-in-out"
-                                >
-                                    <FaArrowRight />
-                                    <span>Read More</span>
-                                </a>
                             </div>
                         </div>
 
@@ -67,7 +106,7 @@ const YourHealth = () => {
                             </p>
                             <div className="flex items-center space-x-2 mt-2 justify-center">
                                 <FaStar className="text-[#52aa40]" size={26} />
-                                <span className="text-gray-800 text-5xl font-bold">4.9</span>
+                                <span className="text-gray-800 text-5xl font-black">4.9</span>
                             </div>
                         </div>
                     </div>
@@ -87,28 +126,54 @@ const YourHealth = () => {
                             </div>
                         </div>
 
-                        {/* Testimonial */}
-                        <div className="space-y-6 p-6 bg-[#c8dcec] hover:bg-opacity-90 cursor-pointer rounded-2xl shadow-lg transition duration-300 ease-in-out">
-                            <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
-                            <p className="text-gray-600 text-lg leading-relaxed">
-                                &#34;I had a great experience at this healthcare clinic . I was seen quickly, and the doctor was able to diagnose and treat my condition very patiently.&#34;
-                            </p>
-                            <div className="flex items-center space-x-4">
-                                <Image
-                                    src="/Pretty-Health Website/Images/Photo by Etty Fidele.png"
-                                    alt="Jane Ronan"
-                                    width={60}
-                                    height={60}
-                                    className="w-12 h-12 rounded-full object-cover border border-gray-300"
-                                />
-                                <div>
-                                    <h3 className="text-gray-800 text-lg font-semibold">Jane Ronan</h3>
-                                    <p className="text-lg text-gray-600">Cardio Patient</p>
-                                </div>
+                        {/* Testimonials Slider */}
+                <div className="relative w-full mx-auto">
+                    <div className="overflow-hidden rounded-2xl shadow-lg space-y-5 bg-[#c8dcec] py-6 px-10 sm:px-6 md:px-16 lg:px-20">
+                        <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
+                        <p className="text-gray-600 md:text-lg sm:text-sm lg:text-lg line-clamp-2">
+                            &#34;{testimonials[currentIndex].quote}&#34;
+                        </p>
+                        <div className="flex items-center space-x-4 mt-4">
+                            <Image
+                                src={testimonials[currentIndex].image}
+                                alt={testimonials[currentIndex].name}
+                                width={60}
+                                height={60}
+                                className="w-12 h-12 rounded-full object-cover border border-gray-300"
+                            />
+                            <div>
+                                <h3 className="text-gray-800 md:text-md sm:text-sm lg:text-lg  font-semibold uppercase">
+                                    {testimonials[currentIndex].name}
+                                </h3>
+                                <p className="md:text-md sm:text-sm lg:text-lg  text-gray-600">
+                                    {testimonials[currentIndex].role}
+                                </p>
                             </div>
                         </div>
                     </div>
+
+                    {/* Navigation Buttons */}
+                    <div className="absolute top-1/2 right-2 transform -translate-y-1/2 w-full flex justify-between px-4">
+                        <button
+                            title="prev"
+                            className="p-2 bg-blue-100 text-white rounded-full hover:bg-blue-400 transition"
+                            onClick={prevSlide}
+                        >
+                            <FaArrowLeft />
+                        </button>
+                        <button
+                            title='next'
+                            className="p-2 bg-blue-100 text-white rounded-full hover:bg-blue-400 transition"
+                            onClick={nextSlide}
+                        >
+                            <FaArrowRight />
+                        </button>
+                    </div>
                 </div>
+                    </div>
+                </div>
+
+                
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-white shadow-md top-0 left-0 w-full z-50">
+        <div className="bg-white shadow-md top-0 left-0 w-full z-50 px-3">
             <div className="mx-auto flex justify-between items-center px-6 py-4">
                 {/* Logo */}
                 <div className="flex items-center z-50">
@@ -50,7 +50,7 @@ const Navbar = () => {
 
             {/* Mobile Navigation */}
             <div
-                className={`lg:hidden fixed left-0 top-16 inset-x-0 font-black bg-white w-full h-full z-50 flex flex-col items-center justify-start transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : 'translate-x-full'
+                className={`lg:hidden fixed left-0 top-20 inset-x-0 font-black bg-white w-full h-full z-50 flex flex-col items-center justify-start transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : 'translate-x-full'
                     }`}
             >
                 <ul className="space-y-6 mt-4 w-full px-6">
