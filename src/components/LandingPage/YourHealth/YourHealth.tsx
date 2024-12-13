@@ -58,7 +58,7 @@ const YourHealth = () => {
                 {/* Header Section */}
                 <div className="text-center md:text-left">
                     <span className="text-lg font-bold text-blue-600">
-                        Your Health is Our Top Priority
+                        Your Health Is Our Top Priority
                     </span>
                     <p className="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 lg:w-[750px] md:w-[650px] mx-auto md:mx-0 leading-relaxed">
                         Our track record speaks for itself. We led{" "}
@@ -92,7 +92,7 @@ const YourHealth = () => {
                         {/* Image */}
                         <div className="rounded-lg overflow-hidden">
                             <Image
-                                src="/Pretty-Health Website/Images/Rectangle 5.png"
+                                src="/Pretty-Health Website/new_images/Rectangle 5.png"
                                 alt="Google Ratings"
                                 width={600}
                                 height={400}
