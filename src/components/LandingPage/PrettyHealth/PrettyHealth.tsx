@@ -2,10 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import PrettyCard from './PrettyCard/PrettyCard';
 import { IoSettings } from 'react-icons/io5';
-import Image from 'next/image';
-import { FaArrowRight } from 'react-icons/fa';
-import { BiPlusCircle } from 'react-icons/bi';
-import Link from 'next/link';
+// import Image from 'next/image';
+// import { FaArrowRight } from 'react-icons/fa';
+// import { BiPlusCircle } from 'react-icons/bi';
+// import Link from 'next/link';
 
 const PrettyHealthCare = [
     {
@@ -75,20 +75,20 @@ const PrettyHealth = () => {
                 </div>
 
                 {/* Lab Test Section */}
-                <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-5 w-full mt-10">
-                    <div className="lg:w-1/2 flex flex-col bg-indigo-50 p-5 rounded-lg">
-                        <p className="text-lg text-blue-600 font-bold">LAB TEST</p>
+                {/* <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-5 w-full mt-10"> */}
+                    {/* <div className="lg:w-1/2 flex flex-col bg-indigo-50 p-5 rounded-lg"> */}
+                        {/* <p className="text-lg text-blue-600 font-bold">LAB TEST</p> */}
 
-                        <h3 className="text-4xl w-full lg:w-[600px] font-thin">
+                        {/* <h3 className="text-4xl w-full lg:w-[600px] font-thin">
                             We Have Lab Test Facilities{' '}
                             <span className="font-bold">Book Yours Today</span>
-                        </h3>
+                        </h3> */}
 
-                        <div className="flex flex-col lg:flex-row mt-10 gap-5 w-full">
+                        {/* <div className="flex flex-col lg:flex-row mt-10 gap-5 w-full"> */}
                             {/* Card 1 */}
-                            <div className="bg-white p-5 rounded-lg w-full lg:w-1/2 shadow-md space-y-5 flex flex-col items-start">
+                            {/* <div className="bg-white p-5 rounded-lg w-full lg:w-1/2 shadow-md space-y-5 flex flex-col items-start"> */}
                                 {/* Image Section */}
-                                <span className="mt-10">
+                                {/* <span className="mt-10">
                                     <Image
                                         src="/Pretty-Health Website/Images/image 15.png"
                                         alt="X-Ray Icon"
@@ -96,33 +96,33 @@ const PrettyHealth = () => {
                                         height={50}
                                         className="object-contain"
                                     />
-                                </span>
+                                </span> */}
 
                                 {/* Content Section */}
-                                <p className="text-lg font-semibold text-gray-700">X-Rays</p>
-                                <span className="text-gray-500 lg:text-xs md:text-lg font-thin sm:w-[300px] md:w-[450px] lg:w-[200px]">
+                                {/* <p className="text-lg font-semibold text-gray-700">X-Rays</p> */}
+                                {/* <span className="text-gray-500 lg:text-xs md:text-lg font-thin sm:w-[300px] md:w-[450px] lg:w-[200px]">
                                     We do all kinds of MRI & CT Scan for our patients
-                                </span>
+                                </span> */}
 
                                 {/* Pricing Section */}
-                                <span className="lg:text-xs md:text-lg font-thin text-gray-600">
+                                {/* <span className="lg:text-xs md:text-lg font-thin text-gray-600">
                                     STARTING FROM{' '}
                                     <span className="text-gray-800 lg:text-xs md:text-lg font-extrabold">N3000</span>
-                                </span>
+                                </span> */}
 
                                 {/* CTA Section */}
-                                <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                                {/* <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
                                     <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">
                                         <FaArrowRight className="w-2 h-2" />
                                     </div>
                                     <p className='lg:text-xs md:text-lg'>Schedule A Test</p>
-                                </button>
-                            </div>
+                                </button> */}
+                            {/* </div> */}
 
                             {/* Card 2 */}
-                            <div className="bg-white p-5 rounded-lg w-full lg:w-1/2 shadow-md space-y-5 flex flex-col items-start">
+                            {/* <div className="bg-white p-5 rounded-lg w-full lg:w-1/2 shadow-md space-y-5 flex flex-col items-start"> */}
                                 {/* Image Section */}
-                                <span className="mt-10">
+                                {/* <span className="mt-10">
                                     <Image
                                         src="/Pretty-Health Website/Images/image 15.png"
                                         alt="X-Ray Icon"
@@ -130,31 +130,31 @@ const PrettyHealth = () => {
                                         height={50}
                                         className="object-contain"
                                     />
-                                </span>
+                                </span> */}
 
                                 {/* Content Section */}
-                                <p className="text-lg font-semibold text-gray-700">X-Rays</p>
-                                <span className="text-gray-500 lg:text-xs md:text-lg font-thin sm:w-[300px] md:w-[450px] lg:w-[200px]">
+                                {/* <p className="text-lg font-semibold text-gray-700">X-Rays</p> */}
+                                {/* <span className="text-gray-500 lg:text-xs md:text-lg font-thin sm:w-[300px] md:w-[450px] lg:w-[200px]">
                                     We do all kinds of MRI & CT Scan for our patients
-                                </span>
+                                </span> */}
 
                                 {/* Pricing Section */}
-                                <span className="lg:text-xs md:text-lg font-thin text-gray-600">
+                                {/* <span className="lg:text-xs md:text-lg font-thin text-gray-600">
                                     STARTING FROM{' '}
                                     <span className="text-gray-800 lg:text-xs md:text-lg font-extrabold">N3000</span>
-                                </span>
+                                </span> */}
 
                                 {/* CTA Section */}
-                                <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
+                                {/* <button className="px-4 py-2 flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-700 text-white w-fit">
                                     <div className="flex justify-center items-center bg-white text-blue-600 w-4 h-4 rounded-full">
                                         <FaArrowRight className="w-2 h-2" />
                                     </div>
                                     <p className='lg:text-xs md:text-lg'>Schedule A Test</p>
-                                </button>
-                            </div>
-                        </div>
+                                </button> */}
+                            {/* </div> */}
+                        {/* </div> */}
 
-                        <input
+                        {/* <input
                             title="range"
                             type="range"
                             min="0"
@@ -166,21 +166,21 @@ const PrettyHealth = () => {
                                 background: `linear-gradient(to right, #3b82f6 ${30}%, #e5e7eb ${30}%)`,
                             }}
                             disabled
-                        />
-                    </div>
+                        /> */}
+                    {/* </div> */}
 
                     {/* Image Section */}
-                    <div className="relative w-full lg:w-1/2">
-                        <Image
+                    {/* <div className="relative w-full lg:w-1/2"> */}
+                        {/* <Image
                             src="/Pretty-Health Website/Images/Rectangle 6.png"
                             alt=""
                             width={600}
                             height={0}
                             layout="responsive"
                             className=''
-                        />
+                        /> */}
 
-                        <div className="absolute bottom-20 left-0 flex items-center bg-white space-x-5 px-10 py-2 border rounded-br-full rounded-tr-full">
+                        {/* <div className="absolute bottom-20 left-0 flex items-center bg-white space-x-5 px-10 py-2 border rounded-br-full rounded-tr-full">
                             <BiPlusCircle size={44} className="bg-[#fdfdfd] rounded-full border font-2xl hidden md:flex" />
 
                             <div>
@@ -199,9 +199,9 @@ const PrettyHealth = () => {
                             >
                                 <FaArrowRight />
                             </Link>
-                        </div>
-                    </div>
-                </div>
+                        </div> */}
+                    {/* </div> */}
+                {/* </div> */}
             </div>
         </div>
     );

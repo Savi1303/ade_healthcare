@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import HomeView from './HomeView/HomeView';
-import VisitInfo from './VisitInfo/VisitInfo';
+// import VisitInfo from './VisitInfo/VisitInfo';
 import Service from './Servicess/Service';
 import YourHealth from './YourHealth/YourHealth';
 import PrettyHealth from './PrettyHealth/PrettyHealth';
@@ -15,9 +15,9 @@ const LandingPage = () => {
             <div>
                 <HomeView />
             </div>
-            <div>
+            {/* <div>
                 <VisitInfo />
-            </div>
+            </div> */}
             <div>
                 <Service />
             </div>

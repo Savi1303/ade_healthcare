@@ -20,13 +20,13 @@ const Footer = () => {
                         <p className="text-lg lg:text-sm font-bold">
                             Location: <br />
                             <span className="font-normal text-gray-300">
-                                485, Bayshore Blvd. Str. Ikeja, Lagos State, NG 95124
+                                78/79, Obafemi Awolowo Way, Ikeja, Lagos State.
                             </span>
                         </p>
                         <div className="text-lg lg:text-sm space-y-1">
                             <p className="font-bold">Visiting Hours:</p>
-                            <p className="text-gray-300">Sunday: 08:00 AM - 10:00 PM</p>
-                            <p className="text-gray-300">Monday - Friday: 06:00 AM - 12:00 AM</p>
+                            <p className="text-gray-300">Saturday: 09:00 AM - 04:00 PM</p>
+                            <p className="text-gray-300">Monday - Friday: 08:00 AM - 05:00 AM</p>
                         </div>
                     </div>
 
