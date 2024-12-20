@@ -46,27 +46,24 @@ const HomeClinic = () => {
                     </div>
 
                     {/* Find Location Section */}
-                    <div className="absolute left-0 bottom-20 md:bottom-20 lg:bottom-7 flex md:flex-nowrap justify-between items-center bg-white space-x-3 md:space-x-5 px-3 sm:px-6 py-3 md:py-2 border rounded-tr-full rounded-br-full w-[350px] md:w-[500px] lg:w-[700px] lg:z-50">
-                        <div className="flex gap-4 md:gap-6">
-                            <BiPlusCircle
-                                size={40}
-                                className="hidden lg:flex mt-4 bg-[#2e1635] text-white rounded-full border p-2"
-                            />
+                    <div className="absolute left-0 lg:bottom-8 md:bottom-24 z-40 bottom-24 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[400px] md:w-[600px] lg:w-[600px] ">
+                        <div className='flex gap-6'>
+                            <BiPlusCircle size={40} className='flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2' />
 
                             <div>
-                                <span className="font-extrabold text-xs sm:text-sm md:text-base text-gray-800">
-                                    FIND A LOCATION NEARBY
+                                <span className="font-extrabold uppercase text-xs sm:text-sm md:text-base text-gray-800">
+                                    Need Vaccination?
                                 </span>
 
-                                <p className="text-xs sm:text-sm md:text-base text-gray-600 line-clamp-1 md:line-clamp-2">
-                                    Hospa medical center operates more than 120 locations. Find the nearest...
+                                <p className="text-xs sm:text-sm font-thin md:text-lg text-gray-800">
+                                    Send us a message, let&#39;s get started
                                 </p>
                             </div>
                         </div>
 
                         <Link
                             href="#"
-                            className="text-white p-2 md:p-3 flex items-center border rounded-full bg-blue-600 transition duration-300 ease-in-out"
+                            className="text-white p-3 flex items-center border rounded-full bg-blue-600 transition duration-300 ease-in-out"
                         >
                             <FaArrowRight />
                         </Link>

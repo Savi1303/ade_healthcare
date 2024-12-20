@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; // ActivePathName
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import NavLinks from './NavLinks/NavLinks';
@@ -8,10 +9,19 @@ import NavButton from './NavButton/NavButton';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const pathname = usePathname(); 
 
     const toggleMobileMenu = () => {
         setMobileMenuOpen(!isMobileMenuOpen);
     };
+
+    const isActive = (path: string) => pathname === path; 
+    
+    const menuItems = [
+        { name: 'Home', href: '/' },
+        { name: 'About Us', href: '/about-us' },
+        { name: 'Blog', href: '/view-blog' },
+    ];
 
     return (
         <div className="bg-white shadow-md top-0 left-0 w-full z-50 px-3">
@@ -30,12 +40,22 @@ const Navbar = () => {
 
                 {/* Desktop Navigation */}
                 <ul className="hidden lg:flex items-center gap-3 text-sm font-black">
-                    <li onClick={() => window.location.href = "/"}>
-                        <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Home</Link>
-                    </li>
-                    <li onClick={() => window.location.href = "/about-us"}>
-                        <Link href="/" className="text-gray-800 hover:text-indigo-600 transition py-2 px-3">Why Us</Link>
-                    </li>
+                    {menuItems.map((item) => (
+                        <li key={item.href}>
+                            <Link
+                                href={item.href}
+                                className={`relative group text-gray-800 hover:text-indigo-600 py-2 px-3 ${isActive(item.href) ? 'text-indigo-600' : ''}`}
+                            >
+                                {item.name}
+                                <span
+                                    className={`absolute left-0 bottom-0 h-0.5 w-full bg-indigo-600 transform ${isActive(item.href) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'} transition-transform duration-300`}
+                                    style={{
+                                        transformOrigin: 'left center',
+                                    }}
+                                ></span>
+                            </Link>
+                        </li>
+                    ))}
                     <NavLinks isMobile={false} />
                     <NavButton />
                 </ul>
@@ -50,35 +70,32 @@ const Navbar = () => {
 
             {/* Mobile Navigation */}
             <div
-                className={`lg:hidden fixed left-0 top-20 inset-x-0 font-black bg-white w-full h-full z-50 flex flex-col items-center justify-start transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : 'translate-x-full'
-                    }`}
+                className={`lg:hidden fixed left-0 top-20 inset-x-0 font-black bg-white w-full h-full z-50 flex flex-col items-center justify-start transform transition-transform duration-300 ${isMobileMenuOpen ? 'translate-y-0' : 'translate-x-full'}`}
             >
                 <ul className="space-y-6 mt-4 w-full px-6">
-                    <li>
-                        <Link
-                            href="/"
-                            className="text-gray-800 hover:text-indigo-600 transition py-2 px-3 text-lg w-full block text-left"
-                            onClick={toggleMobileMenu}
-                        >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href="/about-us"
-                            className="text-gray-800 hover:text-indigo-600 transition py-2 px-3 text-lg w-full block text-left"
-                            onClick={toggleMobileMenu}
-                        >
-                            Why Us
-                        </Link>
-                    </li>
+                    {menuItems.map((item) => (
+                        <li key={item.href}>
+                            <Link
+                                href={item.href}
+                                className={`relative group text-gray-800 hover:text-indigo-600 py-2 px-3 text-lg w-full block text-left ${isActive(item.href) ? 'text-indigo-600' : ''}`}
+                                onClick={toggleMobileMenu}
+                            >
+                                {item.name}
+                                <span
+                                    className={`absolute left-0 bottom-0 h-0.5 w-full bg-indigo-600 transform ${isActive(item.href) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'} transition-transform duration-300`}
+                                    style={{
+                                        transformOrigin: 'left center',
+                                    }}
+                                ></span>
+                            </Link>
+                        </li>
+                    ))}
                     <NavLinks isMobile={true} onClick={toggleMobileMenu} />
                     <NavButton />
                 </ul>
             </div>
-
         </div>
-    )
+    );
 };
 
 export default Navbar;
