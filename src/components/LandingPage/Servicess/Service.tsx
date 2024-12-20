@@ -41,7 +41,7 @@ const services = [
 
 const Service = () => {
     return (
-        <div className="py-16 bg-[#f5b8f55b]">
+        <div className="py-16 bg-[#B6B5FF]">
             <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
                 {/* Section Header */}
                 <div className="text-center">

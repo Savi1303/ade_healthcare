@@ -72,7 +72,7 @@ const YourHealth = () => {
                     {/* Left Column */}
                     <div className="flex flex-col items-end justify-center basis-full lg:basis-1/2 gap-4">
                         {/* Card Section */}
-                        <div className="bg-[#f198f1b2] rounded-xl flex gap-4 p-6 items-center w-full md:w-3/4">
+                        <div className="bg-[#B6B5FF] rounded-xl flex gap-4 p-6 items-center w-full md:w-3/4">
                             {/* Image */}
                             <Image
                                 src="/Pretty-Health Website/Images/Frame 37.png"
@@ -100,7 +100,7 @@ const YourHealth = () => {
                         </div>
 
                         {/* Rating Info */}
-                        <div className="w-full md:w-3/4 lg:w-1/2 rounded-xl py-4 bg-[#f198f1f6] text-center flex flex-col items-center">
+                        <div className="w-full md:w-3/4 lg:w-1/2 rounded-xl py-4 bg-[#B6B5FF] text-center flex flex-col items-center">
                             <p className="text-sm font-bold text-gray-900 uppercase">
                                 Average Google Ratings
                             </p>
@@ -128,7 +128,7 @@ const YourHealth = () => {
 
                         {/* Testimonials Slider */}
                 <div className="relative w-full mx-auto">
-                    <div className="overflow-hidden rounded-2xl shadow-lg space-y-5 bg-[#f198f1b2] py-6 px-10 sm:px-6 md:px-16 lg:px-20">
+                    <div className="overflow-hidden rounded-2xl shadow-lg space-y-5 bg-[#B6B5FF] py-6 px-10 sm:px-6 md:px-16 lg:px-20">
                         <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
                         <p className="text-gray-900 md:text-lg sm:text-sm lg:text-lg line-clamp-2">
                             &#34;{testimonials[currentIndex].quote}&#34;

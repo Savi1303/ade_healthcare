@@ -37,7 +37,7 @@ const HeroSection = () => {
         className={`
           hidden md:flex flex-col md:flex-row 
           bg-[url('/Pretty-Health%20Website/Images/Group%2020652.png')] 
-          bg-cover bg-center py-20
+          bg-cover bg-center pt-20
           transition-all duration-1000 ease-in-out
           ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}
@@ -60,7 +60,7 @@ const HeroSection = () => {
             alt="Cardiology"
             width={500}
             height={500}
-            className="w-full w-h-[120%] h-full max-w-[400px] mb-[25px]"
+            className="w-full w-h-[120%] h-full max-w-[400px]"
           />
         </div>
       </div>
