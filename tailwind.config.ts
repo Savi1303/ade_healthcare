@@ -8,6 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        scroll: 'scroll 5s linear infinite',
+        'scroll-sm': 'scroll 10s linear infinite', // Faster for smaller screens
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-114%)' },
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
