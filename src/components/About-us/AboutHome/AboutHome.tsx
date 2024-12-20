@@ -6,9 +6,7 @@ import { TbCalendarTime } from "react-icons/tb";
 const AboutHome = () => {
     return (
         <div>
-            {/* Hero Section */}
             <div className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center bg-gray-100 bg-opacity-90">
-                {/* Background Image */}
                 <Image
                     src="/Pretty-Health Website/new_images/Group 6.png"
                     alt="Background Image"
@@ -17,7 +15,6 @@ const AboutHome = () => {
                     className="absolute"
                 />
 
-                {/* Foreground Content */}
                 <div className="absolute flex md:flex-row justify-between items-center px-6 md:px-6 lg:px-32 w-full space-y-6 md:space-y-0">
                     {/* Top Image */}
                     <div className="w-full md:w-1/2 md:flex justify-center hidden">
@@ -30,7 +27,6 @@ const AboutHome = () => {
                         />
                     </div>
 
-                    {/* Text Content */}
                     <div className="w-full top-60 md:w-1/2 flex flex-col space-y-1 md:space-y-2 md:text-left">
                         <h3 className="text-4xl md:text-4xl lg:text-6xl font-bold text-white">
                             100,000+ Patients
@@ -52,11 +48,11 @@ const AboutHome = () => {
                     <div className="w-full md:w-1/2 space-y-5">
                         <h2 className="flex items-center gap-2 text-xl md:text-2xl font-semibold">
                             <PiHeartbeatBold size={30} />
-                            Our Services
+                            For Our Services
                         </h2>
                         
                         <h4 className="text-lg md:text-2xl font-bold">
-                            Call: <span className="text-indigo-300">0-123-456-7890</span>
+                            Call: <span className="text-indigo-300">+234 811 434 6325</span>
                         </h4>
                     </div>
 
@@ -70,11 +66,11 @@ const AboutHome = () => {
                         <div className="flex flex-col space-y-5">
                             {[
                                 { day: "Mon - Fri", time: "08:00AM - 05:00PM" },
-                                { day: "Saturday", time: "09:00AM - 04:00PM" },
+                                { day: "Saturdays", time: "09:00AM - 04:00PM" },
                             ].map((schedule, index) => (
                                 <div key={index} className="flex justify-between items-center font-bold text-sm">
-                                    <span>{schedule.day}</span>
-                                    <span>{schedule.time}</span>
+                                    <span className='m-2'>{schedule.day}</span>
+                                    <span className='m-2'>{schedule.time}</span>
                                 </div>
                             ))}
                         </div>
