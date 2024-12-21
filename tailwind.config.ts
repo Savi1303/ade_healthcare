@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        scroll: 'scroll 5s linear infinite',
+        scroll: 'scroll 10s linear infinite',
         'scroll-sm': 'scroll 10s linear infinite', // Faster for smaller screens
       },
       keyframes: {
