@@ -30,7 +30,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ isMobile }) => {
             ],
         },
         {
-            name: 'More',
+            name: 'About Us',
             submenu: [
                 { name: 'FAQ', value: '/FAQs' },
                 { name: 'Contact Us', value: '/contact-us' },

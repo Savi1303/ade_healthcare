@@ -19,12 +19,12 @@ const Navbar = () => {
     
     const menuItems = [
         { name: 'Home', href: '/' },
-        { name: 'About Us', href: '/about-us' },
+        { name: 'Why Us', href: '/about-us' },
         { name: 'Blog', href: '/view-blog' },
     ];
 
     return (
-        <div className="bg-white shadow-md top-0 left-0 w-full z-50 px-3">
+        <div className="bg-white shadow-lg top-0 left-0 w-full z-50 px-3">
             <div className="mx-auto flex justify-between items-center px-6 py-4">
                 {/* Logo */}
                 <div className="flex items-center z-50">

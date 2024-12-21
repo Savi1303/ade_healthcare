@@ -48,15 +48,15 @@ const HomeClinic = () => {
                     {/* Find Location Section */}
                     <div className="absolute left-0 lg:bottom-8 md:bottom-24 z-40 bottom-24 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[400px] md:w-[600px] lg:w-[600px] ">
                         <div className='flex gap-6'>
-                            <BiPlusCircle size={40} className='flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2' />
+                            <BiPlusCircle size={40} className='lg:flex hidden mt-3 bg-[#2e1635] rounded-full border font-2xl p-2' />
 
                             <div>
-                                <span className="font-extrabold uppercase text-xs sm:text-sm md:text-base text-gray-800">
-                                    Need Vaccination?
+                                <span className="font-extrabold uppercase text-xs sm:text-sm md:text-sm text-gray-800">
+                                    Find a location nearby
                                 </span>
 
-                                <p className="text-xs sm:text-sm font-thin md:text-lg text-gray-800">
-                                    Send us a message, let&#39;s get started
+                                <p className="text-xs sm:text-sm font-thin md:text-sm text-gray-800">
+                                    Hospa medical center operates more than 120 locations. Find the nearest...
                                 </p>
                             </div>
                         </div>

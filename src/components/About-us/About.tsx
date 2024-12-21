@@ -3,14 +3,16 @@ import AboutHome from './AboutHome/AboutHome'
 import OurStory from './OurStory/OurStory'
 import Blog from '../LandingPage/Blog/Blog'
 import YourHealth from '../LandingPage/YourHealth/YourHealth'
-import AboutService from './AboutService/AboutService'
+import Service from '../LandingPage/Servicess/Service'
+// import AboutService from './AboutService/AboutService'
 
 const About = () => {
   return (
     <div>
       <AboutHome />
       <OurStory />
-      <AboutService />
+      {/* <AboutService /> */}
+      <Service />
       <Blog />
       <YourHealth />
     </div>

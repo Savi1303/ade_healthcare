@@ -35,14 +35,14 @@ const HomeView = () => {
                 {/* Location Section */}
                 <div className="absolute left-0 lg:bottom-72 md:bottom-60 bottom-36 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[400px] md:w-[600px] lg:w-[600px] ">
                     <div className='flex gap-6'>
-                        <BiPlusCircle size={40} className='flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2' />
+                        <BiPlusCircle size={40} className='hidden md:flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2' />
 
                         <div>
                             <span className="font-extrabold uppercase text-xs sm:text-sm md:text-base text-gray-800">
                                 Need Vaccination?
                             </span>
 
-                            <p className="text-xs sm:text-sm font-thin md:text-lg text-gray-800">
+                            <p className="text-xs sm:text-sm font-medium md:text-lg text-gray-900">
                                 Send us a message, let&#39;s get started
                             </p>
                         </div>
