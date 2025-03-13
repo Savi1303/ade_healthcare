@@ -1,10 +1,9 @@
 'use client';
-import PrettyHealth from '../YourHealth/PrettyHealth/PrettyHealth'
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import { PiQuotes } from "react-icons/pi";
 import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
-import Sponsors from '../sponsors/page'
+import Image from "next/image";
+
 
 const testimonials = [
     {
@@ -39,30 +38,28 @@ const testimonials = [
     },
 ];
 
-const YourHealth = () => {
+function AboutHealth() {
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            nextSlide();
-        }, 3000);
-        return () => clearInterval(timer);
-    }, [currentIndex]);
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-        );
-    };
-
+    
+        useEffect(() => {
+            const timer = setInterval(() => {
+                nextSlide();
+            }, 3000);
+            return () => clearInterval(timer);
+        }, [currentIndex]);
+    
+        const nextSlide = () => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+        };
+    
+        const prevSlide = () => {
+            setCurrentIndex((prevIndex) =>
+                prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+            );
+        };
     return (
-        <div className="py-16">
+        <div className='py-16'>
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
-                {/* Header Section */}
                 <div className="text-center md:text-left">
                     <span className="text-lg font-bold text-blue-600">
                         Your Health Is Our Top Priority
@@ -84,14 +81,6 @@ const YourHealth = () => {
                         </div>
                     </div>
                 </div>
-
-                <div>   
-                    <PrettyHealth />
-                </div>
-
-                <div>
-                                <Sponsors />
-                            </div>
 
                 <div className="flex justify-center w-full items-end flex-col lg:flex-row gap-4">
                     {/* Left Column */}
@@ -128,7 +117,7 @@ const YourHealth = () => {
 
                     {/* Right Column */}
                     <div className="w-full lg:w-3/4 space-y-6">
-                         {/* Testimonials Slider */}
+                        {/* Testimonials Slider */}
                         <div className="relative w-full mx-auto">
                             <div className="overflow-hidden rounded-2xl shadow-lg space-y-5 bg-[#B6B5FF] py-6 px-10 sm:px-6 md:px-16 lg:px-20">
                                 <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
@@ -176,7 +165,7 @@ const YourHealth = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default YourHealth;
+export default AboutHealth;

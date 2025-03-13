@@ -28,14 +28,14 @@ const AboutHome = () => {
                     </div>
 
                     <div className="w-full top-60 md:w-1/2 flex flex-col space-y-1 md:space-y-2 md:text-left">
-                        <h3 className="text-4xl md:text-4xl lg:text-6xl font-bold text-white">
-                            100,000+ Patients
+                        <h3 className="text-4xl -mt-36 md:text-4xl lg:text-6xl font-extrabold text-white">
+                            250,000+ Clients
                         </h3>
-                        <span className="lg:text-5xl md:text-4xl text-4xl font-thin text-white">
+                        <span className="lg:text-5xl md:text-4xl text-4xl font-light text-white">
                             Trust in Our Services
                         </span>
-                        <p className="text-white text-lg lg:text-md md:text-lg font-medium">
-                            With over 100,000+ Clients, we are your go-to preventive healthcare Organsiation
+                        <p className="text-gray-100 text-lg lg:text-md md:text-lg font-medium">
+                            ....We are your go-to preventive healthcare Organization
                         </p>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const AboutHome = () => {
 
             {/* Info Section */}
             <div className="px-4 md:px-20 mt-8">
-                <div className="flex flex-col md:flex-row border rounded-lg bg-[#250c2c] text-white p-6 md:p-10 space-y-6 md:space-y-0 md:space-x-5">
+                <div className="flex flex-col md:flex-row border rounded-2xl bg-[#250c2c] text-white p-6 md:p-10 space-y-6 md:space-y-0 md:space-x-5">
                     {/* Emergency Services */}
                     <div className="w-full md:w-1/2 space-y-5">
                         <h2 className="flex items-center gap-2 text-xl md:text-2xl font-semibold">

@@ -18,7 +18,7 @@ interface NavLinksProps {
 }
 
 const NavLinks: React.FC<NavLinksProps> = ({ isMobile }) => {
-    const pathname = usePathname(); // Get the current URL path
+    const pathname = usePathname(); 
 
     const links: LinkItem[] = [
         {
