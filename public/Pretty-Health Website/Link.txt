@@ -4,4 +4,4 @@ FACEBOOK=https://www.facebook.com/share/18cPYnVpda/?mibextid=wwXIfr
 INSTAGRAM=https://www.instagram.com/prettyhealthcareltd?igsh=MWV2b3dzYm1vYWdleA%3D%3D&utm_source=qr
 EMAIL_1=Info@prettyhealthcare.com.ng
 EMAIL_2=Prettyprevent@gmail.com
-WHATSAPP=
+WHATSAPP=https://wa.me/message/KEAP2TUQOW6EN1
