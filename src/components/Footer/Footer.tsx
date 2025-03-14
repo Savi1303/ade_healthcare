@@ -11,7 +11,7 @@ const Footer = () => {
                 {/* Top Section */}
                 <div className="flex flex-col lg:flex-row lg:justify-between space-y-8 md:space-y-16">
                     {/* Navigation Links */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:flex items-start justify-between gap-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:flex items-start justify-between gap-24">
                         {/* Logo */}
                         <div className='hidden mt-6 sm:mt-12 lg:flex justify-center sm:justify-start'>
                             <Image

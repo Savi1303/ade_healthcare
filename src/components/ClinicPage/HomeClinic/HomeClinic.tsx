@@ -19,7 +19,7 @@ const HomeClinic = () => {
                 <div className="flex">
                     <div className="absolute space-y-4 top-40 sm:top-20 md:top-32 lg:top-28 ">
                         {/* Heading */}
-                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl -mt-12 max-w-[90%] md:max-w-[45%] lg:max-w-[500px]">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl -mt-12 max-w-[90%] md:max-w-[45%] lg:max-w-[650px]">
                             <p>
                                 We <b>design</b> and <b>manage clinics</b> to meet the <b>unique requirements</b>
                                 of your <b>workplace or institution.</b> 

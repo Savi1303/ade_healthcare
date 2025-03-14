@@ -1,12 +1,13 @@
 'use client'
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaArrowRight, FaChevronDown } from 'react-icons/fa';
 
 interface ServiceCardProps {
     image: string;
     title: string;
-    items: string[];
+    items?: string[];
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, items }) => {
@@ -14,7 +15,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, items }) => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div 
+        <div
             className={`flex flex-col mx-auto justify-between p-6 bg-white shadow-lg rounded-2xl cursor-pointer w-full sm:w-[300px] gap-5 transition-transform duration-300 ease-in-out transform ${isHovered ? 'scale-105 shadow-xl' : 'scale-100'}`}
             onMouseEnter={() => {
                 setIsHovered(true);
@@ -30,25 +31,35 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, items }) => {
                 <Image src={image} alt={title} width={40} height={40} className="object-contain" />
             </div>
 
-            <button
-                className="text-gray-800 font-bold text-lg text-center flex items-center justify-center gap-2"
-            >
-                {title} <FaChevronDown className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+            {/* Title with Dropdown Icon */}
+            <button className="text-gray-800 font-bold text-lg text-center flex items-center justify-center gap-2">
+                {title} 
+                <FaChevronDown className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
             </button>
 
+            {/* Service List */}
             {isOpen && (
                 <ul className="text-gray-900 text-center list-none mx-auto">
-                    {items.map((item, index) => (
-                        <li key={index} className="hover:bg-blue-600 px-4 py-2 rounded-2xl hover:text-white">{item}</li>
-                    ))}
+                    {items && items.length > 0 ? (
+                        items.map((item, i) => (
+                            <li 
+                                key={i} 
+                                className="px-3 py-1 rounded-md transition-all duration-300 hover:bg-blue-600 hover:text-white"
+                            >
+                                {item}
+                            </li>
+                        ))
+                    ) : (
+                        <p>No specific services listed.</p>
+                    )}
                 </ul>
             )}
 
             {/* Learn More Button */}
-            <a href="#" className="flex items-center justify-center space-x-2 hover:text-blue-600 text-black text-md">
+            <Link href="#" className="flex items-center justify-center space-x-2 hover:text-blue-600 text-black text-md">
                 <FaArrowRight />
                 <span>Read More</span>
-            </a>
+            </Link>
         </div>
     );
 };

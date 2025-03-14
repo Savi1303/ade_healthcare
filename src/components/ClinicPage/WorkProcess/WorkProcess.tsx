@@ -2,7 +2,6 @@ import Image from 'next/image';
 import React from 'react';
 
 function WorkProcess() {
-    // Data for process steps
     const steps = [
         { id: 4, title: 'Health screenings and wellness programs', icon: '/Pretty-Health Website/Images/Icon (8).png' },
         { id: 1, title: 'Emergency medical support', icon: '/Pretty-Health Website/Images/Icon (5).png' },
@@ -24,7 +23,8 @@ function WorkProcess() {
                 {steps.map((step) => (
                     <div
                         key={step.id}
-                        className={`flex flex-col items-center text-center bg-white shadow-lg rounded-lg p-6 space-y-4 border-t-4 border-blue-600 hover:shadow-xl transition duration-300` }
+                        className="flex flex-col cursor-pointer items-center text-center bg-white shadow-lg rounded-lg p-6 space-y-4 border-t-4 border-blue-600
+                        hover:shadow-2xl hover:scale-105 hover:border-blue-800 transition-all duration-300 ease-in-out"
                     >
                         {/* Icon */}
                         <div className="w-16 h-16 sm:w-20 sm:h-20">

@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import { PiQuotes } from "react-icons/pi";
 import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
 import Sponsors from '../sponsors/page'
+import AboutPrettyHealth from './PrettyHealth/AboutPrettyHealth';
 
 const testimonials = [
     {
@@ -85,13 +86,17 @@ const YourHealth = () => {
                     </div>
                 </div>
 
-                <div>   
+                <div>
                     <PrettyHealth />
                 </div>
 
                 <div>
-                                <Sponsors />
-                            </div>
+                    <AboutPrettyHealth />
+                </div>
+
+                <div>
+                    <Sponsors />
+                </div>
 
                 <div className="flex justify-center w-full items-end flex-col lg:flex-row gap-4">
                     {/* Left Column */}
@@ -128,7 +133,7 @@ const YourHealth = () => {
 
                     {/* Right Column */}
                     <div className="w-full lg:w-3/4 space-y-6">
-                         {/* Testimonials Slider */}
+                        {/* Testimonials Slider */}
                         <div className="relative w-full mx-auto">
                             <div className="overflow-hidden rounded-2xl shadow-lg space-y-5 bg-[#B6B5FF] py-6 px-10 sm:px-6 md:px-16 lg:px-20">
                                 <PiQuotes className="transform rotate-180 text-gray-600" size={48} />

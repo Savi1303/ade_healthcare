@@ -5,22 +5,21 @@ const services = [
     {
         image: '/Pretty-Health Website/Images/image 3.png',
         title: 'Vaccination Services',
-        items: ["HBV Vaccine", "HBV Vaccine", "HBV Vaccine",],
+        items: ["HBV Vaccine", "HPV Vaccine", "Typhoid Vaccine", "MMR (Measles, Mumps, Rubella Vaccine)", "Varicella Vaccine", "Tdap Vaccine", "Meningitis Vaccine",],
     },
     {
         image: '/Pretty-Health Website/Images/image 10.png',
         title: 'Health Screening Services',
-        items: ["HBV Vaccine", "HBV Vaccine", "HBV Vaccine",],
+        items: ["Laboratory Services", "Mammogram", "Wellness Screening",],
     },
     {
         image: '/Pretty-Health Website/Images/image 5.png',
         title: 'Integrated School Health and Adolescent Health Services',
-        items: ["HBV Vaccine", "HBV Vaccine", "HBV Vaccine",],
+        items: ["School Clinics", "Pre - Admission Screening", "School Vaccination Services", "Intergrated School Intervention"],
     },
     {
         image: '/Pretty-Health Website/Images/image 7.png',
         title: 'Health Promotion Services and Research',
-        items: ["HBV Vaccine", "HBV Vaccine", "HBV Vaccine",],
     },
 ];
 
@@ -40,7 +39,12 @@ const Service = () => {
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-6">
                     {services.map((service, index) => (
-                        <ServiceCard key={index} image={service.image} title={service.title} items={service.items} />
+                        <ServiceCard
+                            key={index}
+                            image={service.image}
+                            title={service.title}
+                            items={service.items || []}
+                        />
                     ))}
                 </div>
             </div>
