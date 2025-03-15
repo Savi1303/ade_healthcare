@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import ServiceCard from './ServiceCard/ServiceCard';
 
@@ -5,17 +6,21 @@ const services = [
     {
         image: '/Pretty-Health Website/Images/image 3.png',
         title: 'Vaccination Services',
-        items: ["HBV Vaccine", "HPV Vaccine", "Typhoid Vaccine", "MMR (Measles, Mumps, Rubella Vaccine)", "Varicella Vaccine", "Tdap Vaccine", "Meningitis Vaccine",],
+        items: [
+            "HBV Vaccine", "HPV Vaccine", "Typhoid Vaccine", 
+            "MMR (Measles, Mumps, Rubella Vaccine)", "Varicella Vaccine", 
+            "Tdap Vaccine", "Meningitis Vaccine"
+        ],
     },
     {
         image: '/Pretty-Health Website/Images/image 10.png',
         title: 'Health Screening Services',
-        items: ["Laboratory Services", "Mammogram", "Wellness Screening",],
+        items: ["Laboratory Services", "Mammogram", "Wellness Screening"],
     },
     {
         image: '/Pretty-Health Website/Images/image 5.png',
         title: 'Integrated School Health and Adolescent Health Services',
-        items: ["School Clinics", "Pre - Admission Screening", "School Vaccination Services", "Intergrated School Intervention"],
+        items: ["School Clinics", "Pre-Admission Screening", "School Vaccination Services", "Integrated School Intervention"],
     },
     {
         image: '/Pretty-Health Website/Images/image 7.png',

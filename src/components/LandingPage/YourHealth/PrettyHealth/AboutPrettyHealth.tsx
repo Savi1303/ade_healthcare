@@ -8,22 +8,22 @@ function AboutPrettyHealth() {
         <div>
             <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 animate__animated animate__bounceInLeft">
                 {/* Image Section */}
-                <div className="w-full lg:w-1/2 flex gap-10">
+                <div className="w-full lg:w-1/2 flex gap-5 pl-28">
                     <Image
-                        src="/Pretty-Health Website/Images/Union.png"
-                        alt="UnionPix"
-                        width={500}
-                        height={200}
-                        className="mx-auto lg:mx-0"
+                        src="/Pretty-Health Website/new_images/Rectangle 6298 (4).png"
+                        alt="AboutPrettyOne"
+                        width={200}
+                        height={150}
+                        className="mx-auto lg:mx-0 object-fit"
                     />
 
-                    {/* <Image
-                        src="/Pretty-Health Website/Images/Union.png"
-                        alt="UnionPix"
+                    <Image
+                        src="/Pretty-Health Website/new_images/Rectangle 6299 (2).png"
+                        alt="AboutPrettyOne"
                         width={200}
-                        height={200}
-                        className="mx-auto lg:mx-0"
-                    /> */}
+                        height={150}
+                        className="mx-auto lg:mx-0 object-fit"
+                    />
                 </div>
 
                 {/* Text Content */}

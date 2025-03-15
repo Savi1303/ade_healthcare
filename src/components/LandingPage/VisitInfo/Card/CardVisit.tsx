@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { LiaBoxOpenSolid } from 'react-icons/lia';
@@ -23,13 +24,13 @@ const CardVisit: React.FC<{ color: string }> = ({ color }) => {
             </p>
 
             {/* Learn More Button */}
-            <a
+            <Link
                 href="#"
                 className="flex text-sm items-center text-[#20123a] justify-start mt-6 w-[150px] space-x-2 px-4 py-2 hover:bg-white hover:bg-opacity-50 rounded-full transition duration-300 ease-in-out"
             >
                 <FaArrowRight />
                 <span>Learn More</span>
-            </a>
+            </Link>
         </div>
     );
 };

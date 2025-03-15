@@ -52,7 +52,13 @@ const Footer = () => {
                             <ul className="space-y-3 text-lg lg:text-sm text-center sm:text-left">
                                 <li><Link href="/diagnostics" className="hover:text-gray-500 text-gray-300">Diagnostics</Link></li>
                                 <li><Link href="/vaccination" className="hover:text-gray-500 text-gray-300">Vaccination</Link></li>
-                                <li><Link href="/whatsapp" className="hover:text-gray-500 text-gray-300">Chat Now</Link></li>
+                                <li>
+                                    <Link href='https://wa.me/message/KEAP2TUQOW6EN1'
+                                        target="_blank" rel="noopener noreferrer" 
+                                        className="hover:text-gray-500 text-gray-300">
+                                            Chat Now
+                                    </Link>
+                                </li>
                             </ul>
                         </div>
 
@@ -83,10 +89,26 @@ const Footer = () => {
 
                         {/* Social Media Icons */}
                         <div className="flex gap-4 mt-2 md:mt-0">
-                            <Link href="https://facebook.com" aria-label="Facebook" className="hover:text-gray-300 cursor-pointer"><FaFacebookF /></Link>
-                            <Link href="https://twitter.com" aria-label="Twitter" className="hover:text-gray-300 cursor-pointer"><FaXTwitter /></Link>
-                            <Link href="https://instagram.com" aria-label="Instagram" className="hover:text-gray-300 cursor-pointer"><FaInstagram /></Link>
-                            <Link href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-gray-300 cursor-pointer"><FaLinkedinIn /></Link>
+                            <Link href='https://www.facebook.com/share/18cPYnVpda/?mibextid=wwXIfr'
+                                target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-gray-300 cursor-pointer">
+                                    <FaFacebookF />
+                            </Link>
+
+                            <Link href='https://x.com/prettyhealth_?s=21'
+                                target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-gray-300 cursor-pointer">
+                                    <FaXTwitter />
+                            </Link>
+
+                            <Link href='https://www.instagram.com/prettyhealthcareltd?igsh=MWV2b3dzYm1vYWdleA%3D%3D&utm_source=qr'
+                                target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram" className="hover:text-gray-300 cursor-pointer">
+                                    <FaInstagram />
+                            </Link>
+
+                            <Link href='https://www.linkedin.com/company/pretty-healthcare-limited/'
+                                target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-gray-300 cursor-pointer">
+                                    <FaLinkedinIn />
+                            </Link>
                         </div>
                     </div>
                 </div>

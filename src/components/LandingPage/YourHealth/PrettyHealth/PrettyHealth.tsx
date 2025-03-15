@@ -53,11 +53,12 @@ const PrettyHealth = () => {
                             disabled
                         />
 
-                        <div className='hidden lg:flex absolute bottom-0 -left-0 w-full'>
-                            <Link href="/diagnostics" passHref>
-                                <AwardBanner title='Book More' />
-                            </Link>
-                        </div>
+<div className='hidden lg:flex absolute bottom-0 -left-0 w-full'>
+    <Link href="/diagnostics" passHref>
+        <AwardBanner title='Book More' />
+    </Link>
+</div>
+
                     </div>
 
 
@@ -74,9 +75,11 @@ const PrettyHealth = () => {
                         />
 
                         <div className="relative z-20">
-                            <AwardBanner
-                                title='Need Vaccination? Click to Book Now!'
-                            />
+                            <Link href="/vaccination" passHref>
+                                <AwardBanner
+                                    title='Need Vaccination? Click to Book Now!'
+                                    />
+                            </Link>
                         </div>
                     </div>
 

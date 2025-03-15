@@ -29,8 +29,12 @@ const Navbar = () => {
             {/* first navbar */}
             <div className="hidden lg:flex justify-center items-center bg-[#b69b44] text-white text-center py-3 text-[12px]">
                 Not Sure Where To Start? Chat With Our Health Advisor{" "}
-                <Link href='#' className="flex items-center gap-2 bg-transparent border border-white ml-2 px-3 py-1 rounded-full">
-                <FaWhatsapp className="text-white rounded-full bg-green-500"/> Chat Now
+                <Link
+                    href="#"
+                    onClick={() => window.open('https://wa.me/message/KEAP2TUQOW6EN1', '_blank', 'noopener,noreferrer')}
+                    className="flex items-center gap-2 bg-transparent border border-white ml-2 px-3 py-1 rounded-full"
+                >
+                    <FaWhatsapp className="text-white rounded-full bg-green-500" /> Chat Now
                 </Link>
             </div>
 
@@ -61,8 +65,8 @@ const Navbar = () => {
                                     {item.name}
                                     <span
                                         className={`absolute left-0 bottom-0 h-0.5 w-full bg-indigo-600 transform ${isActive(item.href)
-                                                ? "scale-x-100"
-                                                : "scale-x-0 group-hover:scale-x-100"
+                                            ? "scale-x-100"
+                                            : "scale-x-0 group-hover:scale-x-100"
                                             } transition-transform duration-300`}
                                         style={{
                                             transformOrigin: "left center",
@@ -103,8 +107,8 @@ const Navbar = () => {
                                     {item.name}
                                     <span
                                         className={`absolute left-0 bottom-0 h-0.5 w-full bg-indigo-600 transform ${isActive(item.href)
-                                                ? "scale-x-100"
-                                                : "scale-x-0 group-hover:scale-x-100"
+                                            ? "scale-x-100"
+                                            : "scale-x-0 group-hover:scale-x-100"
                                             } transition-transform duration-300`}
                                         style={{
                                             transformOrigin: "left center",

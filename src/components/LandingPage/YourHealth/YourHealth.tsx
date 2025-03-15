@@ -89,14 +89,15 @@ const YourHealth = () => {
                 <div>
                     <PrettyHealth />
                 </div>
+                
+                <div>
+                    <Sponsors />
+                </div>
 
                 <div>
                     <AboutPrettyHealth />
                 </div>
 
-                <div>
-                    <Sponsors />
-                </div>
 
                 <div className="flex justify-center w-full items-end flex-col lg:flex-row gap-4">
                     {/* Left Column */}
