@@ -53,8 +53,14 @@ const ContactForm: React.FC = () => {
 
     if (!formData.phoneNumber) {
       newErrors.phoneNumber = 'Phone Number is required';
-    } else if (!/^\d{10}$/.test(formData.phoneNumber)) {
-      newErrors.phoneNumber = 'Phone Number must be exactly 10 digits';
+    } else {
+      // Remove any spaces or special characters except + sign
+      const cleanNumber = formData.phoneNumber.replace(/[^\d+]/g, '');
+      // Check for Nigerian format: +234 followed by 10 digits
+      const isValidNigerianNumber = /^\+234\d{10}$/.test(cleanNumber);
+      if (!isValidNigerianNumber) {
+        newErrors.phoneNumber = 'Please enter a valid Nigerian phone number (+234XXXXXXXXXX)';
+      }
     }
 
     if (!formData.message) {
@@ -70,6 +76,17 @@ const ContactForm: React.FC = () => {
 
     // Return true if no errors
     return Object.keys(newErrors).length === 0;
+  };
+
+  // Add this function inside your ContactForm component
+  const formatEmailBody = (data: FormValues): string => {
+    return `
+First Name: ${data.firstName}
+Last Name: ${data.lastName}
+Email: ${data.email}
+Phone Number: ${data.phoneNumber}
+Message: ${data.message}
+    `.trim();
   };
 
   // Handle form input changes
@@ -96,8 +113,20 @@ const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
-      console.log('Form submitted successfully:', formData);
-      // Proceed with API call or further action
+      const emailBody = formatEmailBody(formData);
+      const mailtoLink = `mailto:Info@prettyhealthcare.com.ng?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = mailtoLink;
+      
+      // Optional: Reset form after submission
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        message: '',
+        terms: false,
+      });
+      setErrors({});
     }
   };
 
@@ -181,7 +210,7 @@ const ContactForm: React.FC = () => {
             placeholder="Enter your Message"
             value={formData.message}
             onChange={handleChange}
-            className="border border-[#0094DE] outline-none pl-[20px] pt-[10px]h-[150px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50"
+            className="border border-[#0094DE] outline-none pl-[20px] pt-[10px] h-[200px] rounded-[5px] placeholder:text-black placeholder:text-[12px] placeholder:opacity-50"
           />
           {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
         </div>
@@ -204,9 +233,23 @@ const ContactForm: React.FC = () => {
           {errors.terms && <p className="text-red-500 text-sm">{errors.terms}</p>}
           <button
             type="submit"
-            className="text-white bg-[#4E96D1] py-[10px] px-[30px] rounded-[5px] w-full md:w-fit"
+            className="text-white bg-[#4E96D1] py-[10px] px-[30px] rounded-[5px] w-full md:w-fit flex items-center justify-center gap-2 hover:bg-[#3a75a5] transition-colors"
           >
-            Send
+            <span>Send</span>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              className="h-5 w-5" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" 
+              />
+            </svg>
           </button>
         </div>
       </form>
