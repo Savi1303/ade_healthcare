@@ -27,18 +27,18 @@ const NavLinks: React.FC<NavLinksProps> = ({ isMobile }) => {
                 { name: 'Clinic Services', value: '/clinic' },
                 { name: 'School Health Program', value: '/school-health' },
                 { name: 'Diagnostic Services', value: '/diagnostics' },
-                { name: 'Vaccine', value: '/vaccine' },
-                { name: 'Health Promotion', value: '/health-promotion' },
-                { name: 'Career', value: '/career' },
+                { name: 'Vaccination', value: '/vaccination' },
+                // { name: 'Health Promotion', value: '/health-promotion' },
+                
             ],
         },
-        {
-            name: 'About Us',
-            submenu: [
-                { name: 'FAQ', value: '/FAQs' },
-                { name: 'Contact Us', value: '/contact-us' },
-            ],
-        },
+        // {
+        //     name: 'About Us',
+        //     submenu: [
+        //         { name: 'FAQ', value: '/FAQs' },
+        //         { name: 'Contact Us', value: '/contact-us' },
+        //     ],
+        // },
     ];
 
     const [activeLink, setActiveLink] = useState<number | null>(null);
