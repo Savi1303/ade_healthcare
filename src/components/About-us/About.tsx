@@ -2,8 +2,8 @@ import React from 'react'
 import AboutHome from './AboutHome/AboutHome'
 import OurStory from './OurStory/OurStory'
 import Blog from '../LandingPage/Blog/Blog'
-import YourHealth from '../LandingPage/YourHealth/YourHealth'
 import Service from '../LandingPage/Servicess/Service'
+import AboutHealth from './AboutHealth/AboutHealth'
 // import AboutService from './AboutService/AboutService'
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
       {/* <AboutService /> */}
       <Service />
       <Blog />
-      <YourHealth />
+      <AboutHealth />
     </div>
   )
 }

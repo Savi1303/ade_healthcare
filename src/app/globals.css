@@ -16,8 +16,42 @@
   }
 }
 
+.PrettyHealth {
+  background-image: url('/Pretty-Health Website/Images/Rectangle 6.png');
+  background-size: cover;
+  position: relative;
+}
+
+.PrettyHealth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: inherit; 
+}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
   
 }
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scrollText 30s linear infinite;
+  min-width: 100%; 
+}
+

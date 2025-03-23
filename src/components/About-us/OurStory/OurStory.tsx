@@ -5,17 +5,17 @@ const OurStory = () => {
     return (
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-16 px-6 md:px-12 space-y-10 md:space-y-16">
             <div className="w-full lg:w-1/2 space-y-2 text-center md:text-left">
-                <p className="text-lg font-semibold text-indigo-600 tracking-wider">
-                    Our Story
+                <p className="text-3xl font-medium tracking-wider">
+                    Our <span className='font-extrabold'>Story</span> 
                 </p>
 
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-normal text-gray-800 md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
+                {/* <h3 className="text-2xl md:text-3xl lg:text-4xl font-normal text-gray-800 md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
                     Pretty-Health Care Prioritize Her {' '}
                     <span className="text-black font-extrabold">Clients</span>
-                </h3>
+                </h3> */}
 
                 {/* Section Description */}
-                <p className="text-gray-600 text-justify leading-relaxed md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
+                <p className="text-gray-600 text-justify leading-tight md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
                     <span className='text-2xl'>I</span>n an environment where curative health care is out of reach for many, Prettyhealth began
                     as a powerful idea of one-physician &apos;Odunayo Talabi&apos; who believed that prevention
                     should be more than just an option, it should be a way of life. The journey began when he
