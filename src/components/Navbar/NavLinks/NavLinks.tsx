@@ -27,6 +27,9 @@ const NavLinks: React.FC<NavLinksProps> = ({ isMobile }) => {
                 { name: 'Clinic Services', value: '/clinic' },
                 { name: 'School Health Program', value: '/school-health' },
                 { name: 'Diagnostic Services', value: '/diagnostics' },
+                { name: 'Vaccine', value: '/vaccine' },
+                { name: 'Health Promotion', value: '/health-promotion' },
+                { name: 'Career', value: '/career' },
             ],
         },
         {

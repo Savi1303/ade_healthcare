@@ -51,7 +51,7 @@ const Footer = () => {
                             <p className="text-lg font-bold mb-4 text-center sm:text-left">SERVICES</p>
                             <ul className="space-y-3 text-lg lg:text-sm text-center sm:text-left">
                                 <li><Link href="/diagnostics" className="hover:text-gray-500 text-gray-300">Diagnostics</Link></li>
-                                <li><Link href="/vaccination" className="hover:text-gray-500 text-gray-300">Vaccination</Link></li>
+                                <li><Link href="/vaccine" className="hover:text-gray-500 text-gray-300">Vaccination</Link></li>
                                 <li>
                                     <Link href='https://wa.me/message/KEAP2TUQOW6EN1'
                                         target="_blank" rel="noopener noreferrer" 

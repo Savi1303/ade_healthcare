@@ -1,11 +1,13 @@
 'use client'
 import React from 'react';
 import ServiceCard from './ServiceCard/ServiceCard';
+import Link from 'next/link';
 
 const services = [
     {
         image: '/Pretty-Health Website/Images/image 3.png',
         title: 'Vaccination Services',
+        link: '/vaccine',
         items: [
             "HBV Vaccine", "HPV Vaccine", "Typhoid Vaccine", 
             "MMR (Measles, Mumps, Rubella Vaccine)", "Varicella Vaccine", 
@@ -15,16 +17,19 @@ const services = [
     {
         image: '/Pretty-Health Website/Images/image 10.png',
         title: 'Health Screening Services',
+        link: '/health-promotion',
         items: ["Laboratory Services", "Mammogram", "Wellness Screening"],
     },
     {
         image: '/Pretty-Health Website/Images/image 5.png',
         title: 'Integrated School Health and Adolescent Health Services',
+        link: '/school-health-services',
         items: ["School Clinics", "Pre-Admission Screening", "School Vaccination Services", "Integrated School Intervention"],
     },
     {
         image: '/Pretty-Health Website/Images/image 7.png',
         title: 'Health Promotion Services and Research',
+        link: '/health-promotion-research',
     },
 ];
 
@@ -47,7 +52,11 @@ const Service = () => {
                         <ServiceCard
                             key={index}
                             image={service.image}
-                            title={service.title}
+                            title={
+                                <Link href={service.link} className="hover:underline text-blue-600">
+                                    {service.title}
+                                </Link>
+                            }
                             items={service.items || []}
                         />
                     ))}
