@@ -23,13 +23,14 @@ const services = [
     {
         image: '/Pretty-Health Website/Images/image 5.png',
         title: 'Integrated School Health and Adolescent Health Services',
-        link: '/school-health-services',
+        link: '/school-health',
         items: ["School Clinics", "Pre-Admission Screening", "School Vaccination Services", "Integrated School Intervention"],
     },
     {
         image: '/Pretty-Health Website/Images/image 7.png',
         title: 'Health Promotion Services and Research',
-        link: '/health-promotion-research',
+        link: '#',
+        // link: '/health-promotion-research',
     },
 ];
 
