@@ -27,7 +27,7 @@ const PrettyHealth = () => {
                             </h3>
                         </div>
 
-                        <div className="flex flex-col lg:flex-row mt-20 gap-5 w-full relative z-10">
+                        <div className="flex flex-col md:flex-row mt-20 gap-5 w-full relative z-10">
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
                                 title="Food Handlers Test"
@@ -53,11 +53,11 @@ const PrettyHealth = () => {
                             disabled
                         />
 
-<div className='hidden lg:flex absolute bottom-0 -left-0 w-full'>
-    <Link href="/diagnostics" passHref>
-        <AwardBanner title='Book More' />
-    </Link>
-</div>
+                        <div className='hidden lg:flex absolute bottom-0 -left-0 w-full'>
+                            <Link href="/diagnostics" passHref>
+                                <AwardBanner title='Book More' />
+                            </Link>
+                        </div>
 
                     </div>
 
@@ -75,10 +75,10 @@ const PrettyHealth = () => {
                         />
 
                         <div className="relative z-20">
-                            <Link href="/vaccination" passHref>
+                            <Link href="/vaccine" passHref>
                                 <AwardBanner
                                     title='Need Vaccination? Click to Book Now!'
-                                    />
+                                />
                             </Link>
                         </div>
                     </div>
