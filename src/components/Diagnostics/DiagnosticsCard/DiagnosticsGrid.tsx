@@ -2,14 +2,14 @@ import React from "react";
 import DiagnosticsCard from "./DiagnosticsCard";
 
 const testData = [
-    { title: "Food Handlers Test", price: "N12,550" },
-    { title: "Chemical Handlers Test", price: "N38,000" },
-    { title: "Female Annual Medical Test", price: "N64,710" },
-    { title: "Steward Medical Screening", price: "N15,100" },
-    { title: "Pre-Nuptial Test", price: "N14,850" },
-    { title: "Male Annual Medical Screening", price: "N65,610" },
-    { title: "Pre-Employment Screening", price: "N18,500" },
-    { title: "Pre-Admission Screening", price: "N12,550" },
+    { title: "Food Handlers Test", price: "₦12,550" },
+    { title: "Chemical Handlers Test", price: "₦38,000" },
+    { title: "Female Annual Medical Test", price: "₦64,710" },
+    { title: "Steward Medical Screening", price: "₦15,100" },
+    { title: "Pre-Nuptial Test", price: "₦14,850" },
+    { title: "Male Annual Medical Screening", price: "₦65,610" },
+    { title: "Pre-Employment Screening", price: "₦18,500" },
+    { title: "Pre-Admission Screening", price: "₦12,550" },
 ];
 
 const DiagnosticsGrid: React.FC = () => {
