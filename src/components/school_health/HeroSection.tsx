@@ -1,6 +1,5 @@
 'use client'
-import { FaArrowRight } from 'react-icons/fa';
-import FindLocation from "../general/FindLocation";
+import Image from 'next/image'
 import { useEffect, useRef, useState } from "react";
 
 const HeroSection = () => {
@@ -32,35 +31,41 @@ const HeroSection = () => {
   return (
     <div
       ref={heroRef}
-      className={`md:h-screen flex flex-col md:flex-row py-20 md:py-0 transition-all duration-1000 ease-in-out ${
+      className={`md:h-screen flex flex-col py-20 md:py-0 transition-all duration-1000 ease-in-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="basis-full md:basis-3/5 bg-white flex flex-col justify-center">
-        <div className="px-6 md:px-12 lg:px-16 xl:px-20 space-y-4 mb-12">
-          <div>
-            <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-              Get Educated To
-            </h1>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light">
-              Restore Your Health
-            </h1>
-          </div>
-          <p>
-            Embrace a world of comprehensive healthcare where your well-being
-            takes center stage. At Meca, we&apos;re dedicated to providing you
-            with personalized and compassionate medical services.
-          </p>
-          <button className="px-3 py-1 flex items-center gap-2 rounded-full bg-blue-500 hover:bg-blue-600 transition text-white w-fit">
-            <div className="flex justify-center items-center bg-white text-blue-500 w-4 h-4 rounded-full">
-              < FaArrowRight className="w-2 h-2" />
+        <div className='py-16 gap-10 flex flex-col justify-center items-center px-4 sm:px-8'>
+            <div className='flex flex-col items-center justify-center gap-3 mb-12 text-center'>
+                <h2 className='text-3xl sm:text-4xl md:text-5xl leading-tight'>
+                    Your {''}
+                    <span className='font-extrabold'>
+                        Partner
+                    </span> {''} in {''}
+                    <span className='font-extrabold'>
+                        Student Health 
+                    </span> 
+                </h2>
+                <h2 className='text-3xl sm:text-4xl md:text-5xl leading-tight'>
+                    {''} and {''}
+                    <span className='font-extrabold'>
+                        Well-being 
+                    </span>  
+                </h2> 
+
             </div>
-            <p>Learn More</p>
-          </button>
+
+            {/* Image Section */}
+            <div className='w-full max-w-4xl px-4'>
+                <Image
+                    src='/Pretty-Health Website/new_images/image.png'
+                    alt='Students Image'
+                    width={1000}
+                    height={500}
+                    layout="responsive"
+                />
+            </div>
         </div>
-        <FindLocation />
-      </div>
-      <div className="basis-full md:basis-2/5 bg-[#B6B5FF]"></div>
     </div>
   );
 };

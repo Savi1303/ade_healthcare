@@ -11,9 +11,9 @@ const SchoolHealthPage = () => {
       <HeroSection />
       <IconsSection />
       <OurStorySection />
-      <ServicesSection />
-      <BlogSection />
-      <PrioritySection />
+      {/* <ServicesSection /> */}
+      {/* <BlogSection /> */}
+      {/* <PrioritySection /> */}
     </div>
   )
 }

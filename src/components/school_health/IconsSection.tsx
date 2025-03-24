@@ -35,15 +35,15 @@ const IconsSection = () => {
         <div 
             ref={sectionRef}
             className={`
-                bg-[#331C4C] text-white py-16 px-4 
+                bg-[#331C4C] text-white mt-40 py-16 px-4 
                 flex justify-center items-center flex-wrap gap-8
-                transition-all duration-1000 ease-out
+                transition-all duration-1000 ease-out h-[450px]
                 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
             `}
         >
             {iconsGroup.map((icon, index) => (
                 <IconCard 
-                    key={icon.text} 
+                    key={icon.title} 
                     text={icon.text} 
                     title={icon.title} 
                     image={icon.image} 

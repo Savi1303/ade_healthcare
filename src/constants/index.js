@@ -15,23 +15,23 @@ import cardioImage from '../../public/Pretty-Health Website/Images/image 12.png'
 export const iconsGroup = [
     {
         image: iconImage,
-        title: 'Fermentum amet',
-        text: 'Pellentesque quis tincidunt sit sed. Tortor massa sed habitant.'
+        title: 'School Clincs',
+        text: 'Our team of highly skilled and dedicated nurses and doctors  provide round the clock clinical care , wellness and counseling services for adolescents in secondary school clinics.'
     },
     {
         image: icon2Image,
-        title: 'Dignissim quam',
-        text: 'Quam sed neque vitae viverra purus venenatis ac non.'
+        title: 'Pre-admission School Health Screening Services',
+        text: 'We don’t just screen to diagnose but we screen to detect how best students can safely navigate the rigors of school despite their health status.'
     },
     {
         image: icon3Image,
-        title: 'Dignissim quam',
-        text: 'Eget sed nunc, amet, nibh nulla. Morbi sed risus ullamcorper diam.'
+        title: 'School Vaccination Services',
+        text: 'We have the largest school-based HPV vaccination services in the private sector in Nigeria. We provide other vaccination services such as Hepatitis B, Typhoid, Varicella, Meningococcal, Pneumococcal, etc.'
     },
     {
         image: icon4Image,
-        title: 'Risus morbi',
-        text: 'Euismod sed pellentesque ut elementum.'
+        title: 'Integrated School Health Intervention',
+        text: 'Health education talks, nutritional advice,  deworming services, dental checks, eye checks, etc'
     },
 ]
 export const servicesProvided = [

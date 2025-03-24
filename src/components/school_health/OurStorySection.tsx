@@ -1,12 +1,7 @@
 'use client'
 import React, { useRef, useState, useEffect } from 'react'
-import Image from 'next/image'
-import MiniHeader from '../general/MiniHeader'
-import gridImage from '../../../public/Pretty-Health Website/Images/Col.png'
-import tabletImage from '../../../public/Pretty-Health Website/Images/cd86f3f56c56bcd1833cf9da41275a85.jpg'
-import playIcon from '../../../public/Pretty-Health Website/Images/Icon (22).png'
-import SubHeader from '../general/SubHeader'
-import TalkToADoctorCard from './our_story_section/TalkToADoctorCard'
+import Image from 'next/image';
+import ContactForm from '@/components/Contact-Us/ContactForm';
 
 const OurStorySection = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -59,29 +54,23 @@ const OurStorySection = () => {
                 `}
             >
                 <div className="px-4 basis-full md:basis-1/2">
-                    <Image 
-                        src={gridImage} 
-                        alt='Grid Image' 
-                        className={`
-                            w-full
-                            transition-all duration-1000 ease-out
-                            ${isVisible ? 'scale-100 rotate-0' : 'scale-90 rotate-6'}
-                            ${isVisible ? 'delay-300' : ''}
-                        `}
-                    />
-                </div>
-                <div className="px-4 basis-full md:basis-1/2">
                     <div 
                         className={`
                             transition-all duration-1000 ease-out
                             ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}
                             ${isVisible ? 'delay-400' : ''}
                         `}
-                    >
-                        <MiniHeader text='Our Story' />
-                        <SubHeader text='Pretty-Health Always Take'>
-                            <h1 className='font-bold'>Care of Their Patients</h1>
-                        </SubHeader>
+                    >            
+                        <div className="flex">
+   <Image 
+      src="/Pretty-Health Website/Images/Icon (4).png" // Path relative to the public folder
+      alt="Contact Icon"
+      width={70} // Set width and height based on your design needs
+      height={70}
+      className='mb-[20px]'
+    />
+                        </div>            
+                            <h2 className='font-bold text-4xl'>Send us a message to book our School Health Services!</h2>
                         <p 
                             className={`
                                 mt-2 opacity-70
@@ -90,13 +79,16 @@ const OurStorySection = () => {
                                 ${isVisible ? 'delay-500' : ''}
                             `}
                         >
-                            Consequat ea fugiat commodo eiusmod amet exercitation reprehenderit sint ex quis cupidatat. Lorem excepteur fugiat aute excepteur reprehenderit laboris veniam pariatur ad elit aliqua occaecat. Nisi aute dolore reprehenderit cillum sint magna velit quis consectetur excepteur incididunt amet in ullamco. Minim laboris ullamco nisi ullamco ex incididunt mollit labore sint nisi laboris non. Sint magna consectetur mollit sunt magna voluptate laboris aliquip proident. Labore qui eiusmod pariatur nostrud duis adipisicing excepteur.
+                           
                         </p>
                     </div>
                 </div>
+                <div className="px-4 basis-full md:basis-1/2 flex flex-col-reverse">
+                    < ContactForm />
+                </div>
             </div>
 
-            <div 
+            {/* <div 
                 ref={secondSectionRef}
                 className={`
                     flex flex-col md:flex-row items-center justify-center
@@ -170,7 +162,7 @@ const OurStorySection = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
