@@ -6,11 +6,11 @@ function DiagnosticsLab() {
         <div className='flex flex-col md:flex-row py-12 justify-center w-full items-center px-4 sm:px-8 md:px-12'>
             {/* Text Section */}
             <div className='w-full md:w-1/2 flex flex-col gap-2 text-center md:text-left sm:px-0 md:px-0'>
-                <span className='text-2xl sm:text-3xl md:text-3xl'>
+                <span className='text-4xl sm:text-3xl md:text-3xl lg:text-5xl'>
                     Get your <span className='font-black'>Laboratory</span>
                 </span>
 
-                <span className='text-2xl sm:text-3xl md:text-3xl'>
+                <span className='text-2xl sm:text-3xl md:text-3xl lg:text-5xl'>
                     <span className='font-black'>Tests</span> done with <span className='font-black'>Ease</span>
                 </span>
             </div>

@@ -37,24 +37,24 @@ const VaccinationNation = () => {
             {/* Information Cards */}
             <div className="max-w-5xl mx-auto mt-6 grid gap-4 bg-[#fae4b480] p-6 rounded-xl">
                 <div className="bg-gray-100 p-4 rounded-lg shadow">
-                    <p className="font-semibold text-blue-950 text-2xl text-justify">
-                        We provide comprehensive vaccination offerings, including HPV,
-                        Hepatitis B, Typhoid, Yellow Fever, and others. Our provisions are
+                    <p className="font-normal text-blue-950 text-2xl text-justify">
+                        We provide comprehensive vaccination offerings, including <span className='font-bold'>HPV,
+                        Hepatitis B, Typhoid, Yellow Fever, and others. </span> Our provisions are
                         tailored to your needs. You can come to us or we can come to you.
                     </p>
                 </div>
 
                 <div className="bg-blue-950 p-4 rounded-lg shadow text-white text-2xl text-justify">
-                    <p>
+                    <p className='font-thin'>
                         We help assess your vaccination needs and advise on what you
                         require based on your age group and risk category.
                     </p>
                 </div>
 
                 <div className="bg-blue-300 p-4 rounded-lg shadow text-blue-800 text-2xl text-justify">
-                    <p>
-                        We provide customized vaccination plans for individuals, schools,
-                        workplaces, and communities to ensure widespread access to
+                    <p className='font-thin'>
+                        We provide customized vaccination plans for <span className='font-bold'> individuals, schools,
+                        workplaces, and communities </span> to ensure widespread access to
                         preventive care.
                     </p>
                 </div>
