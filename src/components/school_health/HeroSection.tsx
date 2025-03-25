@@ -31,13 +31,13 @@ const HeroSection = () => {
   return (
     <div
       ref={heroRef}
-      className={`md:h-screen flex flex-col py-20 md:py-0 transition-all duration-1000 ease-in-out ${
+      className={` flex flex-col md:py-10 py-20 max-sm:py-10 transition-all duration-1000 ease-in-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-        <div className='py-16 gap-10 flex flex-col justify-center items-center px-4 sm:px-8'>
+        <div className='lg:py-16 md:py-16 py-0 lg:gap-10 flex flex-col justify-center items-center px-4 sm:px-4'>
             <div className='flex flex-col items-center justify-center gap-3 mb-12 text-center'>
-                <h2 className='text-3xl sm:text-4xl md:text-5xl leading-tight'>
+                <h2 className='max-sm:text-[1.4rem] text-4xl md:text-5xl leading-tight'>
                     Your {''}
                     <span className='font-extrabold'>
                         Partner
@@ -46,7 +46,7 @@ const HeroSection = () => {
                         Student Health 
                     </span> 
                 </h2>
-                <h2 className='text-3xl sm:text-4xl md:text-5xl leading-tight'>
+                <h2 className='max-sm:text-[1.4rem] text-4xl md:text-5xl leading-3'>
                     {''} and {''}
                     <span className='font-extrabold'>
                         Well-being 

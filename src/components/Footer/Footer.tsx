@@ -11,9 +11,9 @@ const Footer = () => {
                 {/* Top Section */}
                 <div className="flex flex-col lg:flex-row lg:justify-between space-y-8 md:space-y-16">
                     {/* Navigation Links */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:flex items-start justify-between gap-24">
+                    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:flex items-start justify-between lg:gap-24 md:gap-16 gap-10">
                         {/* Logo */}
-                        <div className='hidden mt-6 sm:mt-12 lg:flex justify-center sm:justify-start'>
+                        <div className='mt-6 sm:mt-12 lg:flex justify-center sm:justify-start'>
                             <Image
                                 src="/Pretty-Health Website/Images/footer _img.png"
                                 alt="Pretty Health Care Logo"

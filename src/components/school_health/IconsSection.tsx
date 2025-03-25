@@ -6,7 +6,8 @@ import IconCard from "./icon_section/IconCard";
 const IconsSection = () => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef<HTMLDivElement>(null);
-
+    
+// eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
@@ -28,17 +29,17 @@ const IconsSection = () => {
                 observer.unobserve(sectionRef.current);
             }
         };
-    }, []);
+    }, [sectionRef]);
 
     return (
-        <div className="py-16 bg-[#331C4C] mt-36">
+        <div className="py-16 bg-[#331C4C] mt-5">
             <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
                 {/* Icons Grid */}
                 <div
                     ref={sectionRef}
                     className={`
                         grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-6 items-start justify-center
-                        transition-all duration-1000 ease-out
+                        transition-all duration-1000 ease-out 
                         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
                     `}
                 >

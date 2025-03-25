@@ -9,7 +9,7 @@ const OurStorySection = () => {
 
     // Refs for individual sections to stagger animations
     const firstSectionRef = useRef<HTMLDivElement>(null);
-    const secondSectionRef = useRef<HTMLDivElement>(null);
+    // const secondSectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -33,7 +33,7 @@ const OurStorySection = () => {
                 observer.unobserve(sectionRef.current);
             }
         };
-    }, []);
+    }, [sectionRef]);
 
     return (
         <div 
@@ -47,13 +47,13 @@ const OurStorySection = () => {
             <div 
                 ref={firstSectionRef}
                 className={`
-                    flex flex-col md:flex-row items-center justify-center
+                    flex flex-col items-center justify-center lg:flex-row
                     transition-all duration-1000 ease-out
                     ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}
                     ${isVisible ? 'delay-200' : ''}
                 `}
             >
-                <div className="px-4 basis-full md:basis-1/2">
+                <div className="px-4 basis-full md:basis-1/2 pb-5 ">
                     <div 
                         className={`
                             transition-all duration-1000 ease-out
@@ -61,16 +61,16 @@ const OurStorySection = () => {
                             ${isVisible ? 'delay-400' : ''}
                         `}
                     >            
-                        <div className="flex">
-   <Image 
-      src="/Pretty-Health Website/Images/Icon (4).png" // Path relative to the public folder
-      alt="Contact Icon"
-      width={70} // Set width and height based on your design needs
-      height={70}
-      className='mb-[20px]'
-    />
+                        <div className="grid justify-center lg:justify-normal">
+                            <Image 
+                                src="/Pretty-Health Website/Images/Icon (4).png" // Path relative to the public folder
+                                alt="Contact Icon"
+                                width={70} // Set width and height based on your design needs
+                                height={70}
+                                className='lg:mb-[20px] lg:w-[70px] md:w-[60px] w-auto'
+                            />
                         </div>            
-                            <h2 className='font-bold text-4xl'>Send us a message to book our School Health Services!</h2>
+                            <h2 className='font-bold lg:text-4xl md:text-4xl text-[1.3rem] text-center lg:text-start'>Send us a message to book our School Health Services!</h2>
                         <p 
                             className={`
                                 mt-2 opacity-70
@@ -83,7 +83,7 @@ const OurStorySection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="px-4 basis-full md:basis-1/2 flex flex-col-reverse">
+                <div className="lg:px-4 basis-full md:basis-1/2 ">
                     < ContactForm />
                 </div>
             </div>
