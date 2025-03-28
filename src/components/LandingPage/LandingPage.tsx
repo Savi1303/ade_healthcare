@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
 import HomeView from './HomeView/HomeView';
-// import Sponsors from './sponsors/page';
 import Service from './Servicess/Service';
 import YourHealth from './YourHealth/YourHealth';
 import Blog from './Blog/Blog';

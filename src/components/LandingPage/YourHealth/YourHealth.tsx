@@ -68,28 +68,22 @@ const YourHealth = () => {
                     <span className="text-lg font-bold text-blue-600">
                         Your Health Is Our Top Priority
                     </span>
-                    <div className="w-full overflow-hidden whitespace-nowrap">
+                    <div className="w-full whitespace-nowrap">
                         <div className="inline-block animate-scroll">
-                            <p className="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 leading-relaxed inline-block">
+                            <p className="pr-32 text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 leading-relaxed">
                                 Our track record speaks for itself. We led{" "}
-                                <span className="font-[900]">HPV vaccine</span> introduction in
-                                Nigeria through the private sector, using an{" "}
-                                <span className="font-[900]">innovative low-cost delivery model.</span>
-                            </p>
-                            <p className="text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 leading-relaxed inline-block">
-                                &nbsp;&nbsp;Our track record speaks for itself. We led{" "}
-                                <span className="font-[900]">HPV vaccine</span> introduction in
-                                Nigeria through the private sector, using an{" "}
-                                <span className="font-[900]">innovative low-cost delivery model.</span>
+                                <span className="font-extrabold">HPV vaccine</span> introduction in Nigeria through the private sector, using an{" "}
+                                <span className="font-extrabold">innovative low-cost delivery model.</span>
                             </p>
                         </div>
                     </div>
+
                 </div>
 
                 <div>
                     <PrettyHealth />
                 </div>
-                
+
                 <div>
                     <Sponsors />
                 </div>
@@ -115,7 +109,7 @@ const YourHealth = () => {
                             {/* Content */}
                             <div className="flex flex-col space-y-1">
                                 <p className="text-2xl text-gray-800 font-medium">
-                                    What PrettyHealth client think about us.
+                                    What Prettyhealth clients think about us
                                 </p>
                             </div>
                         </div>

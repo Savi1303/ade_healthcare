@@ -35,7 +35,7 @@ const LabTestCard: React.FC<LabTestCardProps> = ({ imgSrc, title, description, p
                 className="flex items-center border space-x-2 text-white px-3 py-1 rounded-3xl bg-[#3cb5d3] hover:bg-[#349bb3] focus:ring-2 focus:ring-[#3cb5d3] focus:outline-none"
             >
                 <FaArrowRight className="text-blue-600 bg-white rounded-full p-1" size={14} />
-                <span className="text-sm font-medium">Schedule A Test</span>
+                <span className="text-sm font-medium">Schedule a test</span>
             </button>
         </div>
     );

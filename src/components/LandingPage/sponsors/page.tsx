@@ -16,7 +16,7 @@ const LogoScroller = () => {
 
   return (
     <div className="lg:min-h-32 md:min-h-36 sm:min-h-40 flex items-center justify-center bg-white">
-      <div className="overflow-hidden relative w-full">
+      <div className="relative w-full">
         <div className="flex animate-scroll space-x-16">
           {[...logos, ...logos].map((logo, index) => (
             <div

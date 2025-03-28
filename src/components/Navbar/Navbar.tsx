@@ -28,16 +28,19 @@ const Navbar = () => {
     return (
         <div>
             {/* first navbar */}
-            <div className="hidden lg:flex justify-center items-center bg-[#b69b44] text-white text-center py-3 text-[12px]">
-                Not Sure Where To Start? Chat With Our Health Advisor{" "}
+            <div className="flex justify-center items-center bg-[#b69b44] gap-4 text-white text-center py-2 sm:py-3 text-[10px] sm:text-[12px] md:text-[14px]">
+                <p>Not Sure Where To Start? Chat With Our Health Advisor</p>
+
                 <Link
                     href="#"
                     onClick={() => window.open('https://wa.me/message/KEAP2TUQOW6EN1', '_blank', 'noopener,noreferrer')}
-                    className="flex items-center gap-2 bg-transparent border border-white ml-2 px-3 py-1 rounded-full"
+                    className="flex items-center gap-2 bg-transparent border border-white mt-2 sm:mt-0 ml-0 sm:ml-2 px-3 py-1 rounded-full"
                 >
-                    <FaWhatsapp className="text-white rounded-full bg-green-500" /> Chat Now
+                    <FaWhatsapp className="text-white rounded-full bg-green-500 p-1 w-5 h-5" />
+                    Chat Now
                 </Link>
             </div>
+
 
             {/* second navbar */}
             <div className="bg-white shadow-lg top-0 left-0 w-full z-50 px-3">

@@ -17,20 +17,20 @@ const services = [
     {
         image: '/Pretty-Health Website/Images/image 10.png',
         title: 'Health Screening Services',
-        link: '/health-promotion',
+        link: '/diagnostics',
         items: ["Laboratory Services", "Mammogram", "Wellness Screening"],
     },
     {
         image: '/Pretty-Health Website/Images/image 5.png',
         title: 'Integrated School Health and Adolescent Health Services',
-        link: '/school-health',
+        link: '/clinic',
         items: ["School Clinics", "Pre-Admission Screening", "School Vaccination Services", "Integrated School Intervention"],
     },
     {
         image: '/Pretty-Health Website/Images/image 7.png',
         title: 'Health Promotion Services and Research',
-        link: '#',
-        // link: '/health-promotion-research',
+        link: '/health-promotion',
+        items: ['Health Education Design and Delivery', 'Health Awareness Programs', 'Public Health Seminars/Webinars', 'Public Health Implementation Research'],
     },
 ];
 
@@ -42,8 +42,8 @@ const Service = () => {
                 <div className="text-center">
                     <span className="text-lg font-extrabold text-blue-600">Our Services</span>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-thin text-gray-800 mt-2 md:w-[500px] lg:w-[600px] mx-auto">
-                        We Serve in Different{' '}
-                        <span className="font-extrabold">Areas For Our Clients</span>
+                        We serve in different{' '}
+                        <span className="font-extrabold">areas for our clients</span>
                     </h2>
                 </div>
 

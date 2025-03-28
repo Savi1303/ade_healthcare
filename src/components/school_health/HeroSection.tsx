@@ -58,7 +58,7 @@ const HeroSection = () => {
             {/* Image Section */}
             <div className='w-full max-w-4xl px-4'>
                 <Image
-                    src='/Pretty-Health Website/new_images/image.png'
+                    src='/Pretty-Health Website/new_images/Rectangle 5.png'
                     alt='Students Image'
                     width={1000}
                     height={500}

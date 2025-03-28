@@ -17,27 +17,27 @@ const PrettyHealth = () => {
         <div className="py-6">
             <div className="mx-auto sm:px-0">
                 {/* Lab Test Section */}
-                <div className="flex flex-col lg:flex-row justify-between space-y-5 lg:space-y-0 lg:space-x-5 w-full animate__animated animate__slideInUp">
+                <div className="flex flex-col lg:flex-row justify-between space-y-5 lg:space-y-0 lg:space-x-5 w-full">
                     <div className="lg:w-1/2 flex space-y-9 flex-col bg-cover p-5 rounded-lg relative PrettyHealth">
-                        <div className="absolute inset-0 bg-gray-300 opacity-50 rounded-lg"></div>
+                        <div className="absolute inset-0 bg-gray-100 opacity-60 rounded-lg"></div>
                         <div>
                             <p className="text-xs text-indigo-500 font-bold relative z-10">LAB TEST</p>
                             <h3 className="lg:text-4xl w-full lg:w-[550px] font-thin mt-3 relative z-10">
-                                We Have Lab Test Facilities <span className="font-extrabold">Book Yours Today</span>
+                                We have lab test facilities. <br/> <span className="font-extrabold">Book Yours Today</span>
                             </h3>
                         </div>
 
                         <div className="flex flex-col md:flex-row mt-20 gap-5 w-full relative z-10">
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
-                                title="Food Handler's Test"
-                                description=""
+                                title="Food Handlers’ Test"
+                                description="’We do all kinds of MRI & ICT Scan for our patients"
                                 price="&#8358;12,550"
                             />
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
                                 title="Pre-Nuptial Test"
-                                description=""
+                                description="’We do all kind of MRI & CT Scan for our patient"
                                 price="&#x20a6;14,850"
                             />
                         </div>
@@ -77,7 +77,7 @@ const PrettyHealth = () => {
                         <div className="relative z-20">
                             <Link href="/vaccine" passHref>
                                 <AwardBanner
-                                    title='Need Vaccination? Click to Book Now!'
+                                    title='Need a vaccination? Click to book now!'
                                 />
                             </Link>
                         </div>

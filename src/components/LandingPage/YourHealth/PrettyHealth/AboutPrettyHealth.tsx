@@ -44,7 +44,7 @@ function AboutPrettyHealth() {
 
                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-sm sm:text-base text-gray-700">
                         <li>✔️ Individual Vaccination</li>
-                        <li>✔️ Travel Vaccination</li>
+                        <li>✔️ Travel Vaccination </li>
                         <li>✔️ Home Vaccination</li>
                         <li>✔️ Expert Healthcare Workers</li>
                         <li>✔️ Group Vaccination</li>
@@ -54,7 +54,7 @@ function AboutPrettyHealth() {
                     </ul>
 
                     <div className="flex justify-start">
-                        <Link href="/about-us">
+                        <Link href="/vaccine">
                             <button className="px-4 py-2 mt-5 flex items-center gap-2 rounded-full bg-indigo-600 hover:bg-indigo-800 text-white w-fit">
                                 <div className="flex justify-center items-center bg-white text-blue-500 w-5 h-5 rounded-full">
                                     <FaArrowRight className="w-3 h-3" />
