@@ -44,7 +44,7 @@ const Blog = () => {
         <div className="container mx-auto py-5">
             {/* Header Section */}
             <div className="text-center mb-10">
-                <h2 className="sm:text-xl text-2xl font-bold text-blue-600">
+                <h2 className="sm:text-lg text-lg font-bold text-blue-600">
                     Blog & Articles
                 </h2>
                 <h3 className="lg:text-5xl text-2xl md:w-[400px] w-[300px] lg:w-[450px] mx-auto sm:text-2xl md:text-3xl mt-3 text-gray-900">

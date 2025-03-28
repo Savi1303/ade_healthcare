@@ -28,11 +28,11 @@ function AboutPrettyHealth() {
 
                 {/* Text Content */}
                 <div className="w-full lg:w-1/2 space-y-6 text-gray-800 text-left px-0 sm:px-8 lg:px-0">
-                    <span className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-indigo-600">
+                    <span className="sm:text-lg text-lg md:text-2xl lg:text-2xl font-semibold text-indigo-600">
                         About PrettyHealth
                     </span>
 
-                    <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-thin text-gray-800 leading-tight">
+                    <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-thin text-gray-800 leading-tight">
                         We are the largest provider of{" "}
                         <span className="font-black">private vaccination services </span> in
                         Nigeria

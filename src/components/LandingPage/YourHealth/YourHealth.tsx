@@ -65,7 +65,7 @@ const YourHealth = () => {
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
                 {/* Header Section */}
                 <div className="text-center md:text-left">
-                    <span className="sm:text-lg text-2xl font-bold text-blue-600">
+                    <span className="sm:text-lg text-lg font-bold text-blue-600">
                         Your Health Is Our Top Priority
                     </span>
                     <div className="w-full">
