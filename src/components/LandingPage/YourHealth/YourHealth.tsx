@@ -65,11 +65,11 @@ const YourHealth = () => {
             <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
                 {/* Header Section */}
                 <div className="text-center md:text-left">
-                    <span className="text-lg font-bold text-blue-600">
+                    <span className="sm:text-lg text-2xl font-bold text-blue-600">
                         Your Health Is Our Top Priority
                     </span>
-                    <div className="w-full whitespace-nowrap">
-                        <div className="inline-block animate-scroll">
+                    <div className="w-full">
+                        <div className="animate-scroll">
                             <p className="pr-32 text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 leading-relaxed">
                                 Our track record speaks for itself. We led{" "}
                                 <span className="font-extrabold">HPV vaccine</span> introduction in Nigeria through the private sector, using an{" "}
@@ -77,6 +77,7 @@ const YourHealth = () => {
                             </p>
                         </div>
                     </div>
+
 
                 </div>
 
@@ -108,7 +109,7 @@ const YourHealth = () => {
                             />
                             {/* Content */}
                             <div className="flex flex-col space-y-1">
-                                <p className="text-2xl text-gray-800 font-medium">
+                                <p className="md:text-2xl text-xl text-gray-800 font-medium">
                                     What Prettyhealth clients think about us
                                 </p>
                             </div>
@@ -144,10 +145,10 @@ const YourHealth = () => {
                                         className="w-12 h-12 rounded-full object-cover border border-gray-300"
                                     />
                                     <div>
-                                        <h3 className="text-gray-800 md:text-md sm:text-sm lg:text-lg  font-semibold uppercase">
+                                        <h3 className="text-gray-800 text-sm md:text-md sm:text-sm lg:text-lg  font-semibold uppercase">
                                             {testimonials[currentIndex].name}
                                         </h3>
-                                        <p className="md:text-md sm:text-sm lg:text-lg  text-gray-900">
+                                        <p className="md:text-md sm:text-sm text-sm lg:text-lg  text-gray-900">
                                             {testimonials[currentIndex].role}
                                         </p>
                                     </div>

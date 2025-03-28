@@ -12,7 +12,7 @@ function AboutPrettyHealth() {
                     <Image
                         src="/Pretty-Health Website/new_images/Rectangle 6298 (4).png"
                         alt="About Pretty One"
-                        width={180}
+                        width={160}
                         height={130}
                         className="object-cover rounded-lg"
                     />
@@ -20,15 +20,15 @@ function AboutPrettyHealth() {
                     <Image
                         src="/Pretty-Health Website/new_images/Rectangle 6299 (2).png"
                         alt="About Pretty Two"
-                        width={180}
+                        width={160}
                         height={130}
                         className="object-cover rounded-lg"
                     />
                 </div>
 
                 {/* Text Content */}
-                <div className="w-full lg:w-1/2 space-y-6 text-gray-800 text-left px-4 sm:px-8 lg:px-0">
-                    <span className="text-sm sm:text-md lg:text-lg font-semibold text-indigo-400">
+                <div className="w-full lg:w-1/2 space-y-6 text-gray-800 text-left px-0 sm:px-8 lg:px-0">
+                    <span className="text-2xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-indigo-600">
                         About PrettyHealth
                     </span>
 
@@ -38,11 +38,11 @@ function AboutPrettyHealth() {
                         Nigeria
                     </h2>
 
-                    <p className="text-sm sm:text-base lg:text-lg text-gray-600">
+                    <p className="text-lg sm:text-xl lg:text-xl text-gray-600">
                         Making vaccination work for you, one person at a time
                     </p>
 
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-sm sm:text-base text-gray-700">
+                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 text-lg sm:text-lg text-gray-700">
                         <li>✔️ Individual Vaccination</li>
                         <li>✔️ Travel Vaccination </li>
                         <li>✔️ Home Vaccination</li>
@@ -59,7 +59,7 @@ function AboutPrettyHealth() {
                                 <div className="flex justify-center items-center bg-white text-blue-500 w-5 h-5 rounded-full">
                                     <FaArrowRight className="w-3 h-3" />
                                 </div>
-                                <p className="text-sm sm:text-base">Learn More</p>
+                                <p className="text-lg sm:text-base">Learn More</p>
                             </button>
                         </Link>
                     </div>

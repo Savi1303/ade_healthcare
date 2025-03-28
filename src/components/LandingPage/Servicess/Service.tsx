@@ -40,7 +40,7 @@ const Service = () => {
             <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
                 {/* Section Header */}
                 <div className="text-center">
-                    <span className="text-lg font-extrabold text-blue-600">Our Services</span>
+                    <span className="sm:text-lg text-2xl font-extrabold text-blue-600">Our Services</span>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-thin text-gray-800 mt-2 md:w-[500px] lg:w-[600px] mx-auto">
                         We serve in different{' '}
                         <span className="font-extrabold">areas for our clients</span>

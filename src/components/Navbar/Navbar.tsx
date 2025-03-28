@@ -28,8 +28,8 @@ const Navbar = () => {
     return (
         <div>
             {/* first navbar */}
-            <div className="flex justify-center items-center bg-[#b69b44] gap-4 text-white text-center py-2 sm:py-3 text-[10px] sm:text-[12px] md:text-[14px]">
-                <p>Not Sure Where To Start? Chat With Our Health Advisor</p>
+            <div className="flex justify-center items-center bg-[#b69b44] gap-10 text-white text-center py-2 sm:py-3 text-[10px] sm:text-[12px] md:text-[14px]">
+                <p className="hidden md:flex">Not Sure Where To Start? Chat With Our Health Advisor</p>
 
                 <Link
                     href="#"
@@ -43,7 +43,7 @@ const Navbar = () => {
 
 
             {/* second navbar */}
-            <div className="bg-white shadow-lg top-0 left-0 w-full z-50 px-3">
+            <div className="bg-white shadow-lg top-0 left-0 w-full z-50 px-0">
                 <div className="mx-auto flex justify-between items-center px-6 py-4">
                     {/* Logo */}
                     <div className="flex items-center z-50">

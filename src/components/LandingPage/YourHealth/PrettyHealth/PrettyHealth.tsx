@@ -31,13 +31,13 @@ const PrettyHealth = () => {
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
                                 title="Food Handlers’ Test"
-                                description="’We do all kinds of MRI & ICT Scan for our patients"
+                                description=""
                                 price="&#8358;12,550"
                             />
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
                                 title="Pre-Nuptial Test"
-                                description="’We do all kind of MRI & CT Scan for our patient"
+                                description=""
                                 price="&#x20a6;14,850"
                             />
                         </div>

@@ -41,19 +41,19 @@ const Blog = () => {
     }, []);
 
     return (
-        <div className="container mx-auto p-5">
+        <div className="container mx-auto py-5">
             {/* Header Section */}
             <div className="text-center mb-10">
-                <h2 className="text-lg font-bold text-blue-600">
+                <h2 className="sm:text-xl text-2xl font-bold text-blue-600">
                     Blog & Articles
                 </h2>
-                <h3 className="lg:text-5xl md:w-[400px] w-[300px] lg:w-[450px] mx-auto sm:text-2xl md:text-3xl mt-3 text-gray-900">
+                <h3 className="lg:text-5xl text-2xl md:w-[400px] w-[300px] lg:w-[450px] mx-auto sm:text-2xl md:text-3xl mt-3 text-gray-900">
                     Read top articles to <span className="text-black font-extrabold">protect your health</span>
                 </h3>
             </div>
 
             {/* Blog Cards Section */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center px-6 gap-6 mt-12">
                 {LandingBlogPost.map((post, index) => (
                     <div
                         key={`${post.date}-${index}`}

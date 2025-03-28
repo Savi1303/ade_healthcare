@@ -14,7 +14,7 @@ interface LandingBlogCardProps {
 
 const BlogCard = ({ type, date, readTime, title, className }: LandingBlogCardProps) => {
     return (
-        <div className={`w-[350px] md:w-[375px] flex flex-col items-center rounded-t-3xl rounded-b-3xl duration-1000 ease-out hover:shadow-xl hover:scale-105 transition-transform ${className}`}>
+        <div className={`w-[310px] md:w-[375px] flex flex-col items-center rounded-t-3xl rounded-b-3xl duration-1000 ease-out hover:shadow-xl ${className}`}>
             <div className='relative'>
                 <Image
                     src='Pretty-Health Website/Images/Rectangle 7.png'
