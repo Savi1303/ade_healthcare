@@ -2,7 +2,7 @@ import React from "react";
 import DiagnosticsCard from "./DiagnosticsCard";
 
 const testData = [
-    { title: "Food Handlers Test", price: "₦12,550" },
+    { title: "Food Handler's Test", price: "₦12,550" },
     { title: "Chemical Handlers Test", price: "₦38,000" },
     { title: "Female Annual Medical Test", price: "₦64,710" },
     { title: "Steward Medical Screening", price: "₦15,100" },

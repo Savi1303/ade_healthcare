@@ -30,14 +30,14 @@ const PrettyHealth = () => {
                         <div className="flex flex-col md:flex-row mt-20 gap-5 w-full relative z-10">
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
-                                title="Food Handlers Test"
-                                description="We do all kinds of MRI & ICT Scan for our patients"
+                                title="Food Handler's Test"
+                                description=""
                                 price="&#8358;12,550"
                             />
                             <LabTestCard
                                 imgSrc="/Pretty-Health Website/Images/image 15.png"
-                                title="Pre-Nupital Test"
-                                description="We do all kind of MRI & CT Scan for our patient "
+                                title="Pre-Nuptial Test"
+                                description=""
                                 price="&#x20a6;14,850"
                             />
                         </div>
