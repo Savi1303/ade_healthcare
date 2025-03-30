@@ -24,10 +24,10 @@ const NavLinks: React.FC<NavLinksProps> = ({ isMobile }) => {
         {
             name: 'Our Services',
             submenu: [
+                { name: 'Vaccination', value: '/vaccine' },
+                { name: 'Diagnostic Services', value: '/diagnostics' },
                 { name: 'Clinic Services', value: '/clinic' },
                 { name: 'School Health Program', value: '/school-health' },
-                { name: 'Diagnostic Services', value: '/diagnostics' },
-                { name: 'Vaccination', value: '/vaccine' },
                 // { name: 'Health Promotion', value: '/health-promotion' },
                 
             ],
