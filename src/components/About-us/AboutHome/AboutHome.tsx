@@ -51,9 +51,11 @@ const AboutHome = () => {
                             For Our Services
                         </h2>
                         
-                        <h4 className="text-lg md:text-2xl font-bold">
-                            Call: <span className="text-indigo-300">+234 811 434 6325</span>
-                        </h4>
+                        <p className="flex flex-col space-y-5 font-bold text-sm">
+                            <span>Call: <span className="text-indigo-300 text-lg">+234 811 434 6325</span></span> 
+                            <span>WhatsApp: <span className="text-indigo-300 text-lg">+234 811 434 6325</span></span> 
+                            <span>E-mail: <span className="text-indigo-300 text-lg">Info@prettyhealthcare.com.ng</span></span> 
+                        </p>
                     </div>
 
                     {/* Opening Hours */}
