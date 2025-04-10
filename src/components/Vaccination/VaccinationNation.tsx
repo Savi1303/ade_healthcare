@@ -22,13 +22,14 @@ const VaccinationNation = () => {
                             National impact [Trailblazing protection from HPV vaccination]
                         </h2>
                         <p className="mt-4 text-gray-600 text-justify">
-                            As Nigeria&#39;s leader in school-based HPV vaccination, we launched
-                            the country&#39;s largest initiative in 2014 to protect young lives -
-                            raising awareness and providing vaccinations using a low-cost
-                            delivery model a full decade before the government&#39;s official
-                            roll-out. Our pioneering work laid a vital foundation, equipping
-                            communities and contributing critical expertise to drive a
-                            successful national program.
+                            As Nigeria&#39;s leader in school-based HPV vaccination, we launched the country&#39;s
+                            largest initiative in 2014 to protect female lives. We raised awareness and provided 
+                            vaccinations—one school at a time—using a low-cost delivery model. We forged critical 
+                            partnerships with key organizations and sponsors, such as Rotary International, to 
+                            deliver tens of thousands of HPV vaccines at no cost or at a reduced price to 
+                            schoolgirls. Our pioneering work laid a vital foundation, equipping communities 
+                            and contributing critical expertise to support a successful national roll-out in 
+                            2023.
                         </p>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ const VaccinationNation = () => {
                 <div className="bg-gray-100 p-4 rounded-lg shadow">
                     <p className="font-normal text-blue-950 text-2xl text-justify">
                         We provide comprehensive vaccination offerings, including <span className='font-bold'>HPV,
-                        Hepatitis B, Typhoid, Yellow Fever, and others. </span> Our provisions are
+                            Hepatitis B, Typhoid, Yellow Fever, and others. </span> Our provisions are
                         tailored to your needs. You can come to us or we can come to you.
                     </p>
                 </div>
@@ -54,7 +55,7 @@ const VaccinationNation = () => {
                 <div className="bg-blue-300 p-4 rounded-lg shadow text-blue-800 text-2xl text-justify">
                     <p className='font-thin'>
                         We provide customized vaccination plans for <span className='font-bold'> individuals, schools,
-                        workplaces, and communities </span> to ensure widespread access to
+                            workplaces, and communities </span> to ensure widespread access to
                         preventive care.
                     </p>
                 </div>

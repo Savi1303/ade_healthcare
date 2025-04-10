@@ -21,7 +21,7 @@ export const iconsGroup = [
     {
         image: icon2Image,
         title: 'Pre-admission School Health Screening Services',
-        text: 'We don’t just screen to diagnose but we screen to detect how best students can safely navigate the rigors of school despite their health status.'
+        text: 'We don’t just screen to diagnose; we screen to detect how best, students, irrespective of their state of health, can safely navigate the rigors of school while maintaining optimal health.'
     },
     {
         image: icon3Image,
@@ -31,7 +31,7 @@ export const iconsGroup = [
     {
         image: icon4Image,
         title: 'Integrated School Health Intervention',
-        text: 'Health education talks, nutritional advice,  deworming services, dental checks, eye checks, etc'
+        text: 'We provide health education talks, nutritional advice, deworming services, dental checks, eye checks, etc., in our various school clinics.'
     },
 ]
 export const servicesProvided = [
