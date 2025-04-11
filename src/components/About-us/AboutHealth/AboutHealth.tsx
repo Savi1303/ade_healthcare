@@ -64,7 +64,7 @@ function AboutHealth() {
                     <span className="text-lg font-bold text-blue-600">
                         Your Health Is Our Top Priority
                     </span>
-                    <div className="w-full whitespace-nowrap">
+                    <div className="w-full whitespace-nowrap overflow-hidden">
                         <div className="inline-block animate-scroll">
                             <p className="pr-32 text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 leading-relaxed">
                                 Our track record speaks for itself. We led{" "}

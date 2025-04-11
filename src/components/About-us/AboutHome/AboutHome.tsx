@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { PiHeartbeatBold } from "react-icons/pi";
 import { TbCalendarTime } from "react-icons/tb";
@@ -50,12 +51,23 @@ const AboutHome = () => {
                             <PiHeartbeatBold size={30} />
                             For Our Services
                         </h2>
-                        
-                        <p className="flex flex-col space-y-5 font-bold text-sm">
-                            <span>Call: <span className="text-indigo-300 text-lg">+234 811 434 6325</span></span> 
-                            <span>WhatsApp: <span className="text-indigo-300 text-lg">+234 811 434 6325</span></span> 
-                            <span>E-mail: <span className="text-indigo-300 text-lg">Info@prettyhealthcare.com.ng</span></span> 
-                        </p>
+
+                        <div className="flex flex-col space-y-5 font-bold text-sm">
+                            <Link href="tel:+2348114346325">
+                                <span>
+                                    Phone: <span className="text-indigo-300 md:text-lg text-[16px]">+234 811 434 6325</span>
+                                </span>
+                            </Link>
+                            <Link href='https://wa.me/message/KEAP2TUQOW6EN1'>
+                                <span>WhatsApp: <span className="text-indigo-300 md:text-lg text-[16px]">+234 811 434 6325</span></span>
+                            </Link>
+
+                            <Link href="mailto:Info@prettyhealthcare.com.ng">
+                                <span>
+                                    E-mail: <span className="text-indigo-300 md:text-lg text-[16px]">Info@prettyhealthcare.com.ng</span>
+                                </span>
+                            </Link>
+                        </div>
                     </div>
 
                     {/* Opening Hours */}

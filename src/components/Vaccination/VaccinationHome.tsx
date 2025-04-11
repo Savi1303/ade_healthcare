@@ -215,7 +215,7 @@ Time: ${input}`)
                 </div>
 
                 {/* Location Section */}
-                <div className="absolute left-0 lg:bottom-44 md:bottom-60 bottom-36 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[400px] md:w-[600px] lg:w-[600px] ">
+                <div className="absolute left-0 lg:bottom-44 md:bottom-60 bottom-28 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[350px] md:w-[600px] lg:w-[600px] ">
                     <div className="flex items-center gap-6">
                         <BiPlusCircle size={50} className="hidden md:flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2" />
 
