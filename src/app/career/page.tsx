@@ -11,7 +11,7 @@ function page() {
             <CareerHome />
             <CareerTailor />
             <CareerGrow />
-            <CareerTeam />
+            {/* <CareerTeam /> */}
             <CareerTalent />
         </div>
     )
