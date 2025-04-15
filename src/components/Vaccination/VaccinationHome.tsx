@@ -68,7 +68,7 @@ function VaccinationHome() {
                 }, 1000)
             }, 1000)
         }
-    }, [isChatOpen])
+    }, [isChatOpen, messages.length, vaccineOptions])
 
     // Scroll to bottom of messages
     useEffect(() => {
