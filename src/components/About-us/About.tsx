@@ -4,6 +4,7 @@ import OurStory from './OurStory/OurStory'
 import Blog from '../LandingPage/Blog/Blog'
 import Service from '../LandingPage/Servicess/Service'
 import AboutHealth from './AboutHealth/AboutHealth'
+import TeamSection from './TeamSection/TeamSection'
 // import AboutService from './AboutService/AboutService'
 
 const About = () => {
@@ -15,6 +16,7 @@ const About = () => {
       <Service />
       <Blog />
       <AboutHealth />
+      <TeamSection />
     </div>
   )
 }

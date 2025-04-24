@@ -27,7 +27,7 @@ const Footer = () => {
                         <div className='mt-7 text-center sm:text-left'>
                             <div className="text-lg lg:text-sm font-bold max-w-[270px]">
                                 <p>Location:</p>
-                                <p className="font-normal text-gray-300">78/81, Obafemi Awolowo Way, Ikeja, Lagos State.</p>
+                                <p className="font-normal text-gray-300">79/81, Obafemi Awolowo Way, Ikeja, Lagos State.</p>
                             </div>
                             <div className="text-lg lg:text-sm space-y-1 mt-3">
                                 <p className="font-bold">Operating Hours:</p>
