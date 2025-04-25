@@ -38,12 +38,12 @@ const BlogCard = ({ type, date, readTime, title, className }: LandingBlogCardPro
                 </p>
                 
                 {/* Link to View Blog */}
-                <Link href="/view-blog">
+                {/* <Link href="/view-blog"> */}
                     <button className='flex gap-2 items-center cursor-pointer text-sm mt-6 hover:text-blue-600'>
                         <FaArrowRight className='w-5 h-5' />
                         <p>Read More</p>
                     </button>
-                </Link>
+                {/* </Link> */}
             </div>
         </div>
     );

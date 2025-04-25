@@ -67,7 +67,11 @@ const Footer = () => {
                         <div>
                             <p className="text-lg font-bold mb-4 text-center sm:text-left">MORE</p>
                             <ul className="space-y-3 text-lg lg:text-sm text-center sm:text-left">
-                                <li><Link href="/view-blog" className="hover:text-gray-500 text-gray-300">Blog</Link></li>
+                                <li
+                                // ><Link href="/view-blog"
+                                 className="hover:text-gray-500 text-gray-300">Blog
+                                 {/* </Link> */}
+                                 </li>
                                 <li>
                                     <Link href="/contact-us" className="hover:text-gray-500 text-gray-300 cursor-pointer">Contact</Link>
 
