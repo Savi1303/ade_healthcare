@@ -226,8 +226,7 @@ Time: ${input}`)
 
                     <button
                         title='ChatOpen'
-                        onClick={() => window.open('https://wa.me/message/KEAP2TUQOW6EN1', '_blank', 'noopener,noreferrer')}
-                        // onClick={() => setIsChatOpen(true)}
+                        onClick={() => setIsChatOpen(true)}
                         className="text-white p-3 flex items-center border rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300 ease-in-out"
                     >
                         <FaArrowRight />
