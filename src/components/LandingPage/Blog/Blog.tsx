@@ -4,19 +4,19 @@ import BlogCard from './BlogCard/BlogCard';
 
 const LandingBlogPost = [
     {
-        date: 'April 19, 2024',
+        date: 'April 19, 2025',
         readTime: '4 mins',
         title: 'Tech Talk: Exploring Cutting Edge Medical Technologies at Pretty-Health',
         type: 'Clinical Health'
     },
     {
-        date: 'April 19, 2024',
+        date: 'April 19, 2025',
         readTime: '4 mins',
         title: 'Tech Talk: Exploring Cutting Edge Medical Technologies at Pretty-Health',
         type: 'Clinical Health'
     },
     {
-        date: 'April 19, 2024',
+        date: 'April 19, 2025',
         readTime: '4 mins',
         title: 'Tech Talk: Exploring Cutting Edge Medical Technologies at Pretty-Health',
         type: 'Clinical Health'
