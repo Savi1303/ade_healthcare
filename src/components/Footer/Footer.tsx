@@ -118,7 +118,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center text-lg lg:text-sm text-center md:text-left">
                     {/* Copyright */}
                     <p className="mb-4 md:mb-0 text-gray-300">
-                        © 2024 Pretty Health Care, NG. All rights reserved. | Designed By Mont Technologies
+                        © 2025 Pretty Health Care, NG. All rights reserved. | Designed By Mont Technologies
                     </p>
 
                     {/* Links and Social Icons */}
