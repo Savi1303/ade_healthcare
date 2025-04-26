@@ -25,14 +25,14 @@ const Footer = () => {
 
                         {/* Location & Operating Hours */}
                         <div className='mt-7 text-center sm:text-left'>
-                            <div className="text-lg lg:text-sm font-bold max-w-[270px]">
+                            <div className="text-lg lg:text-sm font-bold md:max-w-[270px] lg:max-w-[270px]">
                                 <p>Location:</p>
                                 <p className="font-normal text-gray-300">79/81, Obafemi Awolowo Way, Ikeja, Lagos State.</p>
                             </div>
                             <div className="text-lg lg:text-sm space-y-1 mt-3">
                                 <p className="font-bold">Operating Hours:</p>
-                                <p className="text-gray-300">Saturday: 09:00 AM - 04:00 PM</p>
                                 <p className="text-gray-300">Monday - Friday: 08:00 AM - 05:00 PM</p>
+                                <p className="text-gray-300">Saturday: 09:00 AM - 04:00 PM</p>
                             </div>
                         </div>
 

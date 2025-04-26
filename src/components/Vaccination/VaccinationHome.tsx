@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react"
 import { BiPlusCircle } from "react-icons/bi"
 import { FaArrowRight, FaPaperPlane, FaTimes, FaUser } from "react-icons/fa"
 import { FaRobot } from "react-icons/fa6"
+import { motion } from "framer-motion"
 
 // Define message types
 type MessageType = {
@@ -37,7 +38,43 @@ function VaccinationHome() {
     })
     const [isTyping, setIsTyping] = useState(false)
     const messagesEndRef = useRef<HTMLDivElement>(null)
-
+    const TypingText = ({ text }: { text: string }) => {
+        const [displayedText, setDisplayedText] = useState("")
+        
+        useEffect(() => {
+          let index = 0
+          const interval = setInterval(() => {
+            setDisplayedText(text.slice(0, index))
+            index++
+            if (index > text.length) clearInterval(interval)
+          }, 50) // speed of typing
+      
+          return () => clearInterval(interval)
+        }, [text])
+      
+        const renderText = () => {
+          const boldPart = "vaccination services"
+          const boldIndex = displayedText.indexOf(boldPart)
+      
+          if (boldIndex !== -1) {
+            return (
+              <>
+                {displayedText.slice(0, boldIndex)}
+                <span className="font-extrabold">{boldPart}</span>
+                {displayedText.slice(boldIndex + boldPart.length)}
+              </>
+            )
+          } else {
+            return displayedText
+          }
+        }
+      
+        return (
+          <h1 className="text-3xl sm:text-4xl md:text-5xl mb-3 lg:w-[510px]">
+            {renderText()}
+          </h1>
+        )
+      }
     // Available vaccines
     const vaccineOptions: AppointmentOption[] = [
         { id: 1, name: "HBV Vaccine", },
@@ -198,41 +235,52 @@ Time: ${input}`)
 
     return (
         <div className="relative w-full h-[550px] sm:h-[600px] md:h-[650px] lg:h-[650px]">
-            {/* Background Image */}
-            <div className="absolute inset-0 w-full h-full -top-7 -z-10">
-                <Image src="/Pretty-Health Website/new_images/Group 20647.png" alt="homeView" layout="fill" objectFit="cover" />
-            </div>
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full h-full -top-7 -z-10">
+            <Image src="/Pretty-Health Website/new_images/Group 20647.png" alt="homeView" layout="fill" objectFit="cover" />
+        </div>
 
-            {/* Content Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 sm:px-8 lg:px-12 space-y-6">
-                <div className="absolute top-40 sm:top-40 md:top-32 lg:top-36 ">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl mb-3 lg:w-[510px]">
-                        We are the largest provider of private <span className="font-extrabold">vaccination services</span> in
-                        Nigeria
-                    </h1>
+        {/* Content Overlay */}
+        <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 sm:px-8 lg:px-12 space-y-6">
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: false }}
+            className="absolute top-40 sm:top-40 md:top-32 lg:top-36"
+        >
+            <TypingText text="We are the largest provider of private vaccination services in Nigeria" />
+            <span>Making vaccination work for you, one person at a time</span>
+        </motion.div>   
 
-                    <span>Making vaccination work for you, one person at a time</span>
+
+            {/* Location Section with Animation */}
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: false }}
+                className="absolute left-0 lg:bottom-44 md:bottom-60 bottom-28 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[350px] md:w-[600px] lg:w-[600px]"
+            >
+                <div className="flex items-center gap-6">
+                    <BiPlusCircle size={50} className="hidden md:flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2" />
+                    <span className="font-extrabold uppercase text-xs lg:text-lg sm:text-sm md:text-base text-gray-800">
+                        Book Your Vaccination Today!
+                    </span>
                 </div>
 
-                {/* Location Section */}
-                <div className="absolute left-0 lg:bottom-44 md:bottom-60 bottom-28 flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-tr-full rounded-br-full w-[350px] md:w-[600px] lg:w-[600px] ">
-                    <div className="flex items-center gap-6">
-                        <BiPlusCircle size={50} className="hidden md:flex mt-1 bg-[#2e1635] rounded-full border font-2xl p-2" />
-
-                        <span className="font-extrabold uppercase text-xs lg:text-lg sm:text-sm md:text-base text-gray-800">
-                            Book Your Vaccination Today!
-                        </span>
-                    </div>
-
-                    <button
-                        title='ChatOpen'
-                        // onClick={() => setIsChatOpen(true)}
-                        className="text-white p-3 flex items-center border rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300 ease-in-out"
-                    >
-                        <FaArrowRight />
-                    </button>
-                </div>
-            </div>
+                {/* Pulsing Button */}
+                <motion.div
+                    animate={{ scale: [1, 1.3, 1] }}
+                    transition={{ repeat: Infinity, duration: 0.8, ease: "easeInOut" }}
+                    title="ChatOpen"
+                    className="text-white p-3 flex items-center border rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300 ease-in-out"
+                    // onClick={() => setIsChatOpen(true)}
+                >
+                    <FaArrowRight />
+                </motion.div>
+            </motion.div>
+        </div>
 
             {/* Chat Modal */}
             {isChatOpen && (
