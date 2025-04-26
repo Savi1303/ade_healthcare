@@ -26,7 +26,7 @@ const HomeView = () => {
           viewport={{ once: false }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl mb-2">
-            <span className="font-extrabold">Nigeria's</span> Foremost
+            <span className="font-extrabold">Nigeria&apos;s</span> Foremost
           </h1>
           <span className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2">
             Preventive Health &

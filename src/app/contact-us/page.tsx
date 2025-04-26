@@ -7,7 +7,7 @@ import { PiHeartbeatBold } from "react-icons/pi"
 import { TbCalendarTime } from "react-icons/tb"
 import { motion } from "framer-motion"
 const Page = () => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [, setIsVisible] = useState(false)
   const [count, setCount] = useState(0)
 
   // Counter animation effect
