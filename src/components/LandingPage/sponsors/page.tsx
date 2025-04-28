@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from 'framer-motion';
+
 
 const LogoScroller = () => {
   const logos = [
@@ -13,8 +15,20 @@ const LogoScroller = () => {
     "/Pretty-Health Website/new_images/s8.jpg",
     "/Pretty-Health Website/new_images/s9.jpg",
   ];
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeInOut' } }
+  };
 
-  return (
+  return (<>
+          <motion.h2
+          className="m-2 text-lg md:text-2xl text-center font-bold text-blue-600"
+          variants={itemVariants}
+        >
+            <motion.span className="inline-block" whileHover={{ scale: 1.05 }}transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                Our Clients
+            </motion.span>
+        </motion.h2>
     <div className="lg:min-h-32 md:min-h-36 sm:min-h-40 flex items-center justify-center bg-white">
       <div className="relative w-full">
         <div className="flex animate-scroll space-x-16">
@@ -57,9 +71,10 @@ const LogoScroller = () => {
               transform: translateX(-250%);
             }
           }
-}
+          }
       `}</style>
     </div>
+          </>
   );
 };
 
