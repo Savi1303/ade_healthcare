@@ -10,7 +10,7 @@ function NavButton() {
             newTab: false 
         },
         { 
-            name: 'Talk to a Doctor', 
+            name: 'Chat with us', 
             href: 'https://wa.me/message/KEAP2TUQOW6EN1', 
             color: 'bg-blue-600 border-2 border-blue-600 hover:bg-transparent font-black hover:text-blue-600 text-white',
             newTab: true 

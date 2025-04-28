@@ -10,31 +10,31 @@ import AboutPrettyHealth from './PrettyHealth/AboutPrettyHealth';
 const testimonials = [
     {
         quote: "I had a great experience at this healthcare office. I was seen quickly, and the team were very calm and I got my HPV vaccine administered and my next appointment was set up on my phone.",
-        image: "/Pretty-Health Website/Images/Photo by Etty Fidele.png",
+        // image: "/Pretty-Health Website/Images/Photo by Etty Fidele.png",
         name: "Adekunle Florence",
         role: "Vaccination Client",
     },
     {
         quote: "The staff was professional and kind. The vaccination process was smooth and the environment was clean and welcoming.",
-        image: "/Pretty-Health Website/Images/Image (1).png",
+        // image: "/Pretty-Health Website/Images/Image (1).png",
         name: "Chukwuma Obinna",
         role: "Health Screening Client",
     },
     {
         quote: "I appreciate the timely service and the detailed explanations I received about my health. Highly recommend Prettyhealth Care.",
-        image: "/Pretty-Health Website/Images/Image (2).png",
+        // image: "/Pretty-Health Website/Images/Image (2).png",
         name: "Fatima Ibrahim",
         role: "Regular Client",
     },
     {
         quote: "The team made me feel comfortable during my visit, and the follow-up care has been excellent. Great service!",
-        image: "/Pretty-Health Website/Images/Image (3).png",
+        // image: "/Pretty-Health Website/Images/Image (3).png",
         name: "Oluwatobi Adebayo",
         role: "Vaccination Client",
     },
     {
         quote: "The environment is aesthetic and nice. Really a nice place to get your wellness tests done",
-        image: "/Pretty-Health Website/Images/Image (3).png",
+        // image: "/Pretty-Health Website/Images/Image (3).png",
         name: "Cynthia Uche",
         role: "Client",
     },
@@ -137,13 +137,13 @@ const YourHealth = () => {
                                     &#34;{testimonials[currentIndex].quote}&#34;
                                 </p>
                                 <div className="flex items-center space-x-4 mt-4">
-                                    <Image
+                                    {/* <Image
                                         src={testimonials[currentIndex].image}
                                         alt={testimonials[currentIndex].name}
                                         width={60}
                                         height={60}
                                         className="w-12 h-12 rounded-full object-cover border border-gray-300"
-                                    />
+                                    /> */}
                                     <div>
                                         <h3 className="text-gray-800 text-sm md:text-md sm:text-sm lg:text-lg  font-semibold uppercase">
                                             {testimonials[currentIndex].name}
