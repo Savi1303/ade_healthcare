@@ -166,7 +166,7 @@
 
 'use client';
 import React, { useState, useEffect } from "react";
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { PiQuotes } from "react-icons/pi";
 import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
 import Image from "next/image";
@@ -288,57 +288,30 @@ const AboutHealth = () => {
           </motion.div>
 
           {/* Right Column */}
-          <motion.div className="w-full lg:w-3/4 space-y-6" variants={itemVariants}>
-            <motion.div className="relative w-full mx-auto" variants={itemVariants}>
-              <motion.div className="overflow-hidden rounded-2xl shadow-lg space-y-5 bg-[#B6B5FF] py-6 px-10 sm:px-6 md:px-16 lg:px-20" variants={slideVariants}>
-                <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
-                <motion.p className="text-gray-900 md:text-lg sm:text-sm lg:text-lg line-clamp-2" variants={itemVariants}>
-                  “{testimonials[currentIndex].quote}”
-                </motion.p>
-                <div className="flex items-center space-x-4 mt-4">
-                  <motion.div variants={itemVariants} whileHover={{ scale: 1.05 }}>
-                    <Image
-                      src={testimonials[currentIndex].image}
-                      alt={testimonials[currentIndex].name}
-                      width={60}
-                      height={60}
-                      className="w-12 h-12 rounded-full object-cover border border-gray-300"
-                    />
-                  </motion.div>
-                  <div>
-                    <motion.h3 className="text-gray-800 md:text-md sm:text-sm lg:text-lg font-semibold uppercase" variants={itemVariants}>
-                      {testimonials[currentIndex].name}
-                    </motion.h3>
-                    <motion.p className="md:text-md sm:text-sm lg:text-lg text-gray-900" variants={itemVariants}>
-                      {testimonials[currentIndex].role}
-                    </motion.p>
+          <div className="w-full lg:w-3/4 relative">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={currentIndex}
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -50 }}
+                  transition={{ duration: 0.6 }}
+                  className="overflow-hidden rounded-2xl shadow-lg bg-[#B6B5FF] py-6 px-10 sm:px-6 md:px-16 lg:px-20"
+                >
+                  <PiQuotes className="transform rotate-180 text-gray-600" size={48} />
+                  <p className="text-gray-900 md:text-lg sm:text-sm lg:text-lg line-clamp-2">
+                    “{testimonials[currentIndex].quote}”
+                  </p>
+                  <div className="flex items-center space-x-4 mt-4">
+                    {/* <Image src={testimonials[currentIndex].image} alt={testimonials[currentIndex].name} width={60} height={60} className="rounded-full" /> */}
+                    <div>
+                      <h3 className="text-gray-800 text-sm md:text-md lg:text-lg font-semibold uppercase">{testimonials[currentIndex].name}</h3>
+                      <p className="text-sm lg:text-lg text-gray-900">{testimonials[currentIndex].role}</p>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-
-              {/* Navigation Buttons */}
-              <div className="absolute top-1/2 right-2 transform -translate-y-1/2 w-full flex justify-between px-4">
-                <motion.button
-                  title="prev"
-                  className="p-2 bg-blue-100 text-white rounded-full hover:bg-blue-400 transition"
-                  onClick={prevSlide}
-                  whileHover={{ scale: 1.1 }}
-                  variants={itemVariants}
-                >
-                  <FaArrowLeft />
-                </motion.button>
-                <motion.button
-                  title='next'
-                  className="p-2 bg-blue-100 text-white rounded-full hover:bg-blue-400 transition"
-                  onClick={nextSlide}
-                  whileHover={{ scale: 1.1 }}
-                  variants={itemVariants}
-                >
-                  <FaArrowRight />
-                </motion.button>
-              </div>
-            </motion.div>
-          </motion.div>
+                </motion.div>
+              </AnimatePresence>
+            </div>
         </motion.div>
       </motion.div>
     </motion.div>

@@ -126,7 +126,7 @@ const YourHealth = () => {
               <div className="w-full md:w-3/4 lg:w-1/2 rounded-xl py-4 bg-[#B6B5FF] text-center flex flex-col items-center">
                 <p className="text-sm font-bold text-gray-900 uppercase">Average Google Ratings</p>
                 <div className="flex items-center space-x-2 mt-2 justify-center">
-                  <FaStar size={26} />
+                  <FaStar className="text-[#52aa40]" size={26} />
                   <span className="text-gray-800 text-5xl font-black">5.0</span>
                 </div>
               </div>
