@@ -148,7 +148,7 @@ const YourHealth = () => {
                     “{testimonials[currentIndex].quote}”
                   </p>
                   <div className="flex items-center space-x-4 mt-4">
-                    <Image src={testimonials[currentIndex].image} alt={testimonials[currentIndex].name} width={60} height={60} className="rounded-full" />
+                    {/* <Image src={testimonials[currentIndex].image} alt={testimonials[currentIndex].name} width={60} height={60} className="rounded-full" /> */}
                     <div>
                       <h3 className="text-gray-800 text-sm md:text-md lg:text-lg font-semibold uppercase">{testimonials[currentIndex].name}</h3>
                       <p className="text-sm lg:text-lg text-gray-900">{testimonials[currentIndex].role}</p>
