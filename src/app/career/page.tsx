@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 function Page() {
     return (
-        <div className="space-y-10">
+        <div className="space-y-10 overflow-hidden">
             <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}

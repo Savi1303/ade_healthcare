@@ -24,7 +24,14 @@ const SectionWrapper = ({ children, initial = { opacity: 0, y: 50 }, transition 
     </motion.div>
   );
 };
-
+const slideVariants = {
+  hidden: { opacity: 0, x: 50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
+};
 const testimonials = [
     {
         quote: "I had a great experience at this healthcare office. I was seen quickly, and the team were very calm and I got my HPV vaccine administered and my next appointment was set up on my phone.",
@@ -74,12 +81,21 @@ const YourHealth = () => {
 
         {/* Header Section */}
         <SectionWrapper initial={{ opacity: 0, y: -50 }}>
-          <div className="text-center md:text-left">
-            <span className="sm:text-lg text-lg font-bold text-blue-600">Your Health Is Our Top Priority</span>
-            <p className="pr-32 text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin mt-2 leading-relaxed">
-              Our track record speaks for itself. We led <span className="font-extrabold">HPV vaccine</span> introduction in Nigeria through the private sector, using an <span className="font-extrabold">innovative low-cost delivery model.</span>
-            </p>
-          </div>
+        <motion.div className="text-center md:text-left" variants={itemVariants}>
+          <span className="text-lg font-bold text-blue-600">
+            Your Health Is Our Top Priority
+          </span>
+          <motion.div className="w-full whitespace-nowrap overflow-hidden mt-4" variants={slideVariants}>
+            <div className="inline-block animate-scroll">
+              <p className="pr-32 text-2xl md:text-3xl lg:text-4xl text-gray-900 font-thin leading-relaxed">
+                Our track record speaks for itself. We led{' '}
+                <span className="font-extrabold">HPV vaccine</span> introduction in Nigeria through the private sector, using an{' '}
+                <span className="font-extrabold">innovative low-cost delivery model.</span>
+              </p>
+            </div>
+          </motion.div>
+        </motion.div>
+
         </SectionWrapper>
 
         {/* PrettyHealth */}
