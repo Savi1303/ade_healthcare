@@ -59,7 +59,7 @@ const testimonials = [
     },
     {
         quote: "The environment is aesthetic and nice. Really a nice place to get your wellness tests done",
-        image: "/Pretty-Health Website/Images/Image (3).png",
+        // image: "/Pretty-Health Website/Images/Image (3).png",
         name: "Cynthia Uche",
         role: "Client",
     },

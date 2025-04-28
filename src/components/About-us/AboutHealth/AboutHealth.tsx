@@ -168,7 +168,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from 'framer-motion';
 import { PiQuotes } from "react-icons/pi";
-import { FaArrowRight, FaArrowLeft, FaStar } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 
 const testimonials = [
@@ -231,9 +231,9 @@ const AboutHealth = () => {
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
   };
-  const prevSlide = () => {
-    setCurrentIndex((prev) => prev === 0 ? testimonials.length - 1 : prev - 1);
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prev) => prev === 0 ? testimonials.length - 1 : prev - 1);
+  // };
 
   return (
     <motion.div
