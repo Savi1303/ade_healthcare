@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    # 1) Set the destination folder for your live site
+    - export DEPLOYPATH=/home/prettyh3/public_html/
+    # 2) Copy all files (excluding .git) into the live folder
+    - /bin/cp -R * $DEPLOYPATH
