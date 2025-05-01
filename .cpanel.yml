@@ -1,9 +1,0 @@
----
-deployment:
-  tasks:
-    - export PATH=/usr/local/bin:$PATH
-    - cd /home/prettyh3/repositories/ade_healthcare
-    - npm install --legacy-peer-deps         
-    - npm run build                          
-    - export DEPLOYPATH=/home/prettyh3/public_html/
-    - /bin/cp -R build/* $DEPLOYPATH         
