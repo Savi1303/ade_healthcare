@@ -11,7 +11,6 @@ interface DiagnosticsCardProps {
 const DiagnosticsCard: FC<DiagnosticsCardProps> = ({ title, price }) => {
     return (
         <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center border border-gray-200">
-            {/* Icon */}
             <Image
                 src='/Pretty-Health Website/Images/image 15.png'
                 alt="Doctor Icon"
@@ -20,15 +19,12 @@ const DiagnosticsCard: FC<DiagnosticsCardProps> = ({ title, price }) => {
                 className="flex justify-start mb-4"
             />
 
-            {/* Test Title */}
             <h3 className="text-lg font-semibold text-gray-800 line-clamp-2">{title}</h3>
 
-            {/* Price */}
             <p className="text-gray-500 text-sm mt-2">
                 STARTING FROM <span className="font-bold text-gray-900">{price}</span>
             </p>
 
-            {/* Schedule Button */}
             <Link
                 href="https://wa.me/message/KEAP2TUQOW6EN1"
                 target="_blank"

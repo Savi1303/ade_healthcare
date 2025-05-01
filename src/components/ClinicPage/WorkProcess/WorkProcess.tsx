@@ -11,14 +11,12 @@ function WorkProcess() {
 
     return (
         <div className="bg-gray-50 py-20">
-            {/* Header Section */}
             <div className="px-6 sm:px-12 lg:px-12 mb-12 text-left">
                 <p className="text-2xl text-gray-700 mt-4 max-w-3xl text-left">
                     We promote healthier environments all through the way
                 </p>
             </div>
 
-            {/* Steps Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 sm:px-12 lg:px-12">
                 {steps.map((step) => (
                     <div
@@ -26,7 +24,6 @@ function WorkProcess() {
                         className="flex flex-col cursor-pointer items-center text-center bg-white shadow-lg rounded-lg p-6 space-y-4 border-t-4 border-blue-600
                         hover:shadow-2xl hover:scale-105 hover:border-blue-800 transition-all duration-300 ease-in-out"
                     >
-                        {/* Icon */}
                         <div className="w-16 h-16 sm:w-20 sm:h-20">
                             <Image
                                 src={step.icon}
@@ -36,12 +33,11 @@ function WorkProcess() {
                                 className="w-full h-full"
                             />
                         </div>
-                        {/* Title */}
                         <span className="text-base sm:text-lg font-semibold text-gray-700">{step.title}</span>
                     </div>
                 ))}
             </div>
-        </div>
+        </div>  
     );
 }
 

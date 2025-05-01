@@ -32,15 +32,12 @@ function CareerGrow() {
         e.preventDefault()
         setIsSubmitting(true)
 
-        // Simulate form submission
         try {
-            // Replace with actual form submission logic
             await new Promise((resolve) => setTimeout(resolve, 1500))
             setIsSuccess(true)
             setFormData({ name: "", phone: "", email: "" })
             setFile(null)
 
-            // Reset success message after 3 seconds and close dialog
             setTimeout(() => {
                 setIsSuccess(false)
                 setIsModalOpen(false)
@@ -55,7 +52,6 @@ function CareerGrow() {
     return (
         <div className="">
             <div className="flex flex-col lg:flex-row justify-between items-center w-full bg-blue-900 py-24 px-4 sm:px-8 md:px-0 lg:px-0">
-                {/* Image Section */}
                 <div className="w-full lg:w-1/2 flex justify-center mb-8 md:mb-7">
                     <Image
                         src="/Pretty-Health Website/new_images/Rectangle 817.png"
@@ -66,7 +62,6 @@ function CareerGrow() {
                     />
                 </div>
 
-                {/* Text Section */}
                 <div className="w-full lg:w-1/2 text-white lg:px-0 px-4 md:px-20">
                     <h2 className="text-2xl sm:text-3xl uppercase font-bold">Grow with us</h2>
 
@@ -87,7 +82,6 @@ function CareerGrow() {
                         Together, we can make health happen.
                     </p>
 
-                    {/* CTA Button */}
                     <div className="flex lg:justify-end justify-center">
                         <div
                             className="flex justify-between items-center bg-white space-x-5 px-4 sm:px-6 md:px-8 py-4 border rounded-full lg:rounded-tl-full lg:rounded-tr-none lg:rounded-br-none lg:rounded-bl-full w-full max-w-[400px] md:max-w-[600px] lg:max-w-[450px] cursor-pointer"
@@ -111,11 +105,9 @@ function CareerGrow() {
                 </div>
             </div>
 
-            {/* Modal */}
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div className="bg-white rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto">
-                        {/* Modal header */}
                         <div className="p-6 border-b">
                             <div className="flex justify-between items-center">
                                 <h3 className="text-xl font-bold text-blue-900">Join Our Talent Community</h3>
@@ -136,7 +128,6 @@ function CareerGrow() {
                             </p>
                         </div>
 
-                        {/* Modal content */}
                         <div className="p-6">
                             {isSuccess ? (
                                 <div className="py-6 text-center">

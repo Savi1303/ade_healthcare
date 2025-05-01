@@ -32,11 +32,9 @@ const ContactForm: React.FC = () => {
 
   const [errors, setErrors] = useState<FormErrors>({});
 
-  // Validation function
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
 
-    // Validate each field
     if (!formData.firstName) {
       newErrors.firstName = 'First Name is required';
     }
@@ -54,9 +52,7 @@ const ContactForm: React.FC = () => {
     if (!formData.phoneNumber) {
       newErrors.phoneNumber = 'Phone Number is required';
     } else {
-      // Remove any spaces or special characters except + sign
       const cleanNumber = formData.phoneNumber.replace(/[^\d+]/g, '');
-      // Check for Nigerian format: +234 followed by 10 digits
       const isValidNigerianNumber = /^\+234\d{10}$/.test(cleanNumber);
       if (!isValidNigerianNumber) {
         newErrors.phoneNumber = 'Please enter a valid Nigerian phone number (+234XXXXXXXXXX)';
@@ -71,14 +67,11 @@ const ContactForm: React.FC = () => {
       newErrors.terms = 'You must accept the terms and conditions';
     }
 
-    // Update errors state
     setErrors(newErrors);
 
-    // Return true if no errors
     return Object.keys(newErrors).length === 0;
   };
 
-  // Add this function inside your ContactForm component
   const formatEmailBody = (data: FormValues): string => {
     return `
 First Name: ${data.firstName}
@@ -89,7 +82,6 @@ Message: ${data.message}
     `.trim();
   };
 
-  // Handle form input changes
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -109,7 +101,6 @@ Message: ${data.message}
     }
   };
 
-  // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
@@ -117,7 +108,6 @@ Message: ${data.message}
       const mailtoLink = `mailto:Info@prettyhealthcare.com.ng?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
       window.location.href = mailtoLink;
       
-      // Optional: Reset form after submission
       setFormData({
         firstName: '',
         lastName: '',
@@ -136,7 +126,6 @@ Message: ${data.message}
         onSubmit={handleSubmit}
         className="flex flex-col gap-[15px] font-semibold md:py-[20px] md:pl-[20px]"
       >
-        {/* First and Last Name */}
         <div className="group flex md:flex-row flex-col gap-[15px] md:gap-[40px]">
           <div className="form-group flex flex-col gap-[10px]">
             <label htmlFor="firstName" className="text-[13px]">
@@ -168,7 +157,6 @@ Message: ${data.message}
           </div>
         </div>
 
-        {/* Email and Phone Number */}
         <div className="group flex flex-col md:flex-row gap-[15px] md:gap-[40px]">
           <div className="form-group flex flex-col gap-[10px]">
             <label htmlFor="email" className="text-[13px]">
@@ -200,7 +188,6 @@ Message: ${data.message}
           </div>
         </div>
 
-        {/* Message */}
         <div className="form-group flex flex-col gap-[10px]">
           <label htmlFor="message" className="text-[13px]">
             Message
@@ -215,7 +202,6 @@ Message: ${data.message}
           {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
         </div>
 
-        {/* Terms and Submit Button */}
         <div className="group flex flex-col gap-[15px] md:flex-row md:justify-between">
           <div className="form-group flex gap-[10px] items-center">
             <input

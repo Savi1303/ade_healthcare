@@ -10,7 +10,6 @@ const Page = () => {
   const [, setIsVisible] = useState(false)
   const [count, setCount] = useState(0)
 
-  // Counter animation effect
   useEffect(() => {
     setIsVisible(true)
 
@@ -41,7 +40,6 @@ const Page = () => {
               transition={{ duration: 0.8 }}
               className="flex flex-col md:flex-row border rounded-2xl bg-[#250c2c] text-white p-6 md:p-10 space-y-6 md:space-y-0 md:space-x-5"
             >
-              {/* Emergency Services */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -101,7 +99,6 @@ const Page = () => {
                 </div>
               </motion.div>
 
-              {/* Opening Hours */}
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}

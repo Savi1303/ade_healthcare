@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { BiPlusCircle } from "react-icons/bi"
@@ -9,7 +8,6 @@ import { FaArrowRight, FaPaperPlane, FaTimes, FaUser } from "react-icons/fa"
 import { FaRobot } from "react-icons/fa6"
 import { motion } from "framer-motion"
 
-// Define message types
 type MessageType = {
     id: number
     text: string
@@ -17,7 +15,6 @@ type MessageType = {
     timestamp: Date
 }
 
-// Define appointment options
 type AppointmentOption = {
     id: number
     name: string
@@ -47,7 +44,7 @@ function VaccinationHome() {
             setDisplayedText(text.slice(0, index))
             index++
             if (index > text.length) clearInterval(interval)
-          }, 50) // speed of typing
+          }, 50) 
       
           return () => clearInterval(interval)
         }, [text])
@@ -75,7 +72,6 @@ function VaccinationHome() {
           </h1>
         )
       }
-    // Available vaccines
     const vaccineOptions: AppointmentOption[] = [
         { id: 1, name: "HBV Vaccine", },
         { id: 2, name: "HPV Vaccine", },
@@ -86,7 +82,6 @@ function VaccinationHome() {
         { id: 7, name: "MMR (Measles Mumps Rubella)" },
     ]
 
-    // Welcome message when chat opens
     useEffect(() => {
         if (isChatOpen && messages.length === 0) {
             addBotMessage(
@@ -107,12 +102,10 @@ function VaccinationHome() {
         }
     }, [isChatOpen, messages.length, vaccineOptions])
 
-    // Scroll to bottom of messages
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
     }, [messages])
 
-    // Add a bot message
     const addBotMessage = (text: string) => {
         setMessages((prev) => [
             ...prev,
@@ -125,7 +118,6 @@ function VaccinationHome() {
         ])
     }
 
-    // Add a user message
     const addUserMessage = (text: string) => {
         setMessages((prev) => [
             ...prev,
@@ -138,7 +130,6 @@ function VaccinationHome() {
         ])
     }
 
-    // Process user input based on current step
     const processUserInput = (input: string) => {
         switch (currentStep) {
             case 1: // Vaccine selection
@@ -218,7 +209,6 @@ Time: ${input}`)
         }
     }
 
-    // Handle sending a message
     const handleSendMessage = (e: React.FormEvent) => {
         e.preventDefault()
         if (!newMessage.trim()) return
@@ -228,19 +218,16 @@ Time: ${input}`)
         setNewMessage("")
     }
 
-    // Format time for message display
     const formatTime = (date: Date) => {
         return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
     }
 
     return (
         <div className="relative w-full h-[550px] sm:h-[600px] md:h-[650px] lg:h-[650px]">
-        {/* Background Image */}
         <div className="absolute inset-0 w-full h-full -top-7 -z-10">
             <Image src="/Pretty-Health Website/new_images/Group 20647.png" alt="homeView" layout="fill" objectFit="cover" />
         </div>
 
-        {/* Content Overlay */}
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white px-4 sm:px-8 lg:px-12 space-y-6">
         <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -254,7 +241,6 @@ Time: ${input}`)
         </motion.div>   
 
 
-            {/* Location Section with Animation */}
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -269,20 +255,17 @@ Time: ${input}`)
                     </span>
                 </div>
 
-                {/* Pulsing Button */}
                 <motion.div
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ repeat: Infinity, duration: 0.8, ease: "easeInOut" }}
                     title="ChatOpen"
                     className="text-white p-3 flex items-center border rounded-full bg-blue-600 hover:bg-blue-700 transition duration-300 ease-in-out"
-                    // onClick={() => setIsChatOpen(true)}
                 >
                     <FaArrowRight />
                 </motion.div>
             </motion.div>
         </div>
 
-            {/* Chat Modal */}
             {isChatOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
                     <div className="bg-white rounded-lg w-full max-w-md h-[600px] max-h-[90vh] flex flex-col">
@@ -300,7 +283,6 @@ Time: ${input}`)
                             </button>
                         </div>
 
-                        {/* Chat Messages */}
                         <div className="flex-1 p-4 overflow-y-auto bg-gray-50">
                             {messages.map((message) => (
                                 <div
@@ -343,7 +325,6 @@ Time: ${input}`)
                             <div ref={messagesEndRef} />
                         </div>
 
-                        {/* Chat Input */}
                         <form onSubmit={handleSendMessage} className="p-3 border-t flex gap-2">
                             <input
                                 type="text"

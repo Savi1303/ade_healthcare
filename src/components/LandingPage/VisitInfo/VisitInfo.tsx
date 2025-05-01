@@ -14,7 +14,6 @@ const VisitInfo = () => {
     return (
         <div className="p-6 sm:p-8 lg:p-10 bg-white">
             <div className="flex flex-col space-y-10">
-                {/* Cards Section */}
                 <div className="flex flex-wrap gap-2 justify-center sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 border rounded-3xl border-gray-400 p-5">
                     {colors.map((color, index) => (
                         <CardVisit key={index} color={color} />
@@ -22,9 +21,7 @@ const VisitInfo = () => {
                 </div>
 
 
-                {/* About Section */}
                 <div className="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 animate__animated animate__bounceInLeft">
-                    {/* Image Section */}
                     <div className="w-full lg:w-1/2">
                         <Image
                             src="/Pretty-Health Website/Images/Union.png"
@@ -35,7 +32,6 @@ const VisitInfo = () => {
                         />
                     </div>
 
-                    {/* Text Content */}
                     <div className="w-full lg:w-1/2 space-y-6 text-gray-800">
                         <span className="text-lg font-semibold text-blue-600">
                             About PrettyHealth

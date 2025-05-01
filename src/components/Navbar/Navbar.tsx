@@ -22,12 +22,10 @@ const Navbar = () => {
         { name: "Home", href: "/" },
         { name: "About Us", href: "/about-us" },
         { name: 'Career', href: '/career' },
-        // { name: "Blog", href: "/view-blog" },
     ];
 
     return (
         <div>
-            {/* first navbar */}
             <div className="flex justify-center items-center bg-[#b69b44] gap-10 text-white text-center py-2 sm:py-3 text-[10px] sm:text-[12px] md:text-[14px]">
                 <p className="hidden md:flex">Not Sure Where To Start? Chat With Our Health Advisor</p>
 
@@ -42,10 +40,8 @@ const Navbar = () => {
             </div>
 
 
-            {/* second navbar */}
             <div className="bg-white shadow-lg top-0 left-0 w-full z-50 px-0">
                 <div className="mx-auto flex justify-between items-center px-6 py-4">
-                    {/* Logo */}
                     <div className="flex items-center z-50">
                         <Image
                             src="/Pretty-Health Website/Images/nav.png"
@@ -57,7 +53,6 @@ const Navbar = () => {
                         />
                     </div>
 
-                    {/* Desktop Navigation */}
                     <ul className="hidden lg:flex items-center gap-3 text-sm font-black">
                         {menuItems.map((item) => (
                             <li key={item.href}>
@@ -83,7 +78,6 @@ const Navbar = () => {
                         <NavButton />
                     </ul>
 
-                    {/* Mobile Menu Button */}
                     <div className="lg:hidden z-50">
                         <button
                             onClick={toggleMobileMenu}
@@ -94,7 +88,6 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Mobile Navigation */}
                 <div
                     className={`lg:hidden fixed left-0 top-20 inset-x-0 font-black bg-white w-full h-full z-50 flex flex-col items-center justify-start transform transition-transform duration-300 ${isMobileMenuOpen ? "translate-y-0" : "translate-x-full"
                         }`}

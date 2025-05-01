@@ -3,7 +3,6 @@ import React from 'react';
 import HomeView from './HomeView/HomeView';
 import Service from './Servicess/Service';
 import YourHealth from './YourHealth/YourHealth';
-// import Blog from './Blog/Blog';
 
 const LandingPage = () => {
     
@@ -18,9 +17,6 @@ const LandingPage = () => {
             </div>
             <div>
                 <YourHealth />
-            </div>
-            <div >
-                {/* <Blog /> */}
             </div>
         </div>
     );

@@ -4,7 +4,6 @@ import CareerGrow from '@/components/Career/CareerGrow';
 import CareerHome from '@/components/Career/CareerHome';
 import CareerTailor from '@/components/Career/CareerTailor';
 import CareerTalent from '@/components/Career/CareerTalent';
-// import CareerTeam from '@/components/Career/CareerTeam/CareerTeam'
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -37,16 +36,6 @@ function Page() {
             >
                 <CareerGrow />
             </motion.div>
-
-            {/* Uncomment if you want the CareerTeam component later */}
-            {/* <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: false }}
-            >
-                <CareerTeam />
-            </motion.div> */}
 
             <motion.div
                 initial={{ opacity: 0, rotate: -10 }}

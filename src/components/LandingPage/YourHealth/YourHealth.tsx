@@ -8,7 +8,6 @@ import Image from 'next/image';
 import { PiQuotes } from 'react-icons/pi';
 import { FaStar } from 'react-icons/fa';
 
-// Wrapper to animate on scroll into view
 const SectionWrapper = ({ children, initial = { opacity: 0, y: 50 }, transition = { duration: 0.6, ease: 'easeInOut' } }: any) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -35,31 +34,26 @@ const itemVariants = {
 const testimonials = [
     {
         quote: "I had a great experience at this healthcare office. I was seen quickly, and the team were very calm and I got my HPV vaccine administered and my next appointment was set up on my phone.",
-        // image: "/Pretty-Health Website/Images/Photo by Etty Fidele.png",
         name: "Adekunle Florence",
         role: "Vaccination Client",
     },
     {
         quote: "The staff was professional and kind. The vaccination process was smooth and the environment was clean and welcoming.",
-        // image: "/Pretty-Health Website/Images/Image (1).png",
         name: "Chukwuma Obinna",
         role: "Health Screening Client",
     },
     {
         quote: "I appreciate the timely service and the detailed explanations I received about my health. Highly recommend Prettyhealth Care.",
-        // image: "/Pretty-Health Website/Images/Image (2).png",
         name: "Fatima Ibrahim",
         role: "Regular Client",
     },
     {
         quote: "The team made me feel comfortable during my visit, and the follow-up care has been excellent. Great service!",
-        // image: "/Pretty-Health Website/Images/Image (3).png",
         name: "Oluwatobi Adebayo",
         role: "Vaccination Client",
     },
     {
         quote: "The environment is aesthetic and nice. Really a nice place to get your wellness tests done",
-        // image: "/Pretty-Health Website/Images/Image (3).png",
         name: "Cynthia Uche",
         role: "Client",
     },
@@ -79,7 +73,6 @@ const YourHealth = () => {
     <div className="py-16">
       <div className="container mx-auto flex flex-col space-y-10 px-6 md:px-10">
 
-        {/* Header Section */}
         <SectionWrapper initial={{ opacity: 0, y: -50 }}>
         <motion.div className="text-center md:text-left" variants={itemVariants}>
           <span className="text-lg font-bold text-blue-600">
@@ -98,26 +91,21 @@ const YourHealth = () => {
 
         </SectionWrapper>
 
-        {/* PrettyHealth */}
         <SectionWrapper initial={{ opacity: 0, x: -50 }} >
           <PrettyHealth />
         </SectionWrapper>
 
-        {/* Sponsors */}
         <SectionWrapper initial={{ opacity: 0, x: 50 }}>
           <Sponsors />
         </SectionWrapper>
 
-        {/* AboutPrettyHealth */}
         <SectionWrapper initial={{ opacity: 0, y: 50 }}>
           <AboutPrettyHealth />
         </SectionWrapper>
 
-        {/* Cards + Slider Row */}
         <SectionWrapper initial={{ opacity: 0, y: 50 }}>  
           <div className="flex justify-center w-full items-start flex-col lg:flex-row gap-4">
 
-            {/* Static Cards */}
             <div className="flex flex-col items-end justify-center basis-full lg:basis-1/2 gap-4">
               <div className="bg-[#f8e9f1] rounded-xl flex gap-4 px-6 py-7 items-center w-full">
                 <Image src="/Pretty-Health Website/Images/Frame 37.png" alt="HIPAA COMPLIANT" width={60} height={60} />
@@ -132,7 +120,6 @@ const YourHealth = () => {
               </div>
             </div>
 
-            {/* Animated Testimonials Slider */}
             <div className="w-full lg:w-3/4 relative">
               <AnimatePresence mode="wait">
                 <motion.div
@@ -148,7 +135,6 @@ const YourHealth = () => {
                     “{testimonials[currentIndex].quote}”
                   </p>
                   <div className="flex items-center space-x-4 mt-4">
-                    {/* <Image src={testimonials[currentIndex].image} alt={testimonials[currentIndex].name} width={60} height={60} className="rounded-full" /> */}
                     <div>
                       <h3 className="text-gray-800 text-sm md:text-md lg:text-lg font-semibold uppercase">{testimonials[currentIndex].name}</h3>
                       <p className="text-sm lg:text-lg text-gray-900">{testimonials[currentIndex].role}</p>

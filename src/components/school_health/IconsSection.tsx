@@ -17,7 +17,7 @@ const IconsSection = () => {
                     }
                 });
             },
-            { threshold: 0.1 } // Trigger when 10% of the section is visible
+            { threshold: 0.1 }
         );
 
         if (sectionRef.current) {
@@ -34,7 +34,6 @@ const IconsSection = () => {
     return (
         <div className="py-16 bg-[#331C4C] mt-5">
             <div className="mx-auto px-6 sm:px-8 lg:px-10 space-y-12">
-                {/* Icons Grid */}
                 <div
                     ref={sectionRef}
                     className={`

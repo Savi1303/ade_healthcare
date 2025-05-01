@@ -13,7 +13,7 @@ const libreFranklin = Libre_Franklin({
 
 export const metadata: Metadata = {
   title: "Pretty Heailth",
-  description: "Healthcare App",
+  description: "Preventive Healthcare Company",
 };
 
 export default function RootLayout({

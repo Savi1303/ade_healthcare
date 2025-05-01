@@ -19,7 +19,6 @@ function AboutPrettyHealth() {
   return (
     <div className="px-4 sm:px-8 md:px-12 lg:px-24 py-12">
       <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
-        {/* Image Section */}
         <motion.div
           className="w-full lg:w-1/2 flex gap-3 sm:gap-5 px-4 sm:px-8 md:px-12 lg:px-0 justify-center lg:justify-start"
           initial={{ opacity: 0, x: -100 }}
@@ -43,7 +42,6 @@ function AboutPrettyHealth() {
           />
         </motion.div>
 
-        {/* Text Content */}
         <motion.div
           className="w-full lg:w-1/2 space-y-6 text-gray-800 text-left px-0 sm:px-8 lg:px-0"
           initial={{ opacity: 0, y: 100 }}

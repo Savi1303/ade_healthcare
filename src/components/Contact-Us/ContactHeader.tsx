@@ -6,9 +6,9 @@ const ContactHeader = () => {
     <div>
    <div className="flex justify-center">
    <Image 
-      src="/Pretty-Health Website/Images/Icon (4).png" // Path relative to the public folder
+      src="/Pretty-Health Website/Images/Icon (4).png" 
       alt="Contact Icon"
-      width={70} // Set width and height based on your design needs
+      width={70} 
       height={70}
       className='mb-[20px]'
     />

@@ -8,11 +8,8 @@ const Footer = () => {
     return (
         <footer className="bg-[#250c2c] text-white lg:rounded-tl-[60px] lg:rounded-tr-[60px]">
             <div className="container mx-auto py-12 px-6 md:px-10">
-                {/* Top Section */}
                 <div className="flex flex-col lg:flex-row lg:justify-between space-y-8 md:space-y-16">
-                    {/* Navigation Links */}
                     <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:flex items-start justify-between lg:gap-24 md:gap-16 gap-10">
-                        {/* Logo */}
                         <div className='mt-6 sm:mt-12 lg:flex justify-center sm:justify-start'>
                             <Image
                                 src="/Pretty-Health Website/Images/footer _img.png"
@@ -23,7 +20,6 @@ const Footer = () => {
                             />
                         </div>
 
-                        {/* Location & Operating Hours */}
                         <div className='mt-7 text-center sm:text-left'>
                             <div className="text-lg lg:text-sm font-bold md:max-w-[270px] lg:max-w-[270px]">
                                 <p>Location:</p>
@@ -36,7 +32,6 @@ const Footer = () => {
                             </div>
                         </div>
 
-                        {/* Company Links */}
                         <div>
                             <p className="text-lg font-bold mb-4 text-center sm:text-left">COMPANY</p>
                             <ul className="space-y-3 text-lg lg:text-sm text-center sm:text-left">
@@ -47,7 +42,6 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        {/* Services Links */}
                         <div>
                             <p className="text-lg font-bold mb-4 text-center sm:text-left">SERVICES</p>
                             <ul className="space-y-3 text-lg lg:text-sm text-center sm:text-left">
@@ -63,16 +57,13 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        {/* More Links */}
                         <div>
                             <p className="text-lg font-bold mb-4 text-center sm:text-left">MORE</p>
                             <ul className="space-y-3 text-lg lg:text-sm text-center sm:text-left">
                                 <li
-                                // ><Link href="/view-blog"
                                  className="hover:text-gray-500 text-gray-300">Blog
-                                 {/* </Link> */}
                                  </li>
-                                <li>
+                                <li className='lg:hidden'>
                                     <Link href="/contact-us" className="hover:text-gray-500 text-gray-300 cursor-pointer">Contact</Link>
 
                                 </li>
@@ -83,7 +74,6 @@ const Footer = () => {
                         <p className="text-lg font-bold mb-4 text-center sm:text-left">PLATFORMS</p>
 
                             <div className="flex flex-col md:flex-row items-center gap-5">
-                                {/* Social Media Icons */}
                                 <div className="flex gap-4 mt-2 md:mt-0">
                                     <Link href='https://www.facebook.com/share/18cPYnVpda/?mibextid=wwXIfr'
                                         target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-gray-300 cursor-pointer">
@@ -111,22 +101,16 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Divider */}
                 <div className="my-8 border-b border-gray-600"></div>
 
-                {/* Bottom Section */}
                 <div className="flex flex-col md:flex-row justify-between items-center text-lg lg:text-sm text-center md:text-left">
-                    {/* Copyright */}
                     <p className="mb-4 md:mb-0 text-gray-300">
                         © 2025 Pretty Health Care, NG. All rights reserved. | Designed By Mont Technologies
                     </p>
 
-                    {/* Links and Social Icons */}
                     <div className="hidden lg:flex flex-col md:flex-row items-center gap-5">
-                        {/* Links */}
                         <Link href="/contact-us" className="hover:text-gray-300 cursor-pointer">Contact</Link>
 
-                        {/* Social Media Icons */}
                         <div className="flex gap-4 mt-2 md:mt-0">
                             <Link href='https://www.facebook.com/share/18cPYnVpda/?mibextid=wwXIfr'
                                 target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-gray-300 cursor-pointer">

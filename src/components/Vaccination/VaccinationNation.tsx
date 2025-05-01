@@ -3,10 +3,8 @@ import Image from "next/image";
 const VaccinationNation = () => {
     return (
         <div className="lg:py-12 py-4 min-h-screen lg:flex flex-row gap-6 lg:px-12 px-3">
-            {/* Main Section */}
             <div className="max-w-[750px] mx-auto p-6 ">
                 <div className="flex flex-col  items-center gap-6">
-                    {/* Image Section */}
                     <div className="">
                         <Image
                             src="/Pretty-Health Website/new_images/image (2).png"
@@ -16,7 +14,6 @@ const VaccinationNation = () => {
                             className="rounded-lg"
                         />
                     </div>
-                    {/* Text Section */}
                     <div className="">
                         <h2 className="text-2xl font-bold text-blue-950">
                             National impact [Trailblazing protection from HPV vaccination]

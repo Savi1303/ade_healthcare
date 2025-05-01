@@ -16,7 +16,6 @@ const PrettyHealth = () => {
     return (
         <div className="py-6">
             <div className="mx-auto sm:px-0">
-                {/* Lab Test Section */}
                 <div className="flex flex-col lg:flex-row justify-between space-y-5 lg:space-y-0 lg:space-x-5 w-full">
                     <div className="lg:w-1/2 flex space-y-9 flex-col bg-cover p-5 rounded-lg relative PrettyHealth">
                         <div className="absolute inset-0 bg-gray-100 opacity-60 rounded-lg"></div>
@@ -62,9 +61,7 @@ const PrettyHealth = () => {
                     </div>
 
 
-                    {/* Image and Award Section */}
                     <div className="relative w-full lg:w-1/2">
-                        {/* Image */}
                         <Image
                             src="/Pretty-Health Website/new_images/Rectangle 6.png"
                             alt="Lab Image"

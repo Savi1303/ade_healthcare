@@ -9,11 +9,6 @@ const OurStory = () => {
                     Our <span className='font-extrabold'>Story</span> 
                 </p>
 
-                {/* <h3 className="text-2xl md:text-3xl lg:text-4xl font-normal text-gray-800 md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
-                    Pretty-Health Care Prioritize Her {' '}
-                    <span className="text-black font-extrabold">Clients</span>
-                </h3> */}
-
                 {/* Section Description */}
                 <p className="text-gray-600 text-justify leading-tight md:w-[90%] lg:w-[550px] mx-auto md:mx-0">
                     <span className='text-2xl'>I</span>n an environment where curative health care is out of reach for many, Prettyhealth began
