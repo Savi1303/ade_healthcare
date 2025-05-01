@@ -12,7 +12,7 @@ const libreFranklin = Libre_Franklin({
 })
 
 export const metadata: Metadata = {
-  title: "Pretty Heailth",
+  title: "Pretty Health",
   description: "Preventive Healthcare Company",
 };
 
