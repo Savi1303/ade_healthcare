@@ -3,7 +3,7 @@ import React from 'react';
 import HomeView from './HomeView/HomeView';
 import Service from './Servicess/Service';
 import YourHealth from './YourHealth/YourHealth';
-import Blog from './Blog/Blog';
+// import Blog from './Blog/Blog';
 
 const LandingPage = () => {
     
@@ -20,7 +20,7 @@ const LandingPage = () => {
                 <YourHealth />
             </div>
             <div >
-                <Blog />
+                {/* <Blog /> */}
             </div>
         </div>
     );
